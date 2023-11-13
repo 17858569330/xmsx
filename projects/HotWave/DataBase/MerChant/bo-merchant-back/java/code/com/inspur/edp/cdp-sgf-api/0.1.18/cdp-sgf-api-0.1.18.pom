@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>cdp-sg</artifactId>
+        <groupId>com.inspur.edp</groupId>
+        <version>0.1.18</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>cdp-sgf-api</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>cdp-common-utils</artifactId>
+            <version>0.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>lcm-metadata-api</artifactId>
+            <version>0.1.23</version>
+        </dependency>
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>lcm-metadata-spi</artifactId>
+            <version>0.1.23</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.iec.edp</groupId>
+            <artifactId>caf-rpc-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>caf-transaction-api</artifactId>
+            <version>0.2.2</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-jar-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <artifactId>maven-source-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

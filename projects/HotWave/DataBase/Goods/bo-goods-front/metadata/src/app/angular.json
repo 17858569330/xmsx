@@ -1,0 +1,120 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "bo-goods-front": {
+      "root": "projects/bo-goods-front/",
+      "sourceRoot": "projects/bo-goods-front/src",
+      "projectType": "application",
+      "prefix": "app",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+      "targets": {
+        "build": {
+          "builder": "@farris/farris-rollup:build",
+          "options": {
+            "format": "system",
+            "outputPath": "dist-rollup/bo-goods-front",
+            "ngcOut": "out-tsc/app/projects/bo-goods-front",
+            "excludeNgFactory": true,
+            "index": "projects/bo-goods-front/src/index.rollup.html",
+            "importmap": "/platform/runtime/common/web/runtime.common.manifest.json?v=1687933996545",
+            "tsConfig": "projects/bo-goods-front/tsconfig.app.json",
+            "entry": {
+              "main": {
+                "entry": "src/main.js",
+                "sourceMaps": false
+              },
+              "goodsform": {
+                "entry": "src/app/goodsform/goodsform.module.ngfactory.js",
+                "sourceMaps": false,
+                "output": "goodsform"
+              }
+            },
+            "uglify": false,
+            "hash": false,
+            "libs": {},
+            "serve": false,
+            "visualize": false,
+            "libsPath": "F:/projects/node_modules/@farris/farris-rollup/src/build/libsWithNgFactory.json",
+            "linkedNodeModules": "F:/projects/node_modules",
+            "assets": [],
+            "i18n": {
+              "projects/bo-goods-front/src/app/goodsform/i18n": "dist-rollup/bo-goods-front/goodsform/i18n",
+              "projects/bo-goods-front/src/app/goodsform/expressions": "dist-rollup/bo-goods-front/goodsform/expressions",
+              "projects/bo-goods-front/src/app/goodsform/metadata": "dist-rollup/bo-goods-front/goodsform",
+              "projects/bo-goods-front/src/app/goodsform/services/dist-rollup": "dist-rollup/bo-goods-front/goodsform/services"
+            }
+          },
+          "configurations": {
+            "production": {
+              "importmap": "/platform/runtime/common/web/runtime.common.manifest.json?v=1687933996545",
+              "optimization": false,
+              "buildOptimizer": false,
+              "outputHashing": "none",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": true,
+              "showCircularDependencies": false,
+              "aot": true,
+              "extractLicenses": false,
+              "statsJson": false,
+              "progress": false,
+              "vendorChunk": true
+            },
+            "ci": {
+              "importmap": "/platform/runtime/common/web/runtime.common.manifest.json",
+              "libsPath": "请手工修改,参考示例：/builds/webadp/front-project-ci/node_modules/@farris/farris-rollup/src/build/libsWithNgFactory.json",
+              "linkedNodeModules": "请手工修改，参考示例：/builds/webadp/front-project-ci/node_modules",
+              "optimization": false,
+              "buildOptimizer": false,
+              "outputHashing": "none",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": true,
+              "showCircularDependencies": false,
+              "aot": true,
+              "extractLicenses": false,
+              "statsJson": false,
+              "progress": false,
+              "vendorChunk": true
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "bo-goods-front:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "bo-goods-front:build:production"
+            },
+            "ci": {
+              "importmap": "/platform/runtime/common/web/runtime.common.manifest.json",
+              "libsPath": "请手工修改,参考示例：/builds/webadp/front-project-ci/node_modules/@farris/farris-rollup/src/build/libsWithNgFactory.json",
+              "linkedNodeModules": "请手工修改，参考示例：/builds/webadp/front-project-ci/node_modules",
+              "optimization": false,
+              "buildOptimizer": false,
+              "outputHashing": "none",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": true,
+              "showCircularDependencies": false,
+              "aot": true,
+              "extractLicenses": false,
+              "statsJson": false,
+              "progress": false,
+              "vendorChunk": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "bo-goods-front"
+}

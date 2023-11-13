@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2020 - present, Inspur Genersoft Co., Ltd.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~       http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~  Unless required by applicable law or agreed to in writing, software
+  ~  distributed under the License is distributed on an "AS IS" BASIS,
+  ~  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~  See the License for the specific language governing permissions and
+  ~  limitations under the License.
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>io.iec.edp</groupId>
+        <artifactId>caf-boot-parent</artifactId>
+        <version>1.0.0-rc.1</version>
+    </parent>
+
+    <groupId>com.inspur.edp</groupId>
+    <artifactId>metadata-rtcustomization</artifactId>
+    <version>0.1.16</version>
+    <packaging>pom</packaging>
+
+    <modelVersion>4.0.0</modelVersion>
+    <modules>
+        <module>metadata-rtcustomization-api</module>
+        <!-- <module>metadata-rtcustomization-core</module> -->
+        <module>metadata-rtcustomization-spi</module>
+<!--         <module>metadata-rtcustomization-common</module>
+        <module>metadata-rtcustomization-server-api</module>
+        <module>metadata-rtcustomization-server-manager</module>
+        <module>metadata-rtcustomization-server-webapi</module>
+        <module>metadata-deploy</module>
+        <module>lcm-patch-assembly</module>
+        <module>metadata-rtcustomization-construct</module>
+        <module>metadata-rtcustomization-inner-api</module> -->
+    </modules>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.openclover</groupId>
+                <artifactId>clover-maven-plugin</artifactId>
+                <version>4.3.1</version>
+                <configuration>
+                    <includesTestSourceRoots>false</includesTestSourceRoots>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+    </dependencies>
+    <dependencyManagement>
+        <dependencies>
+            <!-- metadata-rtcustomization 依赖 start -->
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>metadata-rtcustomization-api</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>metadata-rtcustomization-inner-api</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>metadata-rtcustomization-common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>metadata-rtcustomization-spi</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>metadata-rtcustomization-server-api</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>metadata-rtcustomization-server-manager</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>metadata-rtcustomization-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <!-- metadata-rtcustomization 依赖 end -->
+            <!-- 组内其他工程 依赖 start -->
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>lcm-metadata-api</artifactId>
+                <version>${metadataframework.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>lcm-metadata-server-api</artifactId>
+                <version>${metadataframework.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>lcm-metadata-common</artifactId>
+                <version>${metadataframework.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>lcm-metadata-cache</artifactId>
+                <version>${metadataframework.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>lcm-metadata-spi</artifactId>
+                <version>${metadataframework.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>lcm-metadata-inner-api</artifactId>
+                <version>${metadataframework.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.iec.edp</groupId>
+                <artifactId>caf-business-object-api</artifactId>
+                <version>${caf.business.object.version}</version>
+            </dependency>
+            <!-- 组内其他工程 依赖 end -->
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>i18n-management-core</artifactId>
+                <version>${i18n.management.core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>i18n-resource-api</artifactId>
+                <version>${i18n.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.iec.edp</groupId>
+                <artifactId>caf-database-object-api</artifactId>
+                <version>${caf.database.object.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>bef-bizentity</artifactId>
+                <version>${cef.bef.bizentity.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <properties>
+        <metadataframework.version>0.1.40</metadataframework.version>
+
+        <!-- 其他组工程引用 -->
+        <i18n.version>0.1.9</i18n.version>
+        <caf.database.object.version>0.2.7</caf.database.object.version>
+        <cef.bef.bizentity.version>0.2.16</cef.bef.bizentity.version>
+        <i18n.management.core.version>0.1.0-RELEASE</i18n.management.core.version>
+
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven-checkstyle-plugin.version>3.0.0</maven-checkstyle-plugin.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+
+    <distributionManagement>
+        <repository>
+            <id>gsp-releases-repo</id>
+            <url>https://repos.iec.io/repository/maven-gsp-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>gsp-snapshots-repo</id>
+            <url>https://repos.iec.io/repository/maven-gsp-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+</project>

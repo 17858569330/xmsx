@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>io.iec.edp</groupId>
+		<artifactId>caf-framework</artifactId>
+		<version>0.3.6</version>
+		<relativePath />
+	</parent>
+
+	<artifactId>caf-boot-parent</artifactId>
+	<version>0.3.6</version>
+	<packaging>pom</packaging>
+
+	<name>caf-boot-parent</name>
+	<description>CAF Boot Parent</description>
+
+	<url>https://git.iec.io/caf/caf-boot</url>
+
+	<developers>
+		<developer>
+			<name>Yi Siqi</name>
+			<email>yisiqi@inspur.com</email>
+			<organization>Inspur Genersoft Co., Ltd.</organization>
+			<organizationUrl>https://ecloud.inspur.com</organizationUrl>
+		</developer>
+		<developer>
+			<name>Zhang Kun</name>
+			<email>zhangkun02@inspur.com</email>
+			<organization>Inspur Genersoft Co., Ltd.</organization>
+			<organizationUrl>https://ecloud.inspur.com</organizationUrl>
+		</developer>
+	</developers>
+
+	<scm>
+		<connection>scm:git:git://git.iec.io/caf/caf-boot</connection>
+		<developerConnection>scm:git:ssh://git@git.iec.io:6060/caf/caf-boot.git</developerConnection>
+		<url>https://git.iec.io/caf/caf-boot</url>
+		<tag>v0.3.6</tag>
+	</scm>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<!--		<caf-security.version>0.5.0</caf-security.version>-->
+		<caf-svc.version>0.3.6</caf-svc.version>
+
+		<caf-i18n-framework.version>0.2.8</caf-i18n-framework.version>
+		<hibernate-core.version>5.3.10-SR4</hibernate-core.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>io.iec.edp</groupId>
+			<artifactId>caf-boot-commons-autoconfigure</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<!--<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<scope>test</scope>
+		</dependency>-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-configuration-processor</artifactId>
+			<optional>true</optional>
+		</dependency>
+	</dependencies>
+
+	<dependencyManagement>
+		<dependencies>
+			<!-- CAF Boot Starters-->
+			<dependency>
+				<groupId>io.iec.edp</groupId>
+				<artifactId>caf-boot-starter-rest-server</artifactId>
+				<version>0.3.6</version>
+			</dependency>
+			<dependency>
+				<groupId>io.iec.edp</groupId>
+				<artifactId>caf-boot-starter-rest-client</artifactId>
+				<version>0.3.6</version>
+			</dependency>
+			<dependency>
+				<groupId>io.iec.edp</groupId>
+				<artifactId>caf-boot-starter-data-orm</artifactId>
+				<version>0.3.6</version>
+			</dependency>
+			<dependency>
+				<groupId>io.iec.edp</groupId>
+				<artifactId>caf-boot-starter-context</artifactId>
+				<version>0.3.6</version>
+			</dependency>
+			<dependency>
+				<groupId>io.iec.edp</groupId>
+				<artifactId>caf-boot-starter-rpc</artifactId>
+				<version>0.3.6</version>
+			</dependency>
+			<dependency>
+				<groupId>io.iec.edp</groupId>
+				<artifactId>caf-boot-starter-middleware</artifactId>
+				<version>0.3.6</version>
+			</dependency>
+			<dependency>
+				<groupId>io.iec.edp</groupId>
+				<artifactId>caf-boot-starter-security</artifactId>
+				<version>0.3.6</version>
+			</dependency>
+			<dependency>
+				<groupId>io.iec.edp</groupId>
+				<artifactId>caf-i18n-framework-api</artifactId>
+				<version>${caf-i18n-framework.version}</version>
+			</dependency>
+
+			<!-- CAF SVC-->
+			<dependency>
+				<groupId>io.iec.edp</groupId>
+				<artifactId>caf-app-manager</artifactId>
+                <version>${caf-svc.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.iec.edp</groupId>
+				<artifactId>caf-lockservice-api</artifactId>
+				<version>${caf-svc.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.iec.edp</groupId>
+				<artifactId>caf-lockservice-core</artifactId>
+				<version>${caf-svc.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.iec.edp</groupId>
+				<artifactId>caf-rpc-api</artifactId>
+				<version>${caf-svc.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.iec.edp</groupId>
+				<artifactId>caf-rpc-client</artifactId>
+				<version>${caf-svc.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.iec.edp</groupId>
+				<artifactId>caf-rpc-server</artifactId>
+				<version>${caf-svc.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.iec.edp</groupId>
+				<artifactId>caf-sumgr-api</artifactId>
+				<version>${caf-svc.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.iec.edp</groupId>
+				<artifactId>caf-sumgr-core</artifactId>
+				<version>${caf-svc.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.iec.edp</groupId>
+				<artifactId>caf-boot-tenancy-api</artifactId>
+				<version>${caf-svc.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.iec.edp</groupId>
+				<artifactId>caf-boot-tenancy-core</artifactId>
+				<version>${caf-svc.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-core</artifactId>
+				<version>${hibernate-core.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.openclover</groupId>
+				<artifactId>clover-maven-plugin</artifactId>
+				<version>4.3.1</version>
+				<configuration>
+					<includesTestSourceRoots>false</includesTestSourceRoots>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<profiles>
+		<profile>
+			<id>caf-regular-module</id>
+			<activation>
+				<file>
+					<missing>src/main/resources/META-INF/caf-bootstrap-module</missing>
+				</file>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-enforcer-plugin</artifactId>
+						<version>3.0.0-M2</version>
+						<executions>
+							<execution>
+								<id>enforce-spring-boot-config-check</id>
+								<goals>
+									<goal>enforce</goal>
+								</goals>
+								<phase>process-test-resources</phase>
+							</execution>
+						</executions>
+						<configuration>
+							<rules>
+								<requireFilesDontExist>
+									<files>
+										<file>${project.build.outputDirectory}/application.yaml</file>
+										<file>${project.build.outputDirectory}/application.yml</file>
+										<file>${project.build.outputDirectory}/application.properties</file>
+									</files>
+									<message>Do not include any spring boot configuration file in the package.</message>
+								</requireFilesDontExist>
+							</rules>
+							<fail>true</fail>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		<profile>
+			<id>caf-bootstrap-module</id>
+			<activation>
+				<file>
+					<exists>src/main/resources/META-INF/caf-bootstrap-module</exists>
+				</file>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-enforcer-plugin</artifactId>
+						<version>3.0.0-M2</version>
+						<executions>
+							<execution>
+								<id>enforce-spring-boot-config-check</id>
+								<goals>
+									<goal>enforce</goal>
+								</goals>
+								<phase>process-test-resources</phase>
+							</execution>
+						</executions>
+						<configuration>
+							<rules>
+								<requireFilesExist>
+									<files>
+										<file>${project.build.outputDirectory}/META-INF/caf-bootstrap-module</file>
+									</files>
+								</requireFilesExist>
+							</rules>
+							<fail>true</fail>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+
+	<distributionManagement>
+		<snapshotRepository>
+			<id>caf-snapshots-repo</id>
+			<url>https://repos.iec.io/repository/maven-caf-snapshots/</url>
+		</snapshotRepository>
+		<repository>
+			<id>caf-releases-repo</id>
+			<url>https://repos.iec.io/repository/maven-caf-releases/</url>
+		</repository>
+	</distributionManagement>
+
+</project>

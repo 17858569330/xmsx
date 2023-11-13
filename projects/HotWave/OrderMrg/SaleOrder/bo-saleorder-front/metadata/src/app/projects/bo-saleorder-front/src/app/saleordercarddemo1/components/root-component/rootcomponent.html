@@ -1,0 +1,92 @@
+<div class="f-page f-page-card f-page-is-mainsubcard f-page-is-sidescrollspy" id="root-layout" [formGroup]="viewModel.form" *ngIf="true"><div class="f-page-header" id="page-header" *ngIf="true"><div class="f-page-header-base" id="header-nav" *ngIf="true"><div class="f-title" id="header-title-container" *ngIf="true"><span class="f-title-icon f-text-orna-bill"><i class="f-icon f-icon-page-title-record"></i></span>
+<h4 class="f-title-text">销售订单制单</h4><h5 class="f-title-subtitle" style="min-width:162px;">
+    {{viewModel.bindingData['orderCode']}}
+    <ng-container [ngSwitch]="viewModel.bindingData['sendState']">
+        <span class="badge badge-border-warning" *ngSwitchCase="'UnShipped'">未发货</span>
+        <span class="badge badge-border-info" *ngSwitchCase="'Shipped'">已发货</span>
+        <span class="badge badge-border-success" *ngSwitchCase="'Done'">已收货</span>
+        <span *ngSwitchDefault></span>
+    </ng-container>
+</h5><div class="f-title-pagination"><span class="f-icon f-icon-arrow-w" [ngClass]="{'f-state-disabled':!viewModel.stateMachine['canEdit']}" (click)="viewModel.stateMachine['canEdit']&&viewModel.ChangeItem1()"></span>
+    <span class="f-icon f-icon-arrow-e" [ngClass]="{'f-state-disabled':!viewModel.stateMachine['canEdit']}" (click)="viewModel.stateMachine['canEdit']&&viewModel.ChangeItem2()"></span>
+</div></div><f-response-toolbar class="col-7 f-toolbar" id="page-header-toolbar" #responsebar [datas]="pageHeaderToolbarToolbarItems" [btnState]="pageHeaderToolbarToolbarItemsStates" [btnVisible]="pageHeaderToolbarToolbarItemsVisibleStates" (rtClickEvent)="pageHeaderToolbarClickHandler($event)" *ngIf="true" [buttonSize]="'default'" [popDirection]="'default'"></f-response-toolbar></div><fe-collapsible-area id="scrollCollapsibleArea" [defaultCollapse]="!!(!!this.viewModel.bindingData['id']? this.viewModel.stateMachine['editable'] : this.viewModel.stateMachine['collapseForTop'])"><div class="d-flex no-gutters" style="border-top: 1px dashed #D1DEE7;padding:6px 18px 18px 56px;font-size:12px;color: rgba(0,0,0,0.70);">
+    <div class="d-none d-lg-block col-2 pr-3">
+        <p style="margin:0 0 4px 0;font-size:13px;">基本信息</p>
+        <p class="mb-0 text-truncate"><span class="f-text-lighter">订单编号：</span><span>{{viewModel.bindingData.orderCode}}</span>
+        </p>
+        <p class="mb-0 text-truncate"><span class="f-text-lighter">下单人：</span><span>{{viewModel.bindingData.orderPerson.orderPerson_Name}}</span>
+        </p>
+        <p class="mb-0 text-truncate"><span class="f-text-lighter">下单时间：</span><span>{{viewModel.bindingData.orderTime}}</span>
+        </p>
+    </div>
+    <div class="d-none d-lg-block col-2 pr-3">
+        <p style="margin:0 0 4px 0;font-size:13px;">支付信息</p>
+        <p class="mb-0 text-truncate"><span class="f-text-lighter">支付方式：</span>
+            <ng-container [ngSwitch]='viewModel.bindingData.payMethod'>
+                <ng-container *ngSwitchDefault>
+                </ng-container>
+                <ng-container *ngSwitchCase="'Cash'">
+                    <span class='state_icon' style="background-image: url('/apps/hotwave/ordermgr/web/assets/todo.svg');"></span>
+                    <span>现金</span>
+                </ng-container>
+                <ng-container *ngSwitchCase="'Wechat'">
+                    <span class='state_icon' style="background-image: url('/apps/hotwave/ordermgr/web/assets/doing.svg');"></span>
+                    <span>微信</span>
+                </ng-container>
+                <ng-container *ngSwitchCase="'ALiPay'">
+                    <span class='state_icon' style="background-image: url('/apps/hotwave/ordermgr/web/assets/doing.svg');"></span>
+                    <span>支付宝</span>
+                </ng-container>
+                <ng-container *ngSwitchCase="'UPay'">
+                    <span class='state_icon' style="background-image: url('/apps/hotwave/ordermgr/web/assets/done.svg');"></span>
+                    <span>银联</span>
+                </ng-container>
+            </ng-container>
+        </p>
+        <p class="mb-0 text-truncate"><span class="f-text-lighter">发货状态：</span>
+            <ng-container [ngSwitch]= 'viewModel.bindingData.sendState'>
+                <ng-container *ngSwitchDefault>
+                </ng-container>
+                <ng-container *ngSwitchCase="'UnShipped'">
+                    <span class='state_icon' style="background-image: url('/apps/hotwave/ordermgr/web/assets/todo.svg');"></span>
+                    <span>未发货</span>
+                </ng-container>
+                <ng-container *ngSwitchCase="'Shipped'">
+                    <span class='state_icon' style="background-image: url('/apps/hotwave/ordermgr/web/assets/doing.svg');"></span>
+                    <span>已发货</span>
+                </ng-container>
+                <ng-container *ngSwitchCase="'Done'">
+                    <span class='state_icon' style="background-image: url('/apps/hotwave/ordermgr/web/assets/doing.svg');"></span>
+                    <span>已收货</span>
+                </ng-container>
+            </ng-container>
+        </p>
+    </div>
+    <div class="col-12 col-lg-8 col-xl-6" style="padding:0!important;">
+        <div class="d-flex">
+            <div class="col-4 pr-3">
+                <p style="margin:0;font-size:13px;">订单金额</p>
+                <p style="font-size:24px;color:#FF6C29;font-weight:700;margin:0;height:38px;">
+                    {{viewModel.bindingData.totalPrice}}
+                    <span style="font-size:15px;"> RMB</span>
+                </p>
+            </div>
+            <div class="col-4 pr-3">
+                <p style="margin:0;font-size:13px;">折扣优惠</p>
+                <p style="font-size:24px;color: #51BD78;font-weight:700;margin:0;height:38px;">
+                    {{viewModel.bindingData.totalDiscounts}}
+                    <span style="font-size:15px;"> RMB</span>
+                </p>
+            </div>
+            <div class="col-4 pr-3">
+                <p style="margin:0;font-size:13px;">合计支付</p>
+                <p style="font-size:24px;color: rgba(67,80,105,0.70);font-weight:700;margin:0;height:38px;">
+                    {{viewModel.bindingData.actualPay}}
+                    <span style="font-size:15px;">RMB</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div></fe-collapsible-area></div><div class="f-page-main h-100" id="main-container" *ngIf="true"><farris-scrollspy id="scrollspy" [scrollspyData]="ScrollspyItemsscrollspy" [currentSectionId]="ScrollspyCurrentSectionscrollspy" scrollspyRef [hidden]="!true" [fFollowType]="(!!this.viewModel.bindingData['id']? this.viewModel.stateMachine['editable'] : this.viewModel.stateMachine['collapseForTop'])?'fixedTab':'side'"></farris-scrollspy><div class="f-scrollspy-content d-block" id="scrollspy-container" fScrollSpyContainer="" [fOffset]="0" *ngIf="true" fe-scroll-area=""><div class="f-struct-like-card" id="like-card-container" *ngIf="true"><app-basicformcomponent></app-basicformcomponent><div class="f-struct-wrapper" id="detail-container-orderdetail" *ngIf="true"><farris-section class="f-section-in-mainsubcard" id="section-orderdetail" [index]="index" [expandStatus]="true" [mainTitle]="SectionsectionorderdetailMainTitle" [subTitle]="SectionsectionorderdetailSubTitle" [fill]="false" [showHeader]="true" [enableMaximize]="false" *ngIf="true" [btnStates]="sectionsToolbarStates" sectionRef [btnVisible]="sectionsToolbarVisibleStates" [toolbar]="toolbarOrderdetail" [fScrollSpy]="'section-orderdetail'">
+<app-orderdetailcomponent></app-orderdetailcomponent>
+</farris-section></div></div></div></div></div>

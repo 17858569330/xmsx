@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <parent>
+    <artifactId>cdp-sg</artifactId>
+    <groupId>com.inspur.edp</groupId>
+    <version>0.1.5</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.inspur.edp</groupId>
+  <artifactId>cdp-sgf-runtime-customize-api</artifactId>
+
+  <dependencies>
+
+    <dependency>
+      <groupId>com.inspur.edp</groupId>
+      <artifactId>formserver-viewmodel</artifactId>
+      <version>0.1.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.inspur.edp</groupId>
+      <artifactId>cef-designtime-api</artifactId>
+      <version>0.1.8</version>
+    </dependency>
+    <dependency>
+      <groupId>com.inspur.edp</groupId>
+      <artifactId>cdp-sgf-api</artifactId>
+      <version>0.1.5</version>
+    </dependency>
+  </dependencies>
+
+
+</project>

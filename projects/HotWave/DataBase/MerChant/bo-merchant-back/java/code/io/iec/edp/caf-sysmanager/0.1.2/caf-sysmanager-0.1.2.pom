@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>io.iec.edp</groupId>
+        <artifactId>caf-boot-parent</artifactId>
+        <version>0.2.0</version>
+        <relativePath />
+    </parent>
+
+    <artifactId>caf-sysmanager</artifactId>
+
+    <groupId>io.iec.edp</groupId>
+    <packaging>pom</packaging>
+    <version>0.1.2</version>
+    <developers>
+        <developer>
+            <name>Dee Peng</name>
+            <email>pengxd@inspur.com</email>
+            <organization>Inspur Genersoft Co., Ltd.</organization>
+            <organizationUrl>https://ecloud.inspur.com</organizationUrl>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://git.iec.io/caf/caf-sysmanager</connection>
+        <developerConnection>scm:git:ssh://git@git.iec.io:6060/caf/caf-sysmanager.git</developerConnection>
+        <url>https://git.iec.io/caf/caf-sysmanager.git</url>
+        <tag>v0.1.2</tag>
+    </scm>
+    <dependencies>
+        <dependency>
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-core</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.openclover</groupId>
+                <artifactId>clover-maven-plugin</artifactId>
+                <version>4.3.1</version>
+                <configuration>
+                    <includesTestSourceRoots>false</includesTestSourceRoots>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5.3</version>
+                <configuration>
+                    <tagNameFormat>v@{project.version}</tagNameFormat>
+                    <pushChanges>false</pushChanges>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>io.iec.edp</groupId>
+                <artifactId>caf-runtime-framework-authentication-userpassword</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.iec.edp</groupId>
+                <artifactId>caf-runtime-framework-syssecurity</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.iec.edp</groupId>
+                <artifactId>caf-framework-sysmanager-api</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.iec.edp</groupId>
+                <artifactId>caf-framework-sysmanager-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.iec.edp</groupId>
+                <artifactId>caf-framework-sysmanager-rest</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.iec.edp</groupId>
+                <artifactId>caf-framework-sys-security-api</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.iec.edp</groupId>
+                <artifactId>caf-runtime-framework-securitylevel</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+    <modules>
+        <module>caf-runtime-framework-authentication-userpassword</module>
+        <module>caf-framework-sysmanager-api</module>
+        <module>caf-framework-sysmanager-core</module>
+        <module>caf-framework-sysmanager-rest</module>
+        <module>caf-runtime-framework-syssecurity</module>
+        <module>caf-framework-sys-security-api</module>
+        <module>caf-runtime-framework-securitylevel</module>
+        <module>caf-runtime-framework-securitylevelmap</module>
+    </modules>
+    <distributionManagement>
+		<snapshotRepository>
+			<id>caf-snapshots-repo</id>
+			<url>https://repos.iec.io/repository/maven-caf-snapshots/</url>
+		</snapshotRepository>
+		<repository>
+			<id>caf-releases-repo</id>
+			<url>https://repos.iec.io/repository/maven-caf-releases/</url>
+		</repository>
+	</distributionManagement>
+
+
+
+</project>

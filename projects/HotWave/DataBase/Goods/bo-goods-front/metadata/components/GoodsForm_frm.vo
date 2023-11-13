@@ -1,0 +1,324 @@
+{
+  "Header" : {
+    "Code" : "GoodsForm_frm",
+    "Type" : "GSPViewModel",
+    "NameSpace" : "Inspur.GS.HotWave.DataBase.Goods.Goods.Front",
+    "CertId" : null,
+    "Name" : "商品表单_frm",
+    "FileName" : "GoodsForm_frm.vo",
+    "BizobjectID" : "dec0e47e-409b-6d3a-8876-85bd5909bf19",
+    "Language" : null,
+    "Extendable" : false,
+    "ID" : "9d9e5460-9b9c-46b6-b30b-650724a5d768",
+    "IsTranslating" : false
+  },
+  "Refs" : [ {
+    "DependentMetadata" : {
+      "ID" : "f417ce27-0680-486c-b88f-232a04557eb9",
+      "CertId" : null,
+      "NameSpace" : "Inspur.GS.Gsp.Common.DataIE",
+      "Code" : "DataImportVMAction",
+      "Name" : "数据导入构件",
+      "Type" : "VMComponent",
+      "BizobjectID" : "DataIE"
+    }
+  }, {
+    "DependentMetadata" : {
+      "ID" : "e3978416-a258-4a1f-b1f2-5416f63638e0",
+      "CertId" : null,
+      "NameSpace" : "Inspur.GS.Gsp.Common.DataIE",
+      "Code" : "DataExportVMAction",
+      "Name" : "数据导出构件",
+      "Type" : "VMComponent",
+      "BizobjectID" : "DataIE"
+    }
+  }, {
+    "DependentMetadata" : {
+      "ID" : "7cbdd71b-7819-44cc-a946-c6ac7c8c94c6",
+      "CertId" : null,
+      "NameSpace" : "Inspur.GS.HotWave.DataBase.Goods.Goods.Back",
+      "Code" : "Goods",
+      "Name" : "商品",
+      "Type" : "GSPBusinessEntity",
+      "BizobjectID" : "dec0e47e-409b-6d3a-8876-85bd5909bf19"
+    }
+  }, {
+    "DependentMetadata" : {
+      "ID" : "884de4f8-eb47-493b-bf23-8cfd20e7d8f5",
+      "CertId" : null,
+      "NameSpace" : "Inspur.GS.HotWave.DataBase.Goods.Goods.Front",
+      "Code" : "GoodsForm_frm.vo",
+      "Name" : "GoodsForm_frm.vo",
+      "Type" : "ResourceMetadata",
+      "BizobjectID" : "dec0e47e-409b-6d3a-8876-85bd5909bf19"
+    }
+  } ],
+  "Content" : {
+    "ID" : "9d9e5460-9b9c-46b6-b30b-650724a5d768",
+    "Code" : "GoodsForm_frm",
+    "Name" : "商品表单_frm",
+    "GeneratingAssembly" : "Inspur.GS.HotWave.DataBase.Goods.Goods.Front.Vo",
+    "IsUseNamespaceConfig" : true,
+    "IsSimplifyGen" : true,
+    "MainObject" : {
+      "ID" : "f185e11f-930b-4157-92fc-d5950af1a057",
+      "Code" : "Goods",
+      "Name" : "商品",
+      "I18nResourceInfoPrefix" : "Inspur.GS.HotWave.DataBase.Goods.Goods.Front.Vo.GoodsForm_frm.Goods",
+      "ContainElements" : [ {
+        "ID" : "fcadfd1a-a424-4912-82d7-4d64a6edfce6",
+        "LabelID" : "ID",
+        "ChildAssociations" : [ ],
+        "Code" : "ID",
+        "Name" : "主键",
+        "MDataType" : "String",
+        "Length" : 36,
+        "IsRequire" : true,
+        "EnableRtrim" : true,
+        "Mapping" : {
+          "MapType" : "Element",
+          "TargetMetadataId" : "7cbdd71b-7819-44cc-a946-c6ac7c8c94c6",
+          "TargetObjId" : "de814a36-c2dd-4724-97e4-e036aebdfe72",
+          "TargetObjectId" : "9939bb9e-4008-47aa-82fa-159aebaa1b6e",
+          "TargetElementId" : "de814a36-c2dd-4724-97e4-e036aebdfe72"
+        }
+      }, {
+        "ID" : "ab6b214b-8c7f-47bf-8c56-de943b25055a",
+        "LabelID" : "Version",
+        "ChildAssociations" : [ ],
+        "Code" : "Version",
+        "Name" : "版本",
+        "MDataType" : "DateTime",
+        "EnableRtrim" : true,
+        "Mapping" : {
+          "MapType" : "Element",
+          "TargetMetadataId" : "7cbdd71b-7819-44cc-a946-c6ac7c8c94c6",
+          "TargetObjId" : "f526d81a-4e56-488a-84fd-999f7d5625d2",
+          "TargetObjectId" : "9939bb9e-4008-47aa-82fa-159aebaa1b6e",
+          "TargetElementId" : "f526d81a-4e56-488a-84fd-999f7d5625d2"
+        }
+      }, {
+        "ID" : "f5c45c50-f3b1-4596-b474-25b1924d637c",
+        "LabelID" : "GoodsName",
+        "ChildAssociations" : [ ],
+        "Code" : "GoodsName",
+        "Name" : "商品名称",
+        "MDataType" : "String",
+        "Length" : 36,
+        "EnableRtrim" : true,
+        "Mapping" : {
+          "MapType" : "Element",
+          "TargetMetadataId" : "7cbdd71b-7819-44cc-a946-c6ac7c8c94c6",
+          "TargetObjId" : "071aa8a8-ac34-4bae-acb4-e121953a6747",
+          "TargetObjectId" : "9939bb9e-4008-47aa-82fa-159aebaa1b6e",
+          "TargetElementId" : "071aa8a8-ac34-4bae-acb4-e121953a6747"
+        }
+      }, {
+        "ID" : "68f83985-c7f1-4802-8def-523411391941",
+        "LabelID" : "GoodsCode",
+        "ChildAssociations" : [ ],
+        "Code" : "GoodsCode",
+        "Name" : "商品编号",
+        "MDataType" : "String",
+        "Length" : 36,
+        "EnableRtrim" : true,
+        "Mapping" : {
+          "MapType" : "Element",
+          "TargetMetadataId" : "7cbdd71b-7819-44cc-a946-c6ac7c8c94c6",
+          "TargetObjId" : "be9ec3b2-5ae4-4ddd-bd87-d97f21af91e8",
+          "TargetObjectId" : "9939bb9e-4008-47aa-82fa-159aebaa1b6e",
+          "TargetElementId" : "be9ec3b2-5ae4-4ddd-bd87-d97f21af91e8"
+        }
+      }, {
+        "ID" : "d87a107d-b808-4fd6-ad6f-105a79bee9ed",
+        "LabelID" : "Specification",
+        "ChildAssociations" : [ ],
+        "Code" : "Specification",
+        "Name" : "规格型号",
+        "MDataType" : "String",
+        "Length" : 36,
+        "EnableRtrim" : true,
+        "Mapping" : {
+          "MapType" : "Element",
+          "TargetMetadataId" : "7cbdd71b-7819-44cc-a946-c6ac7c8c94c6",
+          "TargetObjId" : "f69bea17-83d7-4b96-8a7e-ddb7c63bdb66",
+          "TargetObjectId" : "9939bb9e-4008-47aa-82fa-159aebaa1b6e",
+          "TargetElementId" : "f69bea17-83d7-4b96-8a7e-ddb7c63bdb66"
+        }
+      }, {
+        "ID" : "54897081-7eb7-4731-98f1-000facc3ae98",
+        "LabelID" : "Category",
+        "ChildAssociations" : [ ],
+        "Code" : "Category",
+        "Name" : "分类名称",
+        "MDataType" : "String",
+        "Length" : 30,
+        "EnableRtrim" : true,
+        "Mapping" : {
+          "MapType" : "Element",
+          "TargetMetadataId" : "7cbdd71b-7819-44cc-a946-c6ac7c8c94c6",
+          "TargetObjId" : "f8a48738-172d-46de-828f-915de126bd75",
+          "TargetObjectId" : "9939bb9e-4008-47aa-82fa-159aebaa1b6e",
+          "TargetElementId" : "f8a48738-172d-46de-828f-915de126bd75"
+        }
+      }, {
+        "ID" : "d0345408-e400-4a87-9b88-12d02bf74ca7",
+        "LabelID" : "Price",
+        "ChildAssociations" : [ ],
+        "Code" : "Price",
+        "Name" : "单价",
+        "MDataType" : "Decimal",
+        "Length" : 10,
+        "Precision" : 2,
+        "EnableRtrim" : true,
+        "Mapping" : {
+          "MapType" : "Element",
+          "TargetMetadataId" : "7cbdd71b-7819-44cc-a946-c6ac7c8c94c6",
+          "TargetObjId" : "ca25d509-b383-4aba-bc2b-57d029cde131",
+          "TargetObjectId" : "9939bb9e-4008-47aa-82fa-159aebaa1b6e",
+          "TargetElementId" : "ca25d509-b383-4aba-bc2b-57d029cde131"
+        }
+      }, {
+        "ID" : "cff57161-e73b-4c19-ac3b-cff5ef3e6a24",
+        "LabelID" : "Number",
+        "ChildAssociations" : [ ],
+        "Code" : "Number",
+        "Name" : "上架数量",
+        "MDataType" : "Integer",
+        "EnableRtrim" : true,
+        "Mapping" : {
+          "MapType" : "Element",
+          "TargetMetadataId" : "7cbdd71b-7819-44cc-a946-c6ac7c8c94c6",
+          "TargetObjId" : "bfa9796d-329b-47c1-be12-ede0b38d0701",
+          "TargetObjectId" : "9939bb9e-4008-47aa-82fa-159aebaa1b6e",
+          "TargetElementId" : "bfa9796d-329b-47c1-be12-ede0b38d0701"
+        }
+      }, {
+        "ID" : "1477fc42-e434-4a64-a531-6fc19357af71",
+        "LabelID" : "Remark",
+        "ChildAssociations" : [ ],
+        "Code" : "Remark",
+        "Name" : "备注",
+        "MDataType" : "String",
+        "Length" : 100,
+        "EnableRtrim" : true,
+        "Mapping" : {
+          "MapType" : "Element",
+          "TargetMetadataId" : "7cbdd71b-7819-44cc-a946-c6ac7c8c94c6",
+          "TargetObjId" : "39779892-6648-4411-87d4-ce68892f1c91",
+          "TargetObjectId" : "9939bb9e-4008-47aa-82fa-159aebaa1b6e",
+          "TargetElementId" : "39779892-6648-4411-87d4-ce68892f1c91"
+        }
+      } ],
+      "RefObjectName" : "db9552bc-a4da-4c7c-b42d-21fbafdcc34b",
+      "ColumnGenerateID" : {
+        "ColumnParameters" : [ ],
+        "ElementID" : "fcadfd1a-a424-4912-82d7-4d64a6edfce6",
+        "GenerateType" : "Guid"
+      },
+      "BelongModelID" : "9d9e5460-9b9c-46b6-b30b-650724a5d768",
+      "Mapping" : {
+        "MapType" : "BEObject",
+        "TargetMetadataId" : "7cbdd71b-7819-44cc-a946-c6ac7c8c94c6",
+        "TargetObjId" : "9939bb9e-4008-47aa-82fa-159aebaa1b6e"
+      }
+    },
+    "Variables" : {
+      "ID" : "4d2686b8-27a1-42e2-8c61-e2e6c3ed6bdd",
+      "Code" : "GoodsForm_frmVariable",
+      "Name" : "商品表单_frm变量",
+      "I18nResourceInfoPrefix" : ""
+    },
+    "ConvertMsg" : false,
+    "Actions" : [ {
+      "ID" : "67233a01-3e3b-435b-a509-f917c11fa7e0",
+      "Code" : "DataImportVMAction",
+      "Name" : "数据导入动作",
+      "ComponentName" : "DataImportVMAction",
+      "Type" : "VMAction",
+      "ParameterCollection" : [ {
+        "ID" : "3ec80a12-e803-4f68-8ccc-1611bf6d1c82",
+        "ParamCode" : "dataImportContext",
+        "ParamName" : "数据导入上下文",
+        "ParameterType" : "Custom",
+        "Assembly" : "Inspur.Gsp.Dip.DataIE.Component",
+        "JavaClassName" : "com.inspur.edp.dataie.context.DataImportContext",
+        "ClassName" : "Inspur.Gsp.Dip.DataIE.Component.DataImportContext",
+        "ParamActualValue" : {
+          "Enable" : false,
+          "HasValue" : false,
+          "Value" : "",
+          "ValueType" : "Constant"
+        }
+      } ],
+      "ReturnValue" : {
+        "ID" : "d93a6028-2ef8-4abc-bc7e-d2150b6f2fdf",
+        "ParameterType" : "Custom",
+        "Assembly" : "Inspur.Gsp.Dip.DataIE.Component",
+        "JavaClassName" : "com.inspur.edp.dataie.domain.DataIEResult",
+        "ClassName" : "Inspur.Gsp.Dip.DataIE.Component.DataIEResult",
+        "Mode" : "OUT",
+        "ParamActualValue" : {
+          "Enable" : false,
+          "HasValue" : false,
+          "Value" : "",
+          "ValueType" : "Constant"
+        }
+      },
+      "ComponentEntityId" : "f417ce27-0680-486c-b88f-232a04557eb9",
+      "ComponentPkgName" : "Inspur.GS.Gsp.Common.DataIE",
+      "IsGenerateComponent" : false
+    }, {
+      "ID" : "f7a87e7d-bd2b-4b26-a407-c422bcdd944c",
+      "Code" : "DataExportVMAction",
+      "Name" : "数据导出动作",
+      "ComponentName" : "DataExportVMAction",
+      "Type" : "VMAction",
+      "ParameterCollection" : [ {
+        "ID" : "b1409662-8359-4d2f-9479-a5b7582b0c94",
+        "ParamCode" : "exportContext",
+        "ParamName" : "数据导出上下文",
+        "ParameterType" : "Custom",
+        "Assembly" : "Inspur.Gsp.Dip.DataIE.Component",
+        "JavaClassName" : "com.inspur.edp.dataie.context.DataExportContext",
+        "ClassName" : "Inspur.Gsp.Dip.DataIE.Component.DataExportContext",
+        "ParamActualValue" : {
+          "Enable" : false,
+          "HasValue" : false,
+          "Value" : "",
+          "ValueType" : "Constant"
+        }
+      } ],
+      "ReturnValue" : {
+        "ID" : "158ed4a5-0f72-4558-a4ce-0ecb200c5b78",
+        "ParameterType" : "Custom",
+        "Assembly" : "Inspur.Gsp.Dip.DataIE.Component",
+        "JavaClassName" : "com.inspur.edp.dataie.domain.DataIEResult",
+        "ClassName" : "Inspur.Gsp.Dip.DataIE.Component.DataIEResult",
+        "Mode" : "OUT",
+        "ParamActualValue" : {
+          "Enable" : false,
+          "HasValue" : false,
+          "Value" : "",
+          "ValueType" : "Constant"
+        }
+      },
+      "ComponentEntityId" : "e3978416-a258-4a1f-b1f2-5416f63638e0",
+      "ComponentPkgName" : "Inspur.GS.Gsp.Common.DataIE",
+      "IsGenerateComponent" : false
+    } ],
+    "Mapping" : {
+      "MapType" : "BizEntity",
+      "TargetMetadataId" : "7cbdd71b-7819-44cc-a946-c6ac7c8c94c6",
+      "TargetObjId" : "7cbdd71b-7819-44cc-a946-c6ac7c8c94c6"
+    },
+    "ExtendProperties" : { }
+  },
+  "ExtendRule" : null,
+  "RelativePath" : "HotWave/DataBase/Goods/bo-goods-front/metadata/components",
+  "ExtendProperty" : "",
+  "Extended" : false,
+  "PreviousVersion" : null,
+  "Version" : null,
+  "Properties" : null
+}

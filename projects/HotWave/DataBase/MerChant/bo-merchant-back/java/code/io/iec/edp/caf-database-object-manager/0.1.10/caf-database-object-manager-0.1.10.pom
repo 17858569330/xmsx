@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>caf-database-object</artifactId>
+        <groupId>io.iec.edp</groupId>
+        <version>0.1.10</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>caf-database-object-manager</artifactId>
+    <dependencies>
+        <dependency>
+            <groupId>io.iec.edp</groupId>
+            <artifactId>caf-database-object-api</artifactId>
+            <version>${project.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.iec.edp</groupId>
+            <artifactId>caf-database-object-common</artifactId>
+            <version>${project.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+        </dependency>
+    </dependencies>
+
+
+</project>

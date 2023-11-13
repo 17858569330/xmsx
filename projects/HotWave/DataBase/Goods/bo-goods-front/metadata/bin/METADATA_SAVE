@@ -1,0 +1,20 @@
+#Last modified on: Wed Jun 28 14:59:48 GMT+08:00 2023
+#Wed Jun 28 14:59:48 GMT+08:00 2023
+metadata/eapi=57a3f5419dbd4373528e1c05f6cefbc88f4764eb
+metadata/lookups/GoodsLookup_hlp.vo=a8b11e0b19cc0699596fc5122e7f937780fa3b69
+metadata/bff/GoodsForm.vo=b6655c513fc0311fa2538a2a725779af31523a1f
+metadata/components/GoodsForm_frm.vo=e14490e933cb95e86ee79823a969b4ead7ec4f23
+metadata/components/GoodsForm_frm.vo.res=b6ade398ac3485c673894da1e624f79025c2e1de
+metadata/components/GoodsForm.frm=b462107420238d517e7932f1f817e38cf33af7fe
+metadata/eapi/GoodsLookup_hlp.eapi=55ae15a3d5aea1bb6d1242740634d2564ef10fd7
+metadata/lookups/GoodsLookup.hlp.res=1dc2a473d0678cedc4e170bbcf7a95f6145f04f3
+metadata/eapi/GoodsForm_frm.eapi=e4f10cd3e6441b264e402c5fec90e6f84bc97d75
+metadata/lookups=c755e8f993223a23e29a7b3ce3e5c158d19f5df2
+metadata/lookups/GoodsLookup.hlp=875d6594ac3a4ea2584051e34c63108db06401ec
+metadata/components/GoodsForm.frm.res=c08c2e1b57e3955c5d6acc4465c3900e3a3540c9
+metadata/bff=41f3fbbaf36bbcc3984a2a7dbf85955dde4a01b2
+metadata/components=4de11624aab62e9668eda5239ee167ed1d2bbbc6
+metadata/lookups/GoodsLookup_hlp.vo.res=d365ea1438720ba126b51fab288caae8d3f76e8c
+metadata/route=87c5da2371643c0b307cd4156ac58afc80cf876c
+metadata/bff/GoodsForm.vo.res=0582a88f3a6544c3f2075be82931d95d4ba26f85
+metadata/route/predefinePageflow.pf=dbd35b7310a4380eb39141cce863711d2af36daf

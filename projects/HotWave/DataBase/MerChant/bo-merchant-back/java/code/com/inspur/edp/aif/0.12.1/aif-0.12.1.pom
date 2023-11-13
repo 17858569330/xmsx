@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <modules>
+        <module>aif-common</module>
+        <module>aif-design</module>
+        <module>aif-runtime</module>
+        <module>aif-runtime-client</module>
+        <module>aif-runtime-server</module>
+
+        <module>aif-runtime-client-impl</module>
+        <module>aif-runtime-server-impl</module>
+        <module>aif-runtime-server-engine</module>
+
+        <module>deliverable</module>
+
+        <module>test/aif-test</module>
+        <module>test/aif-test-aif</module>
+        <module>test/aif-test-bcom</module>
+        <module>test/aif-test-sua</module>
+        <module>test/aif-test-sub</module>
+        <module>test/aif-test-suc</module>
+        <module>test/aif-test-sud</module>
+    </modules>
+
+    <parent>
+        <groupId>io.iec.edp</groupId>
+        <artifactId>caf-boot-parent</artifactId>
+        <version>0.3.4</version>
+        <relativePath/>
+    </parent>
+
+    <groupId>com.inspur.edp</groupId>
+    <artifactId>aif</artifactId>
+    <version>0.12.1</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <argLine>-Dfile.encoding=UTF-8</argLine>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.persistence</groupId>
+            <artifactId>javax.persistence-api</artifactId>
+            <version>2.2</version>
+        </dependency>
+
+
+        <!-- pmf -->
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>pmf-pvm</artifactId>
+            <version>0.2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>pmf-bpmn</artifactId>
+            <version>0.4.0</version>
+        </dependency>
+
+
+    </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- aif -->
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>aif-common</artifactId>
+                <version>0.12.1</version>
+            </dependency>
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>aif-design</artifactId>
+                <version>0.12.1</version>
+            </dependency>
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>aif-runtime</artifactId>
+                <version>0.12.1</version>
+            </dependency>
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>aif-runtime-client</artifactId>
+                <version>0.12.1</version>
+            </dependency>
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>aif-runtime-client-impl</artifactId>
+                <version>0.12.1</version>
+            </dependency>
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>aif-runtime-server</artifactId>
+                <version>0.12.1</version>
+            </dependency>
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>aif-runtime-server-engine</artifactId>
+                <version>0.12.1</version>
+            </dependency>
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>aif-runtime-server-impl</artifactId>
+                <version>0.12.1</version>
+            </dependency>
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>aif-test</artifactId>
+                <version>0.12.1</version>
+            </dependency>
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>aif-test-bcom</artifactId>
+                <version>0.12.1</version>
+            </dependency>
+
+            <!-- bef -->
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>cef-entity</artifactId>
+                <version>0.2.60</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>das-commonmodel</artifactId>
+                <version>0.1.13</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>bef-api</artifactId>
+                <version>0.2.32</version>
+            </dependency>
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>bef-spi</artifactId>
+                <version>0.2.32</version>
+            </dependency>
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>bef-bizentity</artifactId>
+                <version>0.2.13</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>bff-api</artifactId>
+                <version>0.2.46</version>
+            </dependency>
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>cm-api</artifactId>
+                <version>0.2.33</version>
+            </dependency>
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>formserver-viewmodel</artifactId>
+                <version>0.2.12</version>
+            </dependency>
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>runtime-customize-api</artifactId>
+                <version>0.1.3</version>
+            </dependency>
+
+            <!-- dip -->
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>mapping-runtime-api</artifactId>
+                <version>0.3.0</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>event-stream</artifactId>
+                <version>0.2.5</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>event-stream-center-client</artifactId>
+                <version>0.2.5</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>mapping-rule-manager-api</artifactId>
+                <version>0.3.2</version>
+            </dependency>
+
+            <!---cmp-->
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>caf-transaction-api</artifactId>
+                <version>0.2.2</version>
+            </dependency>
+
+            <!---lcm-->
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>metadata-businesstype-api</artifactId>
+                <version>0.1.3</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>metadata-rtcustomization-api</artifactId>
+                <version>0.1.18</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.iec.edp</groupId>
+                <artifactId>caf-business-object-api</artifactId>
+                <version>0.1.5</version>
+            </dependency>
+
+            <!-- caf -->
+            <dependency>
+                <groupId>io.iec.edp</groupId>
+                <artifactId>caf-boot-starter-data-orm</artifactId>
+                <version>0.3.8</version>
+            </dependency>
+            <dependency>
+                <groupId>io.iec.edp</groupId>
+                <artifactId>caf-boot-starter-rest-server</artifactId>
+                <version>0.3.8</version>
+            </dependency>
+            <dependency>
+                <groupId>io.iec.edp</groupId>
+                <artifactId>caf-boot-commons-layeringcache</artifactId>
+                <version>0.3.8</version>
+            </dependency>
+            <dependency>
+                <groupId>io.iec.edp</groupId>
+                <artifactId>caf-boot-commons-transaction</artifactId>
+                <version>0.3.8</version>
+            </dependency>
+            <dependency>
+                <groupId>io.iec.edp</groupId>
+                <artifactId>caf-boot-commons-data-orm</artifactId>
+                <version>0.3.8</version>
+            </dependency>
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>svc-expression-api</artifactId>
+                <version>0.1.61</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.iec.edp</groupId>
+                <artifactId>caf-rpc-api</artifactId>
+                <version>0.3.8</version>
+            </dependency>
+            <dependency>
+                <groupId>io.iec.edp</groupId>
+                <artifactId>caf-rpc-client</artifactId>
+                <version>0.3.8</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.iec.edp</groupId>
+                <artifactId>caf-framework-configdata-api</artifactId>
+                <version>0.1.11</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.iec.edp</groupId>
+                <artifactId>caf-i18n-framework-api</artifactId>
+                <version>0.2.91</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.iec.edp</groupId>
+                <artifactId>caf-lockservice-api</artifactId>
+                <version>0.3.8</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.iec.edp</groupId>
+                <artifactId>caf-boot-commons-data-orm</artifactId>
+                <version>0.3.8</version>
+            </dependency>
+
+            <!-- lcm -->
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>lcm-metadata-spi</artifactId>
+                <version>0.1.25</version>
+            </dependency>
+
+            <!-- cdf -->
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>cdf-component-api</artifactId>
+                <version>0.1.8</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>gsp-snapshots-repo</id>
+            <url>https://repos.iec.io/repository/maven-gsp-snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>gsp-releases-repo</id>
+            <url>https://repos.iec.io/repository/maven-gsp-releases/</url>
+        </repository>
+    </distributionManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <configuration>
+                    <charset>UTF-8</charset>
+                    <encoding>UTF-8</encoding>
+                    <docencoding>UTF-8</docencoding>
+                    <show>public</show>
+                    <windowtitle>AifJavaDoc</windowtitle>
+                    <splitindex>true</splitindex>
+                    <sourcepath>
+                        ${pom.basedir}/aif-common;
+                        ${pom.basedir}/aif-design;
+                        ${pom.basedir}/aif-runtime;
+                        ${pom.basedir}/aif-runtime-client;
+                    </sourcepath>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

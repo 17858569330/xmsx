@@ -1,0 +1,47 @@
+
+{
+    "name": "bo-myorderfront",
+    "description": "A Vue.js project",
+    "version": "1.0.0",
+    "author": "tsing",
+    "license": "MIT",
+    "private": true,
+    "scripts": {
+        "build": "cross-env NODE_ENV=production fm -b project",
+        "dev": "cross-env NODE_ENV=development fm -b project"
+    },
+    "dependencies": {
+        "@farris/mobile-bef": "latest",
+        "@farris/mobile-business-ui": "latest",
+        "@farris/mobile-command-services": "latest",
+        "@farris/mobile-devkit": "latest",
+        "@farris/mobile-ui": "latest",
+        "@farris/mobile-vue-adapter": "latest",
+        "@vue/compiler-core": "3.0.5",
+        "axios": "0.21.1",
+        "date-fns": "2.16.1",
+        "dayjs": "1.10.3",
+        "reflect-metadata": "0.1.13",
+        "rxjs": "6.6.3",
+        "vant": "3.0.3",
+        "vue": "3.0.5",
+        "vue-router": "4.0.3"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.12.9",
+        "@babel/preset-env": "^7.12.7",
+        "@babel/preset-typescript": "^7.12.7",
+        "@farris/mobile-cli": "latest",
+        "@typescript-eslint/eslint-plugin": "^4.9.1",
+        "@typescript-eslint/parser": "^4.9.1",
+        "cross-env": "^7.0.3",
+        "eslint": "^7.15.0",
+        "typescript": "^4.1.2"
+    },
+    "linkedNodeModules":"",
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "not ie <= 8"
+    ]
+}

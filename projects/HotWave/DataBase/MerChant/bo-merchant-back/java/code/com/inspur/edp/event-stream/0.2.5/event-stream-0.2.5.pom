@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.inspur.edp</groupId>
+        <artifactId>stream</artifactId>
+        <version>0.2.5</version>
+    </parent>
+    <artifactId>event-stream</artifactId>
+    <dependencies>
+        <dependency>
+            <groupId>io.iec.edp</groupId>
+            <artifactId>caf-boot-starter-data-orm</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.iec.edp</groupId>
+            <artifactId>caf-lockservice-core</artifactId>
+            <version>0.3.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>caf-transaction-api</artifactId>
+            <version>0.1.6</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>stream-common</artifactId>
+            <version>0.2.5</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>event-stream-center-client</artifactId>
+            <version>0.2.5</version>
+        </dependency>
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>event-stream-center-api</artifactId>
+            <version>0.2.5</version>
+        </dependency>
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>cdf-component-api</artifactId>
+            <version>0.1.2</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.esotericsoftware.minlog</groupId>
+            <artifactId>minlog</artifactId>
+            <version>1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>io.iec.edp</groupId>
+            <artifactId>caf-lockservice-api</artifactId>
+            <version>0.2.9</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.seata</groupId>
+            <artifactId>seata-all</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.interceptor</groupId>
+            <artifactId>javax.interceptor-api</artifactId>
+            <version>1.2</version>
+        </dependency>
+    </dependencies>
+    <build>
+        <finalName>event-stream</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.openclover</groupId>
+                <artifactId>clover-maven-plugin</artifactId>
+                <version>4.3.1</version>
+                <configuration>
+                    <includesTestSourceRoots>false</includesTestSourceRoots>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>gsp-snapshots-repo</id>
+            <url>https://repos.iec.io/repository/maven-gsp-snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>gsp-releases-repo</id>
+            <url>https://repos.iec.io/repository/maven-gsp-releases/</url>
+        </repository>
+    </distributionManagement>
+</project>

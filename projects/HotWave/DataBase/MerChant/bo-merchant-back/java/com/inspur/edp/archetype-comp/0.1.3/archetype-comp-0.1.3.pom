@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.inspur.edp</groupId>
+  <artifactId>archetype-comp</artifactId>
+  <version>0.1.3</version>
+  <packaging>maven-archetype</packaging>
+
+  <name>archetype-comp</name>
+
+  <build>
+    <extensions>
+      <extension>
+        <groupId>org.apache.maven.archetype</groupId>
+        <artifactId>archetype-packaging</artifactId>
+        <version>3.1.1</version>
+      </extension>
+    </extensions>
+
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <artifactId>maven-archetype-plugin</artifactId>
+          <version>3.1.1</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+  <properties>
+	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+  <description>CAF Boot Parent</description>
+
+  <url>https://git.iec.io/caf/caf-boot/archetype-comp</url>
+
+  <developers>
+    <developer>
+      <name>Yi Siqi</name>
+      <email>yisiqi@inspur.com</email>
+      <organization>Inspur Genersoft Co., Ltd.</organization>
+      <organizationUrl>https://ecloud.inspur.com</organizationUrl>
+    </developer>
+    <developer>
+      <name>Zhang Kun</name>
+      <email>zhangkun02@inspur.com</email>
+      <organization>Inspur Genersoft Co., Ltd.</organization>
+      <organizationUrl>https://ecloud.inspur.com</organizationUrl>
+    </developer>
+  </developers>
+
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>https://www.apache.org/licenses/LICENSE-2.0</url>
+    </license>
+  </licenses>
+
+  <scm>
+    <connection>scm:git:git://git.iec.io/caf/caf-boot/bf-df-bank-front</connection>
+    <developerConnection>scm:git:ssh://git@git.iec.io:6060/caf/caf-boot.git/bf-df-bank-front</developerConnection>
+    <tag>v0.1.2</tag>
+    <url>https://git.iec.io/caf/caf-boot/bf-df-bank-front</url>
+  </scm>
+
+  <distributionManagement>
+    <repository>
+      <id>gsp-releases-repo</id>
+      <url>https://repos.iec.io/repository/maven-gsp-releases/</url>
+    </repository>
+    <snapshotRepository>
+      <id>caf-snapshots-repo</id>
+      <url>https://repos.iec.io/repository/maven-caf-snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
+</project>

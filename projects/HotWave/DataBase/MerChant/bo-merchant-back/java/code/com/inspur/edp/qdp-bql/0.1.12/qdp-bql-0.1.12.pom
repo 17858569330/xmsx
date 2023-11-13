@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <modules>
+        <module>bql-dom</module>
+        <module>bql-parse</module>
+        <module>bql-db-dm</module>
+        <module>bql-db-oracle</module>
+        <module>bql-db-pg</module>
+        <module>bql-db-sqlserver</module>
+        <module>bql-db-highgo</module>
+        <module>bql-api</module>
+        <module>bql-execute</module>
+        <module>bql-parse2druidom</module>
+        <module>bql-db-gbase</module>
+        <module>bql-db-mysql</module>
+        <module>bql-db-oscar</module>
+        <module>bql-db-kingbase</module>
+        <module>bql-db-db2</module>
+    </modules>
+
+    <parent>
+        <groupId>io.iec.edp</groupId>
+        <artifactId>caf-boot-parent</artifactId>
+        <version>0.3.3</version>
+    </parent>
+
+    <artifactId>qdp-bql</artifactId>
+    <groupId>com.inspur.edp</groupId>
+    <packaging>pom</packaging>
+    <version>0.1.12</version>
+
+    <distributionManagement>
+        <repository>
+            <id>gsp-releases-repo</id>
+            <url>https://repos.iec.io/repository/maven-gsp-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>gsp-snapshots-repo</id>
+            <url>https://repos.iec.io/repository/maven-gsp-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+    <dependencies>
+        <dependency>
+            <groupId>io.iec.edp</groupId>
+            <artifactId>caf-i18n-framework-api</artifactId>
+        </dependency>
+    </dependencies>
+</project>

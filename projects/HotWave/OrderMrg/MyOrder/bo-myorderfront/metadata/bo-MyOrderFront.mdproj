@@ -1,0 +1,70 @@
+{
+  "NameSpace" : "Inspur.GS.HotWave.OrderMrg.MyOrder",
+  "Name" : "bo-MyOrderFront",
+  "ProjectFileName" : "bo-MyOrderFront.mdproj",
+  "ProjectPath" : "HotWave/OrderMrg/MyOrder/bo-myorderfront/metadata",
+  "MetadataPackageInfo" : {
+    "Name" : "Inspur.GS.HotWave.OrderMrg.MyOrder.Front",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "interpretation"
+  },
+  "MetadataPackageRefs" : [ ],
+  "ProjectRefs" : null,
+  "ExternalRefs" : null,
+  "MdpkgRefs" : [ {
+    "Name" : "Inspur.GS.Gsp.Web.WebCmp",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "generation"
+  }, {
+    "Name" : "Inspur.GS.Gsp.Mobile.MobileApproveCmp",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "generation"
+  }, {
+    "Name" : "Inspur.GS.Gsp.Mobile.MobileAttachmentCmp",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "generation"
+  }, {
+    "Name" : "Inspur.GS.HotWave.OrderMrg.SaleOrder.SaleOrder.Back",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "interpretation"
+  }, {
+    "Name" : "Inspur.GS.Gsp.Mobile.MobileCmp",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "generation"
+  }, {
+    "Name" : "Inspur.GS.HotWave.DataBase.MerChant.MerChant.Front",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "interpretation"
+  } ],
+  "MavenPackageRefs" : [ ],
+  "CsprojAssemblyName" : "Inspur.GS.HotWave.OrderMrg.MyOrder.Front",
+  "ID" : "03516469-3009-4aee-adf6-29703fb7b587"
+}

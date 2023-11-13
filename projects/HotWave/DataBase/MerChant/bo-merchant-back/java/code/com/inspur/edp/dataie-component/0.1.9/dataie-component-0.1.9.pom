@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>webcomponent</artifactId>
+        <groupId>com.inspur.edp</groupId>
+        <version>0.1.9</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>dataie-component</artifactId>
+
+    <build>
+        <finalName>dataie-component</finalName>
+    </build>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>bff-spi</artifactId>
+            <version>0.1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>io.iec.edp</groupId>
+            <artifactId>caf-boot-commons-utils</artifactId>
+            <version>0.2.4</version>
+        </dependency>
+        <dependency>
+            <groupId>io.iec.edp</groupId>
+            <artifactId>caf-boot-commons-json</artifactId>
+            <version>0.2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>dataie-entity</artifactId>
+            <version>0.1.9</version>
+        </dependency>
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>cef-entity</artifactId>
+            <version>0.2.24</version>
+        </dependency>
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>dxf-flows-api</artifactId>
+            <version>0.1.7</version>
+        </dependency>
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>dxf-flows-core</artifactId>
+            <version>0.1.7</version>
+        </dependency>
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>lcm-metadata-rtservice</artifactId>
+            <version>0.1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>dataie-manager</artifactId>
+            <version>0.1.9</version>
+        </dependency>
+        <dependency>
+            <groupId>io.iec.edp</groupId>
+            <artifactId>caf-user-profile-config-api</artifactId>
+            <version>0.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>dxc-common</artifactId>
+            <version>0.1.18</version>
+        </dependency>
+        <dependency>
+            <groupId>io.iec.edp</groupId>
+            <artifactId>caf-boot-commons-exception</artifactId>
+            <version>0.2.8</version>
+        </dependency>
+        <dependency>
+            <groupId>io.iec.edp</groupId>
+            <artifactId>caf-boot-starter-context</artifactId>
+            <version>0.3.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>dataie-rule-manage</artifactId>
+            <version>0.1.9</version>
+        </dependency>
+        <dependency>
+            <groupId>io.iec.edp</groupId>
+            <artifactId>caf-boot-starter-data-orm</artifactId>
+            <version>RELEASE</version>
+        </dependency>
+
+    </dependencies>
+
+
+
+</project>

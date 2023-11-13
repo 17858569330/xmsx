@@ -1,0 +1,147 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "bo-goodsstock-front": {
+      "root": "projects/bo-goodsstock-front/",
+      "sourceRoot": "projects/bo-goodsstock-front/src",
+      "projectType": "application",
+      "prefix": "app",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+      "targets": {
+        "build": {
+          "builder": "@farris/farris-rollup:build",
+          "options": {
+            "format": "system",
+            "outputPath": "dist-rollup/bo-goodsstock-front",
+            "ngcOut": "out-tsc/app/projects/bo-goodsstock-front",
+            "excludeNgFactory": true,
+            "index": "projects/bo-goodsstock-front/src/index.rollup.html",
+            "importmap": "/platform/runtime/common/web/runtime.common.manifest.json?v=1688630410039",
+            "tsConfig": "projects/bo-goodsstock-front/tsconfig.app.json",
+            "entry": {
+              "main": {
+                "entry": "src/main.js",
+                "sourceMaps": false
+              },
+              "goodsstockform": {
+                "entry": "src/app/goodsstockform/goodsstockform.module.ngfactory.js",
+                "sourceMaps": false,
+                "output": "goodsstockform"
+              },
+              "goodsstockpurchase": {
+                "entry": "src/app/goodsstockpurchase/goodsstockpurchase.module.ngfactory.js",
+                "sourceMaps": false,
+                "output": "goodsstockpurchase"
+              },
+              "purchaseorder": {
+                "entry": "src/app/purchaseorder/purchaseorder.module.ngfactory.js",
+                "sourceMaps": false,
+                "output": "purchaseorder"
+              },
+              "purchaseorderlist": {
+                "entry": "src/app/purchaseorderlist/purchaseorderlist.module.ngfactory.js",
+                "sourceMaps": false,
+                "output": "purchaseorderlist"
+              }
+            },
+            "uglify": false,
+            "hash": false,
+            "libs": {},
+            "serve": false,
+            "visualize": false,
+            "libsPath": "F:/projects/node_modules/@farris/farris-rollup/src/build/libsWithNgFactory.json",
+            "linkedNodeModules": "F:/projects/node_modules",
+            "assets": [],
+            "i18n": {
+              "projects/bo-goodsstock-front/src/app/goodsstockform/i18n": "dist-rollup/bo-goodsstock-front/goodsstockform/i18n",
+              "projects/bo-goodsstock-front/src/app/goodsstockform/expressions": "dist-rollup/bo-goodsstock-front/goodsstockform/expressions",
+              "projects/bo-goodsstock-front/src/app/goodsstockform/metadata": "dist-rollup/bo-goodsstock-front/goodsstockform",
+              "projects/bo-goodsstock-front/src/app/goodsstockform/services/dist-rollup": "dist-rollup/bo-goodsstock-front/goodsstockform/services",
+              "projects/bo-goodsstock-front/src/app/goodsstockpurchase/i18n": "dist-rollup/bo-goodsstock-front/goodsstockpurchase/i18n",
+              "projects/bo-goodsstock-front/src/app/goodsstockpurchase/expressions": "dist-rollup/bo-goodsstock-front/goodsstockpurchase/expressions",
+              "projects/bo-goodsstock-front/src/app/goodsstockpurchase/metadata": "dist-rollup/bo-goodsstock-front/goodsstockpurchase",
+              "projects/bo-goodsstock-front/src/app/goodsstockpurchase/services/dist-rollup": "dist-rollup/bo-goodsstock-front/goodsstockpurchase/services",
+              "projects/bo-goodsstock-front/src/app/purchaseorder/i18n": "dist-rollup/bo-goodsstock-front/purchaseorder/i18n",
+              "projects/bo-goodsstock-front/src/app/purchaseorder/expressions": "dist-rollup/bo-goodsstock-front/purchaseorder/expressions",
+              "projects/bo-goodsstock-front/src/app/purchaseorder/metadata": "dist-rollup/bo-goodsstock-front/purchaseorder",
+              "projects/bo-goodsstock-front/src/app/purchaseorder/services/dist-rollup": "dist-rollup/bo-goodsstock-front/purchaseorder/services",
+              "projects/bo-goodsstock-front/src/app/purchaseorderlist/i18n": "dist-rollup/bo-goodsstock-front/purchaseorderlist/i18n",
+              "projects/bo-goodsstock-front/src/app/purchaseorderlist/expressions": "dist-rollup/bo-goodsstock-front/purchaseorderlist/expressions",
+              "projects/bo-goodsstock-front/src/app/purchaseorderlist/metadata": "dist-rollup/bo-goodsstock-front/purchaseorderlist",
+              "projects/bo-goodsstock-front/src/app/purchaseorderlist/services/dist-rollup": "dist-rollup/bo-goodsstock-front/purchaseorderlist/services"
+            }
+          },
+          "configurations": {
+            "production": {
+              "importmap": "/platform/runtime/common/web/runtime.common.manifest.json?v=1688630410040",
+              "optimization": false,
+              "buildOptimizer": false,
+              "outputHashing": "none",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": true,
+              "showCircularDependencies": false,
+              "aot": true,
+              "extractLicenses": false,
+              "statsJson": false,
+              "progress": false,
+              "vendorChunk": true
+            },
+            "ci": {
+              "importmap": "/platform/runtime/common/web/runtime.common.manifest.json",
+              "libsPath": "请手工修改,参考示例：/builds/webadp/front-project-ci/node_modules/@farris/farris-rollup/src/build/libsWithNgFactory.json",
+              "linkedNodeModules": "请手工修改，参考示例：/builds/webadp/front-project-ci/node_modules",
+              "optimization": false,
+              "buildOptimizer": false,
+              "outputHashing": "none",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": true,
+              "showCircularDependencies": false,
+              "aot": true,
+              "extractLicenses": false,
+              "statsJson": false,
+              "progress": false,
+              "vendorChunk": true
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "bo-goodsstock-front:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "bo-goodsstock-front:build:production"
+            },
+            "ci": {
+              "importmap": "/platform/runtime/common/web/runtime.common.manifest.json",
+              "libsPath": "请手工修改,参考示例：/builds/webadp/front-project-ci/node_modules/@farris/farris-rollup/src/build/libsWithNgFactory.json",
+              "linkedNodeModules": "请手工修改，参考示例：/builds/webadp/front-project-ci/node_modules",
+              "optimization": false,
+              "buildOptimizer": false,
+              "outputHashing": "none",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": true,
+              "showCircularDependencies": false,
+              "aot": true,
+              "extractLicenses": false,
+              "statsJson": false,
+              "progress": false,
+              "vendorChunk": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "bo-goodsstock-front"
+}

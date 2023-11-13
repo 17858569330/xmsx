@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>qdp-qo-runtime</artifactId>
+        <groupId>com.inspur.edp</groupId>
+        <version>0.1.28</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>qdp-qo-runtime-api</artifactId>
+    <version>0.1.28</version>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>cef-entity</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>cef-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>das-commonmodel</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>qdp-ui-runtime-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.iec.edp</groupId>
+            <artifactId>caf-boot-commons-exception</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>lcm-metadata-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>qdp-qo-metadata-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.iec.edp</groupId>
+            <artifactId>caf-i18n-framework-api</artifactId>
+        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.inspur.edp</groupId>-->
+<!--            <artifactId>qdp-cache</artifactId>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.inspur.edp</groupId>-->
+<!--            <artifactId>qdp-config</artifactId>-->
+<!--        </dependency>-->
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>common-dbaccess</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.iec.edp</groupId>
+            <artifactId>caf-boot-commons-layeringcache</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>bff-api</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>

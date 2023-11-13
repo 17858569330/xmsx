@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <modules>
+        <module>caf-database-object-api</module>
+        <module>caf-database-object-common</module>
+        <module>caf-dimension-api</module>
+        <module>caf-database-object-rtmanager</module>
+        <module>caf-name-rule-extend</module>
+        <module>caf-database-object-spi</module>
+        <module>caf-database-object-manager</module>
+<!--		<module>caf-database-object-deploy</module>-->
+        <module>caf-database-object-deploy-spi</module>
+        <module>caf-database-object-deploy-defaultsqlgenerator</module>
+        <module>caf-database-object-deploy-pgsqlgenerator</module>
+        <module>caf-database-object-deploy-sqlservergenerator</module>
+        <module>caf-database-object-deploy-oraclegenerator</module>
+        <module>caf-database-object-deploy-dmgenerator</module>
+        <module>caf-database-object-deploy-manager</module>
+        <module>caf-database-object-generator</module>
+    </modules>
+
+    <parent>
+        <groupId>io.iec.edp</groupId>
+        <artifactId>caf-boot-parent</artifactId>
+        <version>0.1.2</version>
+    </parent>
+
+    <artifactId>caf-database-object</artifactId>
+
+    <groupId>io.iec.edp</groupId>
+    <packaging>pom</packaging>
+    <version>0.1.5</version>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.openclover</groupId>
+                <artifactId>clover-maven-plugin</artifactId>
+                <configuration>
+                    <includesTestSourceRoots>false</includesTestSourceRoots>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <distributionManagement>
+        <repository>
+            <id>caf-releases-repo</id>
+            <url>https://repos.iec.io/repository/maven-caf-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>caf-snapshots-repo</id>
+            <url>https://repos.iec.io/repository/maven-caf-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+</project>

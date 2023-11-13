@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <modules>
+        <module>dataie-component</module>
+        <module>dataie-rpc-core</module>
+        <module>dataie-rpc-client</module>
+        <module>dataie-rule-manage</module>
+    </modules>
+
+    <parent>
+        <groupId>io.iec.edp</groupId>
+        <artifactId>caf-boot-parent</artifactId>
+        <version>0.1.2</version>
+    </parent>
+
+    <artifactId>webcomponent</artifactId>
+
+    <groupId>com.inspur.edp</groupId>
+    <packaging>pom</packaging>
+    <version>0.1.9</version>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.openclover</groupId>
+                <artifactId>clover-maven-plugin</artifactId>
+                <version>4.3.1</version>
+                <configuration>
+                    <includesTestSourceRoots>false</includesTestSourceRoots>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5.3</version>
+                <configuration>
+                    <tagNameFormat>v@{project.version}</tagNameFormat>
+                    <pushChanges>false</pushChanges>
+                </configuration>
+            </plugin>
+
+        </plugins>
+    </build>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>gsp-snapshots-repo</id>
+            <url>https://repos.iec.io/repository/maven-gsp-snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>gsp-releases-repo</id>
+            <url>https://repos.iec.io/repository/maven-gsp-releases/</url>
+        </repository>
+    </distributionManagement>
+
+</project>

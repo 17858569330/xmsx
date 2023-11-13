@@ -1,0 +1,193 @@
+{
+  "Header" : {
+    "Code" : "MyOrder_mfrm_cardPage",
+    "Type" : "StateMachine",
+    "NameSpace" : "Inspur.GS.HotWave.OrderMrg.MyOrder",
+    "CertId" : null,
+    "Name" : "我的订单_mfrm_cardPage",
+    "FileName" : "MyOrder_mfrm_cardPage.sm",
+    "BizobjectID" : "dc97c471-1757-f628-21f7-32ba147f3eda",
+    "Language" : null,
+    "Extendable" : false,
+    "ID" : "99d06a1d-13ec-43f1-bccc-f7493a71d872",
+    "IsTranslating" : false
+  },
+  "Refs" : [ ],
+  "Content" : {
+    "code" : null,
+    "name" : null,
+    "renderState" : {
+      "canRemove" : {
+        "condition" : [ {
+          "lBracket" : "",
+          "source" : "state",
+          "compare" : "===",
+          "target" : "'initState'",
+          "relation" : "",
+          "rBracket" : ""
+        } ],
+        "name" : "删除",
+        "description" : ""
+      },
+      "canInput" : {
+        "condition" : [ {
+          "lBracket" : "",
+          "source" : "state",
+          "compare" : "===",
+          "target" : "'addState'",
+          "relation" : "or",
+          "rBracket" : ""
+        }, {
+          "lBracket" : "",
+          "source" : "state",
+          "compare" : "===",
+          "target" : "'editState'",
+          "relation" : "",
+          "rBracket" : ""
+        } ],
+        "name" : "输入",
+        "description" : ""
+      },
+      "canEdit" : {
+        "condition" : [ {
+          "lBracket" : "",
+          "source" : "state",
+          "compare" : "===",
+          "target" : "'initState'",
+          "relation" : "or",
+          "rBracket" : ""
+        }, {
+          "lBracket" : "",
+          "source" : "state",
+          "compare" : "===",
+          "target" : "'viewState'",
+          "relation" : "",
+          "rBracket" : ""
+        } ],
+        "name" : "编辑",
+        "description" : ""
+      },
+      "canAdd" : {
+        "condition" : [ {
+          "lBracket" : "",
+          "source" : "state",
+          "compare" : "===",
+          "target" : "'initState'",
+          "relation" : "or",
+          "rBracket" : ""
+        }, {
+          "lBracket" : "",
+          "source" : "state",
+          "compare" : "===",
+          "target" : "'viewState'",
+          "relation" : "",
+          "rBracket" : ""
+        } ],
+        "name" : "新增",
+        "description" : ""
+      },
+      "showStaticText" : {
+        "condition" : [ {
+          "lBracket" : "",
+          "source" : "state",
+          "compare" : "===",
+          "target" : "'viewState'",
+          "relation" : "",
+          "rBracket" : ""
+        } ],
+        "name" : "显示静态文本",
+        "description" : ""
+      },
+      "canSave" : {
+        "condition" : [ {
+          "lBracket" : "",
+          "source" : "state",
+          "compare" : "===",
+          "target" : "'addState'",
+          "relation" : "or",
+          "rBracket" : ""
+        }, {
+          "lBracket" : "",
+          "source" : "state",
+          "compare" : "===",
+          "target" : "'editState'",
+          "relation" : "",
+          "rBracket" : ""
+        } ],
+        "name" : "保存",
+        "description" : ""
+      },
+      "canCancel" : {
+        "condition" : [ {
+          "lBracket" : "",
+          "source" : "state",
+          "compare" : "===",
+          "target" : "'addState'",
+          "relation" : "or",
+          "rBracket" : ""
+        }, {
+          "lBracket" : "",
+          "source" : "state",
+          "compare" : "===",
+          "target" : "'editState'",
+          "relation" : "",
+          "rBracket" : ""
+        } ],
+        "name" : "取消",
+        "description" : ""
+      }
+    },
+    "state" : [ {
+      "state" : "initState",
+      "name" : "初始状态",
+      "description" : "页面初始状态"
+    }, {
+      "state" : "addState",
+      "name" : "新增状态",
+      "description" : "页面新增状态"
+    }, {
+      "state" : "editState",
+      "name" : "编辑状态",
+      "description" : "页面编辑状态"
+    }, {
+      "state" : "viewState",
+      "name" : "查看状态",
+      "description" : "页面查看状态"
+    } ],
+    "initialState" : "initState",
+    "action" : {
+      "addAction" : {
+        "name" : "新增动作",
+        "transitTo" : "addState",
+        "description" : "新增时页面切换至新增状态"
+      },
+      "saveAction" : {
+        "name" : "保存动作",
+        "transitTo" : "initState",
+        "description" : "保存时切换至初始状态"
+      },
+      "editAction" : {
+        "name" : "编辑动作",
+        "transitTo" : "editState",
+        "description" : "编辑时页面切换至编辑状态"
+      },
+      "viewAction" : {
+        "name" : "查看动作",
+        "transitTo" : "viewState",
+        "description" : "页面切换到只能查看状态"
+      },
+      "cancelAction" : {
+        "name" : "取消动作",
+        "transitTo" : "initState",
+        "description" : "取消时将页面切换至初始状态"
+      }
+    }
+  },
+  "ExtendRule" : null,
+  "RelativePath" : "HotWave/OrderMrg/MyOrder/bo-myorderfront/metadata/components",
+  "ExtendProperty" : "",
+  "Extended" : false,
+  "PreviousVersion" : null,
+  "Version" : null,
+  "Properties" : null
+}

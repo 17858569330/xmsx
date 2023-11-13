@@ -1,0 +1,22 @@
+{
+  "NameSpace" : "Inspur.GS.HotWave.DataBase.Goods.Goods.Back",
+  "Name" : "bo-Goods-Back",
+  "ProjectFileName" : null,
+  "ProjectPath" : null,
+  "MetadataPackageInfo" : {
+    "Name" : "Inspur.GS.HotWave.DataBase.Goods.Goods.Back",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "interpretation"
+  },
+  "MetadataPackageRefs" : [ ],
+  "ProjectRefs" : null,
+  "ExternalRefs" : null,
+  "MdpkgRefs" : null,
+  "MavenPackageRefs" : [ ],
+  "CsprojAssemblyName" : null,
+  "ID" : "29a6203c-31a7-4221-a54a-49225404e4ee"
+}

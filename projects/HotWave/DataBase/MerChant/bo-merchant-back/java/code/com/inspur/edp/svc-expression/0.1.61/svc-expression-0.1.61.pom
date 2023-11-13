@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <modules>
+        <module>svc-expression-api</module>
+        <module>svc-expression-engine</module>
+    </modules>
+
+    <parent>
+        <groupId>io.iec.edp</groupId>
+        <artifactId>caf-boot-parent</artifactId>
+        <version>0.3.6</version>
+    </parent>
+
+    <artifactId>svc-expression</artifactId>
+
+    <groupId>com.inspur.edp</groupId>
+    <packaging>pom</packaging>
+    <version>0.1.61</version>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.openclover</groupId>
+                <artifactId>clover-maven-plugin</artifactId>
+                <version>4.3.1</version>
+                <configuration>
+                    <includesTestSourceRoots>false</includesTestSourceRoots>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>svc-expression-api</artifactId>
+                <version>0.1.61</version>
+            </dependency>
+            <dependency>
+                <groupId>io.iec.edp</groupId>
+                <artifactId>caf-boot-commons-json</artifactId>
+                <version>0.2.2</version>
+            </dependency>
+            <dependency>
+                <groupId>io.iec.edp</groupId>
+                <artifactId>caf-boot-commons-utils</artifactId>
+                <version>0.2.3</version>
+            </dependency>
+            <dependency>
+                <groupId>org.graalvm.js</groupId>
+                <artifactId>js</artifactId>
+                <version>20.0.0</version>
+            </dependency>
+            <dependency>
+                <groupId>org.graalvm.js</groupId>
+                <artifactId>js-scriptengine</artifactId>
+                <version>19.2.0</version>
+            </dependency>
+            <dependency>
+                <groupId>io.iec.edp</groupId>
+                <artifactId>caf-rpc-api</artifactId>
+                <version>0.3.3</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>1.2.58</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>gsp-snapshots-repo</id>
+            <url>https://repos.iec.io/repository/maven-gsp-snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>gsp-releases-repo</id>
+            <url>https://repos.iec.io/repository/maven-gsp-releases/</url>
+        </repository>
+    </distributionManagement>
+
+</project>

@@ -1,0 +1,50 @@
+{
+  "Header" : {
+    "Code" : "predefinePageflow",
+    "Type" : "PageFlowMetadata",
+    "NameSpace" : "Inspur.GS.HotWave.DataBase.Staff.Staff.Front",
+    "CertId" : null,
+    "Name" : "predefinePageflow",
+    "FileName" : "predefinePageflow.pf",
+    "BizobjectID" : "b1d99340-20e0-c926-9f0c-748712e5c3d0",
+    "Language" : null,
+    "Extendable" : false,
+    "ID" : "8ac7d376-6927-47b5-8fe1-c740aa78cb0d",
+    "IsTranslating" : false
+  },
+  "Refs" : [ ],
+  "Content" : {
+    "code" : null,
+    "name" : null,
+    "id" : "8ac7d376-6927-47b5-8fe1-c740aa78cb0d",
+    "project" : {
+      "name" : "bo-staff-front"
+    },
+    "pages" : [ {
+      "id" : "d001feb9-fb06-4140-88f6-90e6c68477f3",
+      "code" : "StaffForm",
+      "name" : "员工表单",
+      "fileName" : "StaffForm.frm",
+      "relativePath" : "HotWave/DataBase/Staff/bo-staff-front/metadata/components",
+      "formUri" : null,
+      "routeUri" : "StaffForm",
+      "routeParams" : null,
+      "forceDynamicForm" : false
+    } ],
+    "entry" : "StaffForm",
+    "routes" : null,
+    "appCode" : "YGGL",
+    "appName" : "员工管理",
+    "publishes" : [ {
+      "id" : "47b9551b-4c5a-49fe-9f14-709ba4887a5e",
+      "entry" : "d001feb9-fb06-4140-88f6-90e6c68477f3"
+    } ]
+  },
+  "ExtendRule" : null,
+  "RelativePath" : "HotWave/DataBase/Staff/bo-staff-front/metadata/route",
+  "ExtendProperty" : "",
+  "Extended" : false,
+  "PreviousVersion" : null,
+  "Version" : null,
+  "Properties" : null
+}

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <modules>
+        <module>cdp-sgf-api</module>
+        <module>cdp-sgf-spi</module>
+        <module>cdp-sgf-base</module>
+<!--        <module>cdp-sgf-adapter</module>-->
+<!--        <module>cdp-sgf-compile</module>-->
+<!--        <module>cdp-sgf-core</module>-->
+<!--        <module>cdp-sgf-runtime-customize-core</module>-->
+        <module>cdp-sgf-runtime-customize-api</module>
+<!--        <module>cdp-sgf-provider</module>-->
+<!--        <module>cdp-sgf-dt-compile</module>-->
+<!--        <module>cdp-sgf-runtime-customize-adapter</module>-->
+<!--        <module>cdp-sgf-utils</module>-->
+<!--        <module>cdp-sgf-config</module>-->
+<!--        <module>cdp-sgf-dt-core</module>-->
+<!--        <module>cdp-sgf-dt-provider</module>-->
+        <module>cdp-sgf-dt-spi</module>
+    </modules>
+
+    <parent>
+        <groupId>io.iec.edp</groupId>
+        <artifactId>caf-boot-parent</artifactId>
+        <version>0.3.4</version>
+    </parent>
+
+    <artifactId>cdp-sg</artifactId>
+
+    <groupId>com.inspur.edp</groupId>
+    <packaging>pom</packaging>
+    <version>0.1.18</version>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.openclover</groupId>
+                <artifactId>clover-maven-plugin</artifactId>
+                <version>4.3.1</version>
+                <configuration>
+                    <includesTestSourceRoots>false</includesTestSourceRoots>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <dependencies>
+        <dependency>
+            <groupId>io.iec.edp</groupId>
+            <artifactId>caf-boot-starter-data-orm</artifactId>
+        </dependency>
+
+    </dependencies>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>gsp-snapshots-repo</id>
+            <url>https://repos.iec.io/repository/maven-gsp-snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>gsp-releases-repo</id>
+            <url>https://repos.iec.io/repository/maven-gsp-releases/</url>
+        </repository>
+    </distributionManagement>
+
+
+</project>

@@ -1,0 +1,46 @@
+{
+  "NameSpace" : "Inspur.GS.HotWave.DataBase.Staff.Staff.Back",
+  "Name" : "bo-Staff-Back",
+  "ProjectFileName" : "bo-Staff-Back.mdproj",
+  "ProjectPath" : "HotWave/DataBase/Staff/bo-staff-back/metadata",
+  "MetadataPackageInfo" : {
+    "Name" : "Inspur.GS.HotWave.DataBase.Staff.Staff.Back",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "interpretation"
+  },
+  "MetadataPackageRefs" : [ {
+    "Name" : "Inspur.GS.HotWave.DataBase.MerChant.MerChant.Back",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "interpretation"
+  } ],
+  "ProjectRefs" : [ {
+    "Name" : "Inspur.GS.HotWave.DataBase.MerChant.MerChant.Back",
+    "ProjectPath" : "../../../../HotWave/DataBase/MerChant/bo-merchant-back"
+  } ],
+  "ExternalRefs" : null,
+  "MdpkgRefs" : [ {
+    "Name" : "Inspur.Gsp.Common.CommonUdt",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "generation"
+  } ],
+  "MavenPackageRefs" : [ {
+    "GroupId" : "com.inspur.gs",
+    "ArtifactId" : "hotwave-database-merchant-merchant-back-api",
+    "Version" : "m0.1.0-SNAPSHOT",
+    "MetadataPackageName" : "Inspur.GS.HotWave.DataBase.MerChant.MerChant.Back"
+  } ],
+  "CsprojAssemblyName" : "Inspur.GS.HotWave.DataBase.Staff.Staff.Back",
+  "ID" : "b1f0a6f3-6786-4032-9bb1-56f8cda54fd1"
+}

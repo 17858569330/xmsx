@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>dxc</artifactId>
+        <groupId>com.inspur.edp</groupId>
+        <version>0.1.16</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>dxc-pdf-extraction</artifactId>
+    <build>
+        <finalName>dxc-pdf-extraction</finalName>
+    </build>
+    <dependencies>
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>dxc-entity</artifactId>
+            <version>0.1.16</version>
+        </dependency>
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>dxc-common</artifactId>
+            <version>0.1.16</version>
+        </dependency>
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>dxc-spi</artifactId>
+            <version>0.1.16</version>
+        </dependency>
+        <!-- 异常框架-->
+        <dependency>
+            <groupId>io.iec.edp</groupId>
+            <artifactId>caf-boot-commons-exception</artifactId>
+        </dependency>
+        <!-- 日志框架-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-logging</artifactId>
+        </dependency>
+
+        <!-- PDF组件-->
+        <dependency>
+            <groupId>e-iceblue</groupId>
+            <artifactId>spire.pdf.free</artifactId>
+            <version>2.6.4</version>
+        </dependency>
+    </dependencies>
+<!--    <repositories>-->
+<!--        <repository>-->
+<!--            <id>com.e-iceblue</id>-->
+<!--            <name>e-iceblue</name>-->
+<!--            <url>http://repo.e-iceblue.com/nexus/content/groups/public/</url>-->
+<!--        </repository>-->
+<!--    </repositories>-->
+</project>

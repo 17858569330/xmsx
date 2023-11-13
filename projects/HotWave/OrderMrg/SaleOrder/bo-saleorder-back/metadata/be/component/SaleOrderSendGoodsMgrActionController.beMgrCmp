@@ -1,0 +1,71 @@
+{
+  "Header" : {
+    "Code" : "SaleOrderSendGoodsMgrActionController",
+    "Type" : "BEMgrComponent",
+    "NameSpace" : "Inspur.GS.HotWave.OrderMrg.SaleOrder.SaleOrder.Back",
+    "CertId" : null,
+    "Name" : "SaleOrderSendGoodsMgrActionController",
+    "FileName" : "SaleOrderSendGoodsMgrActionController.beMgrCmp",
+    "BizobjectID" : "ee0af0b4-e947-7987-a85d-5072623dc1e6",
+    "Language" : null,
+    "Extendable" : false,
+    "ID" : "998eca12-ec1c-46ce-979d-89808547b46e",
+    "IsTranslating" : false
+  },
+  "Refs" : [ ],
+  "Content" : {
+    "BEMgrMethod" : {
+      "Assembly" : "Inspur.GS.HotWave.OrderMrg.SaleOrder.SaleOrder.Back",
+      "BEMgrParams" : [ {
+        "Assembly" : "mscorlib.dll",
+        "ClassName" : "System.String",
+        "ID" : "bc6e61c2-21f0-4875-accf-ee22e9776751",
+        "JavaClassName" : "java.lang.String",
+        "Mode" : 0,
+        "ParamCode" : "id",
+        "ParamDescription" : "",
+        "ParamName" : "单据ID",
+        "ParameterCollectionType" : 0,
+        "ParameterType" : 0
+      }, {
+        "Assembly" : "mscorlib.dll",
+        "ClassName" : "System.String",
+        "ID" : "cc577fa6-cbaf-4e03-9e2c-845362b8f2a1",
+        "JavaClassName" : "java.lang.String",
+        "Mode" : 0,
+        "ParamCode" : "sendstate",
+        "ParamDescription" : "",
+        "ParamName" : "parameter1",
+        "ParameterCollectionType" : 0,
+        "ParameterType" : 0
+      } ],
+      "ClassName" : "Inspur.GS.HotWave.OrderMrg.SaleOrder.SaleOrder.Back.bizactions.SaleOrderSendGoodsMgrAction",
+      "JavaClassName" : "com.inspur.gs.hotwave.ordermrg.saleorder.saleorder.back.bizactions.SaleOrderSendGoodsMgrAction",
+      "JavaPackageName" : null,
+      "ReturnValue" : {
+        "Assembly" : "mscorlib.dll",
+        "ClassName" : "Void",
+        "ID" : "1a17df05-e16e-4da8-9c41-9c514ac6fd39",
+        "JavaClassName" : "void",
+        "Mode" : 0,
+        "ParamCode" : "",
+        "ParamDescription" : "",
+        "ParamName" : "",
+        "ParameterCollectionType" : 0,
+        "ParameterType" : 0
+      }
+    },
+    "ComponentCode" : "SendGoods",
+    "ComponentDescription" : "",
+    "ComponentID" : "998eca12-ec1c-46ce-979d-89808547b46e",
+    "ComponentName" : "发货",
+    "ComponentType" : "BEMgrComponent"
+  },
+  "ExtendRule" : null,
+  "RelativePath" : null,
+  "ExtendProperty" : null,
+  "Extended" : false,
+  "PreviousVersion" : null,
+  "Version" : null,
+  "Properties" : null
+}

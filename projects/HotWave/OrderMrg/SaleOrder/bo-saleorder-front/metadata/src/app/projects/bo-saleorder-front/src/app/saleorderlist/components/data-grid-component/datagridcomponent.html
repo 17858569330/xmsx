@@ -1,0 +1,31 @@
+<farris-section class="f-section-grid f-section-in-managelist" id="data-grid-section" [index]="index" [expandStatus]="true" [mainTitle]="SectiondatagridsectionMainTitle" [subTitle]="SectiondatagridsectionSubTitle" [fill]="true" [showHeader]="false" [enableMaximize]="true" [enableAccordion]="'default'" *ngIf="true" sectionRef>
+<!DOCTYPE html><div class="f-utils-fill"><farris-datagrid class="f-component-grid" id="dataGrid" farris-use-binding-data datagridRef farris-grid-end-edit [enableHighlightCell]="false" [fitColumns]="false" [fields]="this.viewModel.dataGridColumns" [showLineNumber]="false" [striped]="true" [virtualized]="false" [pagination]="true" [pageSize]="20" [virtualizedAsyncLoad]="false" [maxHeight]="300" [multiSelect]="false" [editMode]="'cell'" (pageChanged)="this.viewModel.ChangePage1($event);" [fit]="true" [showCheckbox]="false" [farris-datagrid-editable]="viewModel.stateMachine && viewModel.stateMachine['editable']" [disableGroupOnEditing]="true" [lockPagination]="viewModel.stateMachine&&viewModel.stateMachine['editable']" [footerHeight]="29" (scrollYLoad)="this.viewModel.ChangePage1($event);" [showAllCheckbox]="false" [lineNumberTitle]="dataGridlineNumberTitle" [mergeCell]="false" [showBorder]="false" [checkOnSelect]="false" [selectOnCheck]="false" [nowrap]="true" [footerDataFrom]="'client'" *ngIf="true" farris-remote-summary-command="" [autoFitColumns]="false" [showGroupColumn]="true" [autoHeight]="false" [AutoColumnWidthUseDblclick]="true" [showPageList]="false" (pageSizeChanged)="this.viewModel.ChangePage1($event);" [pageList]="[10,20,30,50,100]" [lineNumberWidth]="36" [headerWrap]="false" [rowHeight]="30" [enableEditCellStyle]="false" [enableDragColumn]="false" [showRowGroupPanel]="false" [groupSummaryPosition]="'groupFooterRow'" [keepSelect]="true" [clearSelectionsWhenDataIsEmpty]="true" [selectOnEditing]="false" [footerPosition]="'bottom'" [showGotoInput]="false" [scrollBarShowMode]="'auto'" [enableContextMenu]="false" [expandGroupRows]="true" [enableSimpleMode]="false" [useBlankWhenDataIsEmpty]="false" [emptyDataHeight]="36" [selectionMode]="'default'" [enableScheme]="false" #dataGridDataGrid=""></farris-datagrid></div>
+</farris-section><ng-template #dataGridpayMethodTemplate let-ctx>
+<div style="display: flex;flex-direction: row;align-items: center;">
+    <ng-container [ngSwitch]="ctx.rowData['payMethod']">
+        <ng-container *ngSwitchCase="'Cash'">
+            <span class="badge badge-round-info" style="margin-right: 5px;"></span> 现金
+        </ng-container>
+        <ng-container *ngSwitchCase="'Wechat'">
+            <span class="badge badge-round-warning" style="margin-right: 5px;"></span> 微信
+        </ng-container>
+        <ng-container *ngSwitchCase="'ALipay'">
+            <span class="badge badge-round-success" style="margin-right: 5px;"></span> 支付宝
+        </ng-container>
+        <ng-container *ngSwitchCase="'UPay'">
+            <span class="badge badge-round-danger" style="margin-right: 5px;"></span> 银联
+        </ng-container>
+        <ng-container *ngSwitchDefault>
+        </ng-container>
+    </ng-container>
+</div>
+</ng-template><ng-template #dataGridsendStateTemplate let-ctx>
+<div style="display: flex;flex-direction: row;align-items: center;" class="f-datagrid-cell-content">
+    <ng-container [ngSwitch]="ctx.rowData['sendState']">
+        <span class="badge badge-border-danger" *ngSwitchCase="'UnShipped'">未发货</span>
+        <span class="badge badge-border-info" *ngSwitchCase="'Shipped'">已发货</span>
+        <span class="badge badge-border-success" *ngSwitchCase="'Done'">已收货</span>
+        <span *ngSwitchDefault></span>
+    </ng-container>
+</div>
+</ng-template>

@@ -1,0 +1,60 @@
+{
+  "Header" : {
+    "Code" : "SaleOrderSendStateActionActionController",
+    "Type" : "BEComponent",
+    "NameSpace" : "Inspur.GS.HotWave.OrderMrg.SaleOrder.SaleOrder.Back",
+    "CertId" : null,
+    "Name" : "SaleOrderSendStateActionActionController",
+    "FileName" : "SaleOrderSendStateActionActionController.beCmp",
+    "BizobjectID" : "ee0af0b4-e947-7987-a85d-5072623dc1e6",
+    "Language" : null,
+    "Extendable" : false,
+    "ID" : "1d32c104-fc50-478b-8141-887ad1080ff8",
+    "IsTranslating" : false
+  },
+  "Refs" : [ ],
+  "Content" : {
+    "BEMethod" : {
+      "Assembly" : "Inspur.GS.HotWave.OrderMrg.SaleOrder.SaleOrder.Back",
+      "BEParams" : [ {
+        "Assembly" : "mscorlib.dll",
+        "ClassName" : "System.String",
+        "ID" : "c6903c9b-718d-45db-90e0-1c15bd1e4d7e",
+        "JavaClassName" : "java.lang.String",
+        "Mode" : 0,
+        "ParamCode" : "sendstate",
+        "ParamDescription" : "",
+        "ParamName" : "parameter1",
+        "ParameterCollectionType" : 0,
+        "ParameterType" : 0
+      } ],
+      "ClassName" : "Inspur.GS.HotWave.OrderMrg.SaleOrder.SaleOrder.Back.entityactions.SaleOrderSendStateActionAction",
+      "JavaClassName" : "com.inspur.gs.hotwave.ordermrg.saleorder.saleorder.back.saleorder.entityactions.SaleOrderSendStateActionAction",
+      "JavaPackageName" : null,
+      "ReturnValue" : {
+        "Assembly" : "mscorlib.dll",
+        "ClassName" : "Void",
+        "ID" : "fee5b592-7e96-4717-90b3-67f7d4a935f9",
+        "JavaClassName" : "void",
+        "Mode" : 0,
+        "ParamCode" : "",
+        "ParamDescription" : "",
+        "ParamName" : "",
+        "ParameterCollectionType" : 0,
+        "ParameterType" : 0
+      }
+    },
+    "ComponentCode" : "SendStateAction",
+    "ComponentDescription" : "",
+    "ComponentID" : "1d32c104-fc50-478b-8141-887ad1080ff8",
+    "ComponentName" : "发货",
+    "ComponentType" : "BEComponent"
+  },
+  "ExtendRule" : null,
+  "RelativePath" : null,
+  "ExtendProperty" : null,
+  "Extended" : false,
+  "PreviousVersion" : null,
+  "Version" : null,
+  "Properties" : null
+}

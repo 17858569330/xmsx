@@ -1,0 +1,78 @@
+{
+  "NameSpace" : "Inspur.GS.HotWave.Stock.GoodsStock.GoodsStock.Front",
+  "Name" : "bo-GoodsStock-Front",
+  "ProjectFileName" : "bo-GoodsStock-Front.mdproj",
+  "ProjectPath" : "HotWave/Stock/GoodsStock/bo-goodsstock-front/metadata",
+  "MetadataPackageInfo" : {
+    "Name" : "Inspur.GS.HotWave.Stock.GoodsStock.GoodsStock.Front",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "interpretation"
+  },
+  "MetadataPackageRefs" : [ {
+    "Name" : "Inspur.GS.HotWave.Stock.GoodsStock.GoodsStock.Back",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "interpretation"
+  }, {
+    "Name" : "Inspur.GS.HotWave.DataBase.MerChant.MerChant.Front",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "interpretation"
+  } ],
+  "ProjectRefs" : [ {
+    "Name" : "Inspur.GS.HotWave.Stock.GoodsStock.GoodsStock.Back",
+    "ProjectPath" : "../../../../HotWave/Stock/GoodsStock/bo-goodsstock-back"
+  }, {
+    "Name" : "Inspur.GS.HotWave.DataBase.MerChant.MerChant.Front",
+    "ProjectPath" : "../../../../HotWave/DataBase/MerChant/bo-merchant-front"
+  } ],
+  "ExternalRefs" : null,
+  "MdpkgRefs" : [ {
+    "Name" : "Inspur.GS.Gsp.Web.WebCmp",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "generation"
+  }, {
+    "Name" : "Inspur.GS.Gsp.Web.WebApprove",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "generation"
+  }, {
+    "Name" : "Inspur.GS.HotWave.DataBase.Goods.Goods.Front",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "interpretation"
+  } ],
+  "MavenPackageRefs" : [ {
+    "GroupId" : "com.inspur.gs",
+    "ArtifactId" : "hotwave-stock-goodsstock-goodsstock-back-api",
+    "Version" : "m0.1.0-SNAPSHOT",
+    "MetadataPackageName" : "Inspur.GS.HotWave.Stock.GoodsStock.GoodsStock.Back"
+  }, {
+    "GroupId" : "com.inspur.gs",
+    "ArtifactId" : "hotwave-database-merchant-merchant-front-api",
+    "Version" : "m0.1.0-SNAPSHOT",
+    "MetadataPackageName" : "Inspur.GS.HotWave.DataBase.MerChant.MerChant.Front"
+  } ],
+  "CsprojAssemblyName" : "Inspur.GS.HotWave.Stock.GoodsStock.GoodsStock.Front",
+  "ID" : "5719f6b6-ece1-49ce-b3a0-83188d2bd92e"
+}

@@ -1,0 +1,16 @@
+#Last modified on: Tue Jun 27 14:26:24 GMT+08:00 2023
+#Tue Jun 27 14:26:24 GMT+08:00 2023
+metadata/be=61e87c62e8b12a8754a969383a1e272193b23516
+metadata/eapi/GoodsQuery_QDPParamVO.eapi=bba6e59d475f61ecab74f69583511ec4d497d080
+metadata/be/component/SaleOrderSendStateActionActionController.beCmp=9cc03bca04746d2553b19cd819e05215872b3c8d
+metadata/be/component/SaleOrderSendGoodsMgrActionController.beMgrCmp=946838852a7cc4ef70f56c52b5fb16bea9ff322d
+metadata/qo/GoodsQuery.qo.res=fafae020f5068ce031e278e712584614462a6d21
+metadata/be/SaleOrder.be=6a4bb86b451bd2f4440be4a1ee17ac36d5833112
+metadata/qo=a16a4ee399eacb2dc143c7384ec5daeb1bf7860f
+metadata/be/component=946838852a7cc4ef70f56c52b5fb16bea9ff322d
+metadata/qo/GoodsQuery_QDPParamVO.vo=96d22e07d8fd372c031329ce3d196eb0d195a99a
+metadata/be/component/SaleOrderSaleOrderAfterCreateDeterminationController.beDtmCmp=28b1f4d0de42ef78880a6c997708e35be407add0
+metadata/eapi=a88738e4f291c6b03a74a5963bc5992c980399e1
+metadata/qo/GoodsQuery.qo=1db3798195bc6e5f2f4e1de9e74767c7bf30d647
+metadata/be/SaleOrder.be.res=bad8720acb62330dedcb49f576eb9b0947df2a66
+metadata/qo/GoodsQuery_QDPParamVO.vo.res=1a36c4dec809533daec5068c3a986ef610e1849b

@@ -1,0 +1,3061 @@
+{
+  "Header" : {
+    "Code" : "MyOrder",
+    "Type" : "MobileForm",
+    "NameSpace" : "Inspur.GS.HotWave.OrderMrg.MyOrder",
+    "CertId" : null,
+    "Name" : "我的订单",
+    "FileName" : "MyOrder.mfrm",
+    "BizobjectID" : "dc97c471-1757-f628-21f7-32ba147f3eda",
+    "Language" : null,
+    "Extendable" : false,
+    "ID" : "1fe9d960-b283-49ef-9552-5f1ce090748b",
+    "IsTranslating" : false
+  },
+  "Refs" : [ {
+    "DependentMetadata" : {
+      "ID" : "3e702c63-a9cd-4431-b15e-48273b69fd0c",
+      "CertId" : null,
+      "NameSpace" : "Inspur.GS.HotWave.OrderMrg.MyOrder",
+      "Code" : "MyOrder.mfrm",
+      "Name" : "MyOrder.mfrm",
+      "Type" : "ResourceMetadata",
+      "BizobjectID" : "dc97c471-1757-f628-21f7-32ba147f3eda"
+    }
+  } ],
+  "Content" : {
+    "code" : null,
+    "name" : null,
+    "Id" : "1fe9d960-b283-49ef-9552-5f1ce090748b",
+    "Contents" : {
+      "module" : {
+        "id" : "MyOrder",
+        "code" : "MyOrder",
+        "name" : "我的订单",
+        "caption" : "我的订单",
+        "type" : "Module",
+        "creator" : "hyy",
+        "creationDate" : "2023-06-30T02:25:18.495Z",
+        "updateVersion" : "191104",
+        "showTitle" : true,
+        "bootstrap" : "list-card-template",
+        "schemas" : [ {
+          "name" : "我的订单_mfrm",
+          "id" : "76eb076b-afc1-43f7-a4fc-c0b7a1040c44",
+          "extendProperties" : {
+            "enableStdTimeFormat" : true
+          },
+          "code" : "MyOrder_mfrm",
+          "sourceType" : "vo",
+          "variables" : [ ],
+          "sourceUri" : "api/hotwave/ordermrg/v1.0/MyOrder_mfrm",
+          "entities" : [ {
+            "name" : "业务订单",
+            "id" : "55c2fe12-5bd9-4762-8d4b-27f2dec2723d",
+            "type" : {
+              "$type" : "EntityType",
+              "fields" : [ {
+                "$type" : "SimpleField",
+                "require" : true,
+                "multiLanguage" : false,
+                "defaultValue" : "",
+                "readonly" : false,
+                "editor" : {
+                  "$type" : "TextBox"
+                },
+                "name" : "主键",
+                "id" : "a02208e0-1bae-4c16-9a7d-a2064f519d7b",
+                "type" : {
+                  "$type" : "StringType",
+                  "length" : 36,
+                  "name" : "String",
+                  "displayName" : "字符串"
+                },
+                "path" : "ID",
+                "code" : "ID",
+                "label" : "id",
+                "originalId" : "a02208e0-1bae-4c16-9a7d-a2064f519d7b",
+                "bindingField" : "id",
+                "bindingPath" : "id"
+              }, {
+                "$type" : "SimpleField",
+                "require" : false,
+                "multiLanguage" : false,
+                "defaultValue" : "",
+                "readonly" : false,
+                "editor" : {
+                  "$type" : "DateBox",
+                  "format" : "'yyyy-MM-dd'"
+                },
+                "name" : "版本",
+                "id" : "e9b72957-77a5-4a50-90e7-7d945e489ba3",
+                "type" : {
+                  "$type" : "DateTimeType",
+                  "name" : "DateTime",
+                  "displayName" : "日期时间"
+                },
+                "path" : "Version",
+                "code" : "Version",
+                "label" : "version",
+                "originalId" : "e9b72957-77a5-4a50-90e7-7d945e489ba3",
+                "bindingField" : "version",
+                "bindingPath" : "version"
+              }, {
+                "$type" : "SimpleField",
+                "require" : false,
+                "multiLanguage" : false,
+                "defaultValue" : "",
+                "readonly" : false,
+                "editor" : {
+                  "$type" : "TextBox"
+                },
+                "name" : "订单编号",
+                "id" : "06734cb9-a95c-4fa3-9654-0a56d6fa1fff",
+                "type" : {
+                  "$type" : "StringType",
+                  "length" : 36,
+                  "name" : "String",
+                  "displayName" : "字符串"
+                },
+                "path" : "OrderCode",
+                "code" : "OrderCode",
+                "label" : "orderCode",
+                "originalId" : "06734cb9-a95c-4fa3-9654-0a56d6fa1fff",
+                "bindingField" : "orderCode",
+                "bindingPath" : "orderCode"
+              }, {
+                "$type" : "ComplexField",
+                "name" : "商户",
+                "id" : "b020ff65-ac2d-456a-a3aa-1ed722341bd7",
+                "type" : {
+                  "$type" : "EntityType",
+                  "fields" : [ {
+                    "$type" : "SimpleField",
+                    "require" : false,
+                    "multiLanguage" : false,
+                    "defaultValue" : "",
+                    "readonly" : false,
+                    "editor" : {
+                      "$type" : "TextBox"
+                    },
+                    "name" : "商户",
+                    "id" : "96976ac9-3bb4-4663-8f10-887f7a17d914",
+                    "type" : {
+                      "$type" : "StringType",
+                      "length" : 36,
+                      "name" : "String",
+                      "displayName" : "字符串"
+                    },
+                    "path" : "Merchant.Merchant",
+                    "code" : "Merchant",
+                    "label" : "merchant",
+                    "originalId" : "96976ac9-3bb4-4663-8f10-887f7a17d914",
+                    "bindingField" : "merchant",
+                    "bindingPath" : "merchant.merchant"
+                  }, {
+                    "$type" : "SimpleField",
+                    "require" : false,
+                    "multiLanguage" : false,
+                    "defaultValue" : "",
+                    "readonly" : false,
+                    "editor" : {
+                      "$type" : "TextBox"
+                    },
+                    "name" : "商户名称",
+                    "id" : "cd7315ed-93a3-4a96-a5ea-c4e380b33f32",
+                    "type" : {
+                      "$type" : "StringType",
+                      "length" : 36,
+                      "name" : "String",
+                      "displayName" : "字符串"
+                    },
+                    "path" : "Merchant.Merchant_MerchantName",
+                    "code" : "MerchantName",
+                    "label" : "merchant_MerchantName",
+                    "originalId" : "cd7315ed-93a3-4a96-a5ea-c4e380b33f32",
+                    "bindingField" : "merchant_Merchant_MerchantName",
+                    "bindingPath" : "merchant.merchant_MerchantName"
+                  }, {
+                    "$type" : "SimpleField",
+                    "require" : false,
+                    "multiLanguage" : false,
+                    "defaultValue" : "",
+                    "readonly" : false,
+                    "editor" : {
+                      "$type" : "TextBox"
+                    },
+                    "name" : "商户编号",
+                    "id" : "384ad53e-f11a-4aa9-a95e-34cdd6c70f50",
+                    "type" : {
+                      "$type" : "StringType",
+                      "length" : 36,
+                      "name" : "String",
+                      "displayName" : "字符串"
+                    },
+                    "path" : "Merchant.Merchant_MerchantCode",
+                    "code" : "MerchantCode",
+                    "label" : "merchant_MerchantCode",
+                    "originalId" : "384ad53e-f11a-4aa9-a95e-34cdd6c70f50",
+                    "bindingField" : "merchant_Merchant_MerchantCode",
+                    "bindingPath" : "merchant.merchant_MerchantCode"
+                  } ],
+                  "primary" : "merchant",
+                  "entities" : [ ],
+                  "name" : "MerChant9697",
+                  "displayName" : "商户"
+                },
+                "path" : "Merchant",
+                "code" : "Merchant",
+                "label" : "merchant",
+                "originalId" : "b020ff65-ac2d-456a-a3aa-1ed722341bd7",
+                "bindingField" : "merchant",
+                "bindingPath" : "merchant"
+              }, {
+                "$type" : "SimpleField",
+                "require" : false,
+                "multiLanguage" : false,
+                "defaultValue" : "",
+                "readonly" : false,
+                "editor" : {
+                  "$type" : "TextBox"
+                },
+                "name" : "下单时间",
+                "id" : "587a0fbd-82a4-4c57-a653-abcc81736104",
+                "type" : {
+                  "$type" : "StringType",
+                  "length" : 30,
+                  "name" : "String",
+                  "displayName" : "字符串"
+                },
+                "path" : "OrderTime",
+                "code" : "OrderTime",
+                "label" : "orderTime",
+                "originalId" : "587a0fbd-82a4-4c57-a653-abcc81736104",
+                "bindingField" : "orderTime",
+                "bindingPath" : "orderTime"
+              }, {
+                "$type" : "SimpleField",
+                "require" : false,
+                "multiLanguage" : false,
+                "defaultValue" : "",
+                "readonly" : false,
+                "editor" : {
+                  "$type" : "EnumField"
+                },
+                "name" : "支付方式",
+                "id" : "6c4da08d-937f-41ed-b660-0f4b48929292",
+                "type" : {
+                  "$type" : "EnumType",
+                  "enumValues" : [ {
+                    "name" : "现金",
+                    "value" : "Cash"
+                  }, {
+                    "name" : "支付宝",
+                    "value" : "AliPay"
+                  }, {
+                    "name" : "微信支付",
+                    "value" : "WeChat"
+                  }, {
+                    "name" : "银联",
+                    "value" : "UPay"
+                  } ],
+                  "name" : "Enum",
+                  "displayName" : "枚举",
+                  "valueType" : {
+                    "$type" : "StringType",
+                    "length" : 20,
+                    "name" : "String",
+                    "displayName" : "字符串"
+                  }
+                },
+                "path" : "PayMethod",
+                "code" : "PayMethod",
+                "label" : "payMethod",
+                "originalId" : "6c4da08d-937f-41ed-b660-0f4b48929292",
+                "bindingField" : "payMethod",
+                "bindingPath" : "payMethod"
+              }, {
+                "$type" : "ComplexField",
+                "name" : "下单人",
+                "id" : "0c2f3b08-52e6-49ca-8c03-cbc06c6b7533",
+                "type" : {
+                  "$type" : "EntityType",
+                  "fields" : [ {
+                    "$type" : "SimpleField",
+                    "require" : false,
+                    "multiLanguage" : false,
+                    "defaultValue" : "",
+                    "readonly" : false,
+                    "editor" : {
+                      "$type" : "TextBox"
+                    },
+                    "name" : "下单人",
+                    "id" : "771cf8b5-c0e8-42d1-8da0-de6ac2498afb",
+                    "type" : {
+                      "$type" : "StringType",
+                      "length" : 36,
+                      "name" : "String",
+                      "displayName" : "字符串"
+                    },
+                    "path" : "OrderPerson.OrderPerson",
+                    "code" : "OrderPerson",
+                    "label" : "orderPerson",
+                    "originalId" : "771cf8b5-c0e8-42d1-8da0-de6ac2498afb",
+                    "bindingField" : "orderPerson",
+                    "bindingPath" : "orderPerson.orderPerson"
+                  }, {
+                    "$type" : "SimpleField",
+                    "require" : false,
+                    "multiLanguage" : false,
+                    "defaultValue" : "",
+                    "readonly" : false,
+                    "editor" : {
+                      "$type" : "TextBox"
+                    },
+                    "name" : "编号",
+                    "id" : "840572fa-41b2-406a-a181-6aeae32819e0",
+                    "type" : {
+                      "$type" : "StringType",
+                      "length" : 120,
+                      "name" : "String",
+                      "displayName" : "字符串"
+                    },
+                    "path" : "OrderPerson.OrderPerson_code",
+                    "code" : "code",
+                    "label" : "orderPerson_code",
+                    "originalId" : "840572fa-41b2-406a-a181-6aeae32819e0",
+                    "bindingField" : "orderPerson_OrderPerson_code",
+                    "bindingPath" : "orderPerson.orderPerson_code"
+                  }, {
+                    "$type" : "SimpleField",
+                    "require" : false,
+                    "multiLanguage" : false,
+                    "defaultValue" : "",
+                    "readonly" : false,
+                    "editor" : {
+                      "$type" : "TextBox"
+                    },
+                    "name" : "名称",
+                    "id" : "11731501-3b78-48d6-83b4-a0877d5e4980",
+                    "type" : {
+                      "$type" : "StringType",
+                      "length" : 120,
+                      "name" : "String",
+                      "displayName" : "字符串"
+                    },
+                    "path" : "OrderPerson.OrderPerson_name",
+                    "code" : "name",
+                    "label" : "orderPerson_name",
+                    "originalId" : "11731501-3b78-48d6-83b4-a0877d5e4980",
+                    "bindingField" : "orderPerson_OrderPerson_name",
+                    "bindingPath" : "orderPerson.orderPerson_name"
+                  } ],
+                  "primary" : "orderPerson",
+                  "entities" : [ ],
+                  "name" : "GspUserWithOrgName771c",
+                  "displayName" : "系统用户"
+                },
+                "path" : "OrderPerson",
+                "code" : "OrderPerson",
+                "label" : "orderPerson",
+                "originalId" : "0c2f3b08-52e6-49ca-8c03-cbc06c6b7533",
+                "bindingField" : "orderPerson",
+                "bindingPath" : "orderPerson"
+              }, {
+                "$type" : "SimpleField",
+                "require" : false,
+                "multiLanguage" : false,
+                "defaultValue" : "",
+                "readonly" : false,
+                "editor" : {
+                  "$type" : "TextBox"
+                },
+                "name" : "联系电话",
+                "id" : "1a92292c-299a-42a9-8aab-6e3a0835bd93",
+                "type" : {
+                  "$type" : "StringType",
+                  "length" : 20,
+                  "name" : "String",
+                  "displayName" : "字符串"
+                },
+                "path" : "Telephone",
+                "code" : "Telephone",
+                "label" : "telephone",
+                "originalId" : "1a92292c-299a-42a9-8aab-6e3a0835bd93",
+                "bindingField" : "telephone",
+                "bindingPath" : "telephone"
+              }, {
+                "$type" : "SimpleField",
+                "require" : false,
+                "multiLanguage" : false,
+                "defaultValue" : "",
+                "readonly" : false,
+                "editor" : {
+                  "$type" : "EnumField"
+                },
+                "name" : "发货状态",
+                "id" : "f9fecfd2-0d8e-47ab-840f-c1e9e2093c1a",
+                "type" : {
+                  "$type" : "EnumType",
+                  "enumValues" : [ {
+                    "name" : "未发货",
+                    "value" : "UnShipped"
+                  }, {
+                    "name" : "已发货",
+                    "value" : "Shipped"
+                  }, {
+                    "name" : "已收货",
+                    "value" : "Done"
+                  } ],
+                  "name" : "Enum",
+                  "displayName" : "枚举",
+                  "valueType" : {
+                    "$type" : "StringType",
+                    "length" : 20,
+                    "name" : "String",
+                    "displayName" : "字符串"
+                  }
+                },
+                "path" : "SendState",
+                "code" : "SendState",
+                "label" : "sendState",
+                "originalId" : "f9fecfd2-0d8e-47ab-840f-c1e9e2093c1a",
+                "bindingField" : "sendState",
+                "bindingPath" : "sendState"
+              }, {
+                "$type" : "SimpleField",
+                "require" : false,
+                "multiLanguage" : false,
+                "defaultValue" : "",
+                "readonly" : false,
+                "editor" : {
+                  "$type" : "TextBox"
+                },
+                "name" : "备注",
+                "id" : "1c190570-0a0a-4777-a377-672d2fb0ab4e",
+                "type" : {
+                  "$type" : "StringType",
+                  "length" : 100,
+                  "name" : "String",
+                  "displayName" : "字符串"
+                },
+                "path" : "Remark",
+                "code" : "Remark",
+                "label" : "remark",
+                "originalId" : "1c190570-0a0a-4777-a377-672d2fb0ab4e",
+                "bindingField" : "remark",
+                "bindingPath" : "remark"
+              }, {
+                "$type" : "SimpleField",
+                "require" : false,
+                "multiLanguage" : false,
+                "defaultValue" : "",
+                "readonly" : false,
+                "editor" : {
+                  "$type" : "NumericBox"
+                },
+                "name" : "订单金额",
+                "id" : "665a652d-33f2-476f-9b10-3e2477b048b5",
+                "type" : {
+                  "$type" : "NumericType",
+                  "length" : 10,
+                  "name" : "Number",
+                  "displayName" : "数字",
+                  "precision" : 2
+                },
+                "path" : "TotalPrice",
+                "code" : "TotalPrice",
+                "label" : "totalPrice",
+                "originalId" : "665a652d-33f2-476f-9b10-3e2477b048b5",
+                "bindingField" : "totalPrice",
+                "bindingPath" : "totalPrice"
+              }, {
+                "$type" : "SimpleField",
+                "require" : false,
+                "multiLanguage" : false,
+                "defaultValue" : "",
+                "readonly" : false,
+                "editor" : {
+                  "$type" : "NumericBox"
+                },
+                "name" : "折扣优惠",
+                "id" : "93a4a1f1-6257-495b-bfc6-e8633a7bbf70",
+                "type" : {
+                  "$type" : "NumericType",
+                  "length" : 10,
+                  "name" : "Number",
+                  "displayName" : "数字",
+                  "precision" : 2
+                },
+                "path" : "TotalDiscounts",
+                "code" : "TotalDiscounts",
+                "label" : "totalDiscounts",
+                "originalId" : "93a4a1f1-6257-495b-bfc6-e8633a7bbf70",
+                "bindingField" : "totalDiscounts",
+                "bindingPath" : "totalDiscounts"
+              }, {
+                "$type" : "SimpleField",
+                "require" : false,
+                "multiLanguage" : false,
+                "defaultValue" : "",
+                "readonly" : false,
+                "editor" : {
+                  "$type" : "NumericBox"
+                },
+                "name" : "合计实付",
+                "id" : "38551253-2252-44fa-b497-312cdf99af4b",
+                "type" : {
+                  "$type" : "NumericType",
+                  "length" : 10,
+                  "name" : "Number",
+                  "displayName" : "数字",
+                  "precision" : 2
+                },
+                "path" : "ActualPay",
+                "code" : "ActualPay",
+                "label" : "actualPay",
+                "originalId" : "38551253-2252-44fa-b497-312cdf99af4b",
+                "bindingField" : "actualPay",
+                "bindingPath" : "actualPay"
+              }, {
+                "$type" : "SimpleField",
+                "require" : false,
+                "multiLanguage" : false,
+                "defaultValue" : "",
+                "readonly" : false,
+                "editor" : {
+                  "$type" : "TextBox"
+                },
+                "name" : "订单来源",
+                "id" : "49795524-d959-4b11-ad23-e310657d9566",
+                "type" : {
+                  "$type" : "StringType",
+                  "length" : 20,
+                  "name" : "String",
+                  "displayName" : "字符串"
+                },
+                "path" : "OrderSource",
+                "code" : "OrderSource",
+                "label" : "orderSource",
+                "originalId" : "49795524-d959-4b11-ad23-e310657d9566",
+                "bindingField" : "orderSource",
+                "bindingPath" : "orderSource"
+              } ],
+              "primary" : "id",
+              "entities" : [ {
+                "name" : "订单明细",
+                "id" : "864776cb-f206-485d-bddd-6f339dfd92ee",
+                "type" : {
+                  "$type" : "EntityType",
+                  "fields" : [ {
+                    "$type" : "SimpleField",
+                    "require" : true,
+                    "multiLanguage" : false,
+                    "defaultValue" : "",
+                    "readonly" : false,
+                    "editor" : {
+                      "$type" : "TextBox"
+                    },
+                    "name" : "主键",
+                    "id" : "0d4562cd-bf26-4160-b433-ff79ba79d62e",
+                    "type" : {
+                      "$type" : "StringType",
+                      "length" : 36,
+                      "name" : "String",
+                      "displayName" : "字符串"
+                    },
+                    "path" : "ID",
+                    "code" : "ID",
+                    "label" : "id",
+                    "originalId" : "0d4562cd-bf26-4160-b433-ff79ba79d62e",
+                    "bindingField" : "id",
+                    "bindingPath" : "id"
+                  }, {
+                    "$type" : "SimpleField",
+                    "require" : true,
+                    "multiLanguage" : false,
+                    "defaultValue" : "",
+                    "readonly" : false,
+                    "editor" : {
+                      "$type" : "TextBox"
+                    },
+                    "name" : "上级对象主键",
+                    "id" : "b2e992f7-2369-4aa0-af79-e3be281373ca",
+                    "type" : {
+                      "$type" : "StringType",
+                      "length" : 36,
+                      "name" : "String",
+                      "displayName" : "字符串"
+                    },
+                    "path" : "ParentID",
+                    "code" : "ParentID",
+                    "label" : "parentID",
+                    "originalId" : "b2e992f7-2369-4aa0-af79-e3be281373ca",
+                    "bindingField" : "parentID",
+                    "bindingPath" : "parentID"
+                  }, {
+                    "$type" : "ComplexField",
+                    "name" : "商品",
+                    "id" : "6b901561-aae8-4e51-a173-1bed291f758c",
+                    "type" : {
+                      "$type" : "EntityType",
+                      "fields" : [ {
+                        "$type" : "SimpleField",
+                        "require" : false,
+                        "multiLanguage" : false,
+                        "defaultValue" : "",
+                        "readonly" : false,
+                        "editor" : {
+                          "$type" : "TextBox"
+                        },
+                        "name" : "商品",
+                        "id" : "d3829541-fe43-4618-9e7b-da3e04fb7b94",
+                        "type" : {
+                          "$type" : "StringType",
+                          "length" : 36,
+                          "name" : "String",
+                          "displayName" : "字符串"
+                        },
+                        "path" : "Goods.Goods",
+                        "code" : "Goods",
+                        "label" : "goods",
+                        "originalId" : "d3829541-fe43-4618-9e7b-da3e04fb7b94",
+                        "bindingField" : "goods",
+                        "bindingPath" : "goods.goods"
+                      }, {
+                        "$type" : "SimpleField",
+                        "require" : false,
+                        "multiLanguage" : false,
+                        "defaultValue" : "",
+                        "readonly" : false,
+                        "editor" : {
+                          "$type" : "TextBox"
+                        },
+                        "name" : "商品名称",
+                        "id" : "ff7e490c-8873-4bcd-bdfc-fff265a58484",
+                        "type" : {
+                          "$type" : "StringType",
+                          "length" : 36,
+                          "name" : "String",
+                          "displayName" : "字符串"
+                        },
+                        "path" : "Goods.Goods_GoodsName",
+                        "code" : "GoodsName",
+                        "label" : "goods_GoodsName",
+                        "originalId" : "ff7e490c-8873-4bcd-bdfc-fff265a58484",
+                        "bindingField" : "goods_Goods_GoodsName",
+                        "bindingPath" : "goods.goods_GoodsName"
+                      }, {
+                        "$type" : "SimpleField",
+                        "require" : false,
+                        "multiLanguage" : false,
+                        "defaultValue" : "",
+                        "readonly" : false,
+                        "editor" : {
+                          "$type" : "TextBox"
+                        },
+                        "name" : "商品编号",
+                        "id" : "d205c619-61a1-49f1-bc3e-4f83288aefd7",
+                        "type" : {
+                          "$type" : "StringType",
+                          "length" : 36,
+                          "name" : "String",
+                          "displayName" : "字符串"
+                        },
+                        "path" : "Goods.Goods_GoodsCode",
+                        "code" : "GoodsCode",
+                        "label" : "goods_GoodsCode",
+                        "originalId" : "d205c619-61a1-49f1-bc3e-4f83288aefd7",
+                        "bindingField" : "goods_Goods_GoodsCode",
+                        "bindingPath" : "goods.goods_GoodsCode"
+                      } ],
+                      "primary" : "goods",
+                      "entities" : [ ],
+                      "name" : "GoodsD382",
+                      "displayName" : "商品"
+                    },
+                    "path" : "Goods",
+                    "code" : "Goods",
+                    "label" : "goods",
+                    "originalId" : "6b901561-aae8-4e51-a173-1bed291f758c",
+                    "bindingField" : "goods",
+                    "bindingPath" : "goods"
+                  }, {
+                    "$type" : "SimpleField",
+                    "require" : false,
+                    "multiLanguage" : false,
+                    "defaultValue" : "",
+                    "readonly" : false,
+                    "editor" : {
+                      "$type" : "TextBox"
+                    },
+                    "name" : "规格型号",
+                    "id" : "d5915cfb-ef66-405a-8961-f08807cf565a",
+                    "type" : {
+                      "$type" : "StringType",
+                      "length" : 36,
+                      "name" : "String",
+                      "displayName" : "字符串"
+                    },
+                    "path" : "Specification",
+                    "code" : "Specification",
+                    "label" : "specification",
+                    "originalId" : "d5915cfb-ef66-405a-8961-f08807cf565a",
+                    "bindingField" : "specification",
+                    "bindingPath" : "specification"
+                  }, {
+                    "$type" : "SimpleField",
+                    "require" : false,
+                    "multiLanguage" : false,
+                    "defaultValue" : "",
+                    "readonly" : false,
+                    "editor" : {
+                      "$type" : "NumericBox"
+                    },
+                    "name" : "数量",
+                    "id" : "c69ad672-44da-4529-936f-1913712118a5",
+                    "type" : {
+                      "$type" : "NumericType",
+                      "length" : 0,
+                      "name" : "Number",
+                      "displayName" : "数字",
+                      "precision" : 0
+                    },
+                    "path" : "Quality",
+                    "code" : "Quality",
+                    "label" : "quality",
+                    "originalId" : "c69ad672-44da-4529-936f-1913712118a5",
+                    "bindingField" : "quality",
+                    "bindingPath" : "quality"
+                  }, {
+                    "$type" : "SimpleField",
+                    "require" : false,
+                    "multiLanguage" : false,
+                    "defaultValue" : "",
+                    "readonly" : false,
+                    "editor" : {
+                      "$type" : "NumericBox"
+                    },
+                    "name" : "标准单价",
+                    "id" : "fa3a5332-d226-40d9-90d7-bd36d94530c2",
+                    "type" : {
+                      "$type" : "NumericType",
+                      "length" : 10,
+                      "name" : "Number",
+                      "displayName" : "数字",
+                      "precision" : 2
+                    },
+                    "path" : "Price",
+                    "code" : "Price",
+                    "label" : "price",
+                    "originalId" : "fa3a5332-d226-40d9-90d7-bd36d94530c2",
+                    "bindingField" : "price",
+                    "bindingPath" : "price"
+                  }, {
+                    "$type" : "SimpleField",
+                    "require" : false,
+                    "multiLanguage" : false,
+                    "defaultValue" : "",
+                    "readonly" : false,
+                    "editor" : {
+                      "$type" : "NumericBox"
+                    },
+                    "name" : "金额",
+                    "id" : "60933c19-ddef-49f4-a2b3-f27a54407389",
+                    "type" : {
+                      "$type" : "NumericType",
+                      "length" : 10,
+                      "name" : "Number",
+                      "displayName" : "数字",
+                      "precision" : 2
+                    },
+                    "path" : "Amount",
+                    "code" : "Amount",
+                    "label" : "amount",
+                    "originalId" : "60933c19-ddef-49f4-a2b3-f27a54407389",
+                    "bindingField" : "amount",
+                    "bindingPath" : "amount"
+                  }, {
+                    "$type" : "SimpleField",
+                    "require" : false,
+                    "multiLanguage" : false,
+                    "defaultValue" : "",
+                    "readonly" : false,
+                    "editor" : {
+                      "$type" : "EnumField"
+                    },
+                    "name" : "折扣类型",
+                    "id" : "241ff11c-4e49-405c-949b-ed34fcb65867",
+                    "type" : {
+                      "$type" : "EnumType",
+                      "enumValues" : [ {
+                        "name" : "无折扣",
+                        "value" : "none"
+                      }, {
+                        "name" : "有折扣",
+                        "value" : "dis"
+                      } ],
+                      "name" : "Enum",
+                      "displayName" : "枚举",
+                      "valueType" : {
+                        "$type" : "StringType",
+                        "length" : 20,
+                        "name" : "String",
+                        "displayName" : "字符串"
+                      }
+                    },
+                    "path" : "DiscountType",
+                    "code" : "DiscountType",
+                    "label" : "discountType",
+                    "originalId" : "241ff11c-4e49-405c-949b-ed34fcb65867",
+                    "bindingField" : "discountType",
+                    "bindingPath" : "discountType"
+                  }, {
+                    "$type" : "SimpleField",
+                    "require" : false,
+                    "multiLanguage" : false,
+                    "defaultValue" : "",
+                    "readonly" : false,
+                    "editor" : {
+                      "$type" : "NumericBox"
+                    },
+                    "name" : "折扣金额",
+                    "id" : "35d1275d-8fb9-498a-a0bb-a22ae661223c",
+                    "type" : {
+                      "$type" : "NumericType",
+                      "length" : 10,
+                      "name" : "Number",
+                      "displayName" : "数字",
+                      "precision" : 2
+                    },
+                    "path" : "Discount",
+                    "code" : "Discount",
+                    "label" : "discount",
+                    "originalId" : "35d1275d-8fb9-498a-a0bb-a22ae661223c",
+                    "bindingField" : "discount",
+                    "bindingPath" : "discount"
+                  }, {
+                    "$type" : "SimpleField",
+                    "require" : false,
+                    "multiLanguage" : false,
+                    "defaultValue" : "",
+                    "readonly" : false,
+                    "editor" : {
+                      "$type" : "NumericBox"
+                    },
+                    "name" : "实际结算金额",
+                    "id" : "6a0da038-eac5-4268-8be9-7f245ac980f6",
+                    "type" : {
+                      "$type" : "NumericType",
+                      "length" : 10,
+                      "name" : "Number",
+                      "displayName" : "数字",
+                      "precision" : 2
+                    },
+                    "path" : "ActualAmount",
+                    "code" : "ActualAmount",
+                    "label" : "actualAmount",
+                    "originalId" : "6a0da038-eac5-4268-8be9-7f245ac980f6",
+                    "bindingField" : "actualAmount",
+                    "bindingPath" : "actualAmount"
+                  }, {
+                    "$type" : "SimpleField",
+                    "require" : false,
+                    "multiLanguage" : false,
+                    "defaultValue" : "",
+                    "readonly" : false,
+                    "editor" : {
+                      "$type" : "TextBox"
+                    },
+                    "name" : "备注",
+                    "id" : "7b409db5-ae84-4d9b-890e-d2d1a186c1f8",
+                    "type" : {
+                      "$type" : "StringType",
+                      "length" : 100,
+                      "name" : "String",
+                      "displayName" : "字符串"
+                    },
+                    "path" : "Remark",
+                    "code" : "Remark",
+                    "label" : "remark",
+                    "originalId" : "7b409db5-ae84-4d9b-890e-d2d1a186c1f8",
+                    "bindingField" : "remark",
+                    "bindingPath" : "remark"
+                  } ],
+                  "primary" : "id",
+                  "entities" : [ ],
+                  "name" : "OrderDetail",
+                  "displayName" : "订单明细"
+                },
+                "code" : "OrderDetail",
+                "label" : "orderDetails"
+              } ],
+              "name" : "SaleOrder",
+              "displayName" : "业务订单"
+            },
+            "code" : "SaleOrder",
+            "label" : "saleOrders"
+          } ],
+          "eapiId" : "24c6f831-8e65-415f-b8a5-1f594b9d221e"
+        } ],
+        "states" : [ ],
+        "contents" : [ ],
+        "stateMachines" : [ {
+          "id" : "MyOrder_list-page-component_state_machine",
+          "name" : "我的订单_list-page-component状态机",
+          "uri" : "599490c0-560c-4c7f-a774-bdcf7271dd2f"
+        }, {
+          "id" : "MyOrder_card-page-component_state_machine",
+          "name" : "我的订单_card-page-component状态机",
+          "uri" : "99d06a1d-13ec-43f1-bccc-f7493a71d872"
+        }, {
+          "id" : "MyOrder_root-component-6a869f8_state_machine",
+          "name" : "我的订单_root-component-6a869f8状态机",
+          "uri" : "bd841314-4106-42eb-82be-de08d28e8a05"
+        } ],
+        "viewmodels" : [ {
+          "id" : "list-page-viewmodel",
+          "code" : "list-page-viewmodel",
+          "name" : "业务订单",
+          "fields" : [ ],
+          "commands" : [ {
+            "id" : "fb2e2d4c-b6b5-49c0-a2dc-7a6a983561ba",
+            "code" : "LoadForList",
+            "name" : "列表加载命令",
+            "params" : [ {
+              "name" : "filters",
+              "shownName" : "过滤条件",
+              "value" : "[]",
+              "description" : null
+            }, {
+              "name" : "sorts",
+              "shownName" : "排序条件",
+              "value" : "[]",
+              "description" : null
+            } ],
+            "handlerName" : "LoadForList",
+            "cmpId" : "0a68799b-48c6-4c9f-b0d7-140683c62b58",
+            "shortcut" : { },
+            "extensions" : [ ]
+          }, {
+            "id" : "ee361d44-7b4c-45d6-87c2-f8caa3ae25af",
+            "code" : "OpenCardAndAdd",
+            "name" : "打开卡片并新增命令",
+            "params" : [ {
+              "name" : "path",
+              "shownName" : "路由地址",
+              "value" : "/MyOrder/card-page-component",
+              "description" : null
+            }, {
+              "name" : "queryParams",
+              "shownName" : "路由参数",
+              "value" : "{ \"action\": \"LoadAndAddForCard\" }",
+              "description" : null
+            } ],
+            "handlerName" : "Navigate",
+            "cmpId" : "910661bd-963a-4287-aa32-441c95b8720f",
+            "shortcut" : { },
+            "extensions" : [ ]
+          }, {
+            "id" : "b036c847-9fb1-42ad-aaba-5be2fb6a4422",
+            "code" : "RemoveById",
+            "name" : "删除命令",
+            "params" : [ {
+              "name" : "id",
+              "shownName" : "要删除数据的id",
+              "value" : "{DATA~/list-listview-component/id}",
+              "description" : "必填，要删除的数据id"
+            } ],
+            "handlerName" : "RemoveById",
+            "cmpId" : "dab6b7f1-f56f-490a-879c-3d74232cd3ba",
+            "shortcut" : { },
+            "extensions" : [ ]
+          }, {
+            "id" : "b84e2ff8-65f4-44f2-b7fb-60a464cb3382",
+            "code" : "LoadListPage",
+            "name" : "列表页面加载命令",
+            "params" : [ {
+              "name" : "commandName",
+              "shownName" : "命令名称",
+              "value" : "LoadForList",
+              "description" : "执行命令"
+            }, {
+              "name" : "id",
+              "shownName" : "视图模型id",
+              "value" : "",
+              "description" : "执行命令为当前视图模型下可不填"
+            } ],
+            "handlerName" : "LoadListPage",
+            "cmpId" : "cf5e568a-5243-4539-94ea-e195eb4d6736",
+            "shortcut" : { },
+            "extensions" : [ ]
+          } ],
+          "serviceRefs" : [ ],
+          "states" : [ ],
+          "bindTo" : "/",
+          "parent" : null,
+          "stateMachine" : "MyOrder_list-page-component_state_machine",
+          "enableValidation" : false
+        }, {
+          "id" : "list-listview-viewmodel",
+          "code" : "list-listview-viewmodel",
+          "name" : "业务订单",
+          "fields" : [ {
+            "type" : "Form",
+            "id" : "06734cb9-a95c-4fa3-9654-0a56d6fa1fff",
+            "fieldName" : "orderCode",
+            "groupId" : null,
+            "groupName" : null,
+            "updateOn" : "blur"
+          }, {
+            "type" : "Form",
+            "id" : "cd7315ed-93a3-4a96-a5ea-c4e380b33f32",
+            "fieldName" : "merchant_Merchant_MerchantName",
+            "groupId" : null,
+            "groupName" : null,
+            "updateOn" : "blur"
+          }, {
+            "type" : "Form",
+            "id" : "384ad53e-f11a-4aa9-a95e-34cdd6c70f50",
+            "fieldName" : "merchant_Merchant_MerchantCode",
+            "groupId" : null,
+            "groupName" : null,
+            "updateOn" : "blur"
+          }, {
+            "type" : "Form",
+            "id" : "587a0fbd-82a4-4c57-a653-abcc81736104",
+            "fieldName" : "orderTime",
+            "groupId" : null,
+            "groupName" : null,
+            "updateOn" : "blur"
+          }, {
+            "type" : "Form",
+            "id" : "6c4da08d-937f-41ed-b660-0f4b48929292",
+            "fieldName" : "payMethod",
+            "groupId" : null,
+            "groupName" : null,
+            "updateOn" : "change"
+          }, {
+            "type" : "Form",
+            "id" : "11731501-3b78-48d6-83b4-a0877d5e4980",
+            "fieldName" : "orderPerson_OrderPerson_name",
+            "groupId" : null,
+            "groupName" : null,
+            "updateOn" : "blur"
+          }, {
+            "type" : "Form",
+            "id" : "1a92292c-299a-42a9-8aab-6e3a0835bd93",
+            "fieldName" : "telephone",
+            "groupId" : null,
+            "groupName" : null,
+            "updateOn" : "blur"
+          }, {
+            "type" : "Form",
+            "id" : "f9fecfd2-0d8e-47ab-840f-c1e9e2093c1a",
+            "fieldName" : "sendState",
+            "groupId" : null,
+            "groupName" : null,
+            "updateOn" : "change"
+          }, {
+            "type" : "Form",
+            "id" : "665a652d-33f2-476f-9b10-3e2477b048b5",
+            "fieldName" : "totalPrice",
+            "groupId" : null,
+            "groupName" : null,
+            "updateOn" : "blur"
+          }, {
+            "type" : "Form",
+            "id" : "38551253-2252-44fa-b497-312cdf99af4b",
+            "fieldName" : "actualPay",
+            "groupId" : null,
+            "groupName" : null,
+            "updateOn" : "blur"
+          } ],
+          "serviceRefs" : [ ],
+          "commands" : [ {
+            "id" : "c29b1026-c87d-49f9-b5d9-cbd5a080695c",
+            "code" : "OpenCardAndEdit",
+            "name" : "打开卡片并编辑命令",
+            "params" : [ {
+              "name" : "path",
+              "shownName" : "路由地址",
+              "value" : "/MyOrder/card-page-component",
+              "description" : null
+            }, {
+              "name" : "queryParams",
+              "shownName" : "携带参数",
+              "value" : "{ \"action\": \"LoadAndEditForCard\", \"id\":\"{DATA~/list-listview-component/id}\"}",
+              "description" : null
+            }, {
+              "name" : "backParams",
+              "shownName" : "返回参数",
+              "value" : "",
+              "description" : "被跳转页面调用goback命令的携带参数"
+            }, {
+              "name" : "backPath",
+              "shownName" : "返回地址",
+              "value" : "",
+              "description" : "被跳转页面的goback命令的返回地址"
+            } ],
+            "handlerName" : "Navigate",
+            "cmpId" : "910661bd-963a-4287-aa32-441c95b8720f",
+            "shortcut" : { },
+            "extensions" : [ ]
+          }, {
+            "id" : "5a2b2064-5323-4354-9323-0703ddfef941",
+            "code" : "MyOrderCom5a2b",
+            "name" : "我的订单命令5a2b",
+            "params" : [ {
+              "name" : "sendGoods_id",
+              "shownName" : "sendGoods_id",
+              "value" : "{DATA~/list-listview-component/id}",
+              "description" : null
+            }, {
+              "name" : "sendGoods_sendstate",
+              "shownName" : "sendGoods_sendstate",
+              "value" : "Done",
+              "description" : null
+            }, {
+              "name" : "loadForList_过滤条件",
+              "shownName" : "loadForList_过滤条件",
+              "value" : "{UISTATE~/list-page-component/filterState/filters}",
+              "description" : null
+            }, {
+              "name" : "loadForList_排序条件",
+              "shownName" : "loadForList_排序条件",
+              "value" : "",
+              "description" : null
+            } ],
+            "handlerName" : "MyOrderCom",
+            "cmpId" : "14a26f53-59d4-4403-b1f0-fd55d3aed845",
+            "shortcut" : { },
+            "extensions" : [ ]
+          } ],
+          "states" : [ ],
+          "bindTo" : "/",
+          "parent" : "list-page-viewmodel",
+          "pagination" : {
+            "enable" : true,
+            "pageSize" : 20
+          },
+          "enableValidation" : false
+        }, {
+          "id" : "card-page-viewmodel",
+          "code" : "card-page-viewmodel",
+          "name" : "业务订单",
+          "fields" : [ ],
+          "stateMachine" : "MyOrder_card-page-component_state_machine",
+          "serviceRefs" : [ ],
+          "commands" : [ {
+            "id" : "dd31991d-55a0-4d9e-9327-750d9b5c9300",
+            "code" : "LoadForCard",
+            "name" : "卡片加载命令",
+            "params" : [ {
+              "name" : "action",
+              "shownName" : "命令名称",
+              "value" : "{UISTATE~/card-page-component/routerState/queryParams/action}",
+              "description" : null
+            } ],
+            "handlerName" : "LoadForCard",
+            "cmpId" : "0a68799b-48c6-4c9f-b0d7-140683c62b58",
+            "shortcut" : { },
+            "extensions" : [ ]
+          }, {
+            "id" : "2326e1ee-52c7-4fe2-a0f4-a4272f673ed8",
+            "code" : "LoadAndAddForCard",
+            "name" : "卡片加载并新增命令",
+            "params" : [ {
+              "name" : "action",
+              "shownName" : "状态迁移动作",
+              "value" : "addAction",
+              "description" : null
+            } ],
+            "handlerName" : "LoadAndAddForCard",
+            "cmpId" : "0a68799b-48c6-4c9f-b0d7-140683c62b58",
+            "shortcut" : { },
+            "extensions" : [ ]
+          }, {
+            "id" : "01152ada-386d-4071-81d0-c0dcd43da34d",
+            "code" : "LoadAndEditForCard",
+            "name" : "卡片加载并编辑命令",
+            "params" : [ {
+              "name" : "id",
+              "shownName" : "id",
+              "value" : "{UISTATE~/card-page-component/routerState/queryParams/id}",
+              "description" : null
+            }, {
+              "name" : "action",
+              "shownName" : "状态迁移动作",
+              "value" : "editAction",
+              "description" : null
+            } ],
+            "handlerName" : "LoadAndEditForCard",
+            "cmpId" : "0a68799b-48c6-4c9f-b0d7-140683c62b58",
+            "shortcut" : { },
+            "extensions" : [ ]
+          }, {
+            "id" : "7cbd69ae-bfca-430e-b8c3-0560fd19822a",
+            "code" : "Save",
+            "name" : "保存命令",
+            "params" : [ {
+              "name" : "action",
+              "shownName" : "状态迁移动作",
+              "value" : "viewAction",
+              "description" : null
+            } ],
+            "handlerName" : "Save",
+            "cmpId" : "f863c66a-bf93-4d1f-9f99-bcd76009609d",
+            "shortcut" : { },
+            "extensions" : [ ]
+          }, {
+            "id" : "f005152f-fe2d-4562-b039-0fbd021d6bdf",
+            "code" : "Add",
+            "name" : "新增命令",
+            "params" : [ {
+              "name" : "action",
+              "shownName" : "状态迁移动作",
+              "value" : "addAction",
+              "description" : null
+            } ],
+            "handlerName" : "Create",
+            "cmpId" : "9ef56595-7cb7-4bbe-8f64-c6efcb7b1f9d",
+            "shortcut" : { },
+            "extensions" : [ ]
+          }, {
+            "id" : "e6292547-7c6b-4043-9b17-b0016cd2cf54",
+            "code" : "Cancel",
+            "name" : "取消命令",
+            "params" : [ {
+              "name" : "id",
+              "shownName" : "数据id",
+              "value" : "{DATA~/card-page-component/id}",
+              "description" : null
+            }, {
+              "name" : "action",
+              "shownName" : "迁移动作",
+              "value" : "cancelAction",
+              "description" : null
+            } ],
+            "handlerName" : "Cancel",
+            "cmpId" : "05592163-fd45-474e-b0ab-61d7dc02e5c0",
+            "shortcut" : { },
+            "extensions" : [ ]
+          }, {
+            "id" : "c589c6e1-9d90-4a58-8185-b48b5c33b9c9",
+            "code" : "GoBackToList",
+            "name" : "返回列表命令",
+            "params" : [ {
+              "name" : "path",
+              "shownName" : "路由地址",
+              "value" : "/MyOrder/list-page-component",
+              "description" : null
+            }, {
+              "name" : "queryParams",
+              "shownName" : "路由参数",
+              "value" : "{}",
+              "description" : null
+            } ],
+            "handlerName" : "Navigate",
+            "cmpId" : "910661bd-963a-4287-aa32-441c95b8720f",
+            "shortcut" : { },
+            "extensions" : [ ]
+          }, {
+            "id" : "316a0d01-e53f-4e89-a1bc-d8e9e9c63f6f",
+            "code" : "GoBackAndCheck",
+            "name" : "返回并检查",
+            "params" : [ {
+              "name" : "params",
+              "shownName" : "返回携带参数",
+              "value" : "{}",
+              "description" : null
+            } ],
+            "handlerName" : "GoBackAndCheck",
+            "cmpId" : "910661bd-963a-4287-aa32-441c95b8720f",
+            "shortcut" : { },
+            "extensions" : [ ]
+          }, {
+            "id" : "ca250346-2f6e-4156-a7ee-72e7a1e1919f",
+            "code" : "LoadCardPage",
+            "name" : "卡片页面加载命令",
+            "params" : [ {
+              "name" : "commandName",
+              "shownName" : "命令名称",
+              "value" : "{UISTATE~/card-page-component/routerState/queryParams/id}",
+              "description" : "执行命令"
+            }, {
+              "name" : "id",
+              "shownName" : "视图模型id",
+              "value" : "",
+              "description" : "执行命令为当前视图模型下可不填"
+            } ],
+            "handlerName" : "LoadCardPage",
+            "cmpId" : "cf5e568a-5243-4539-94ea-e195eb4d6736",
+            "shortcut" : { },
+            "extensions" : [ ]
+          }, {
+            "id" : "4bb1a40f-6ee2-49ff-926e-89829d66ac5e",
+            "code" : "Edit",
+            "name" : "编辑命令",
+            "params" : [ {
+              "name" : "id",
+              "shownName" : "数据id",
+              "value" : "{DATA~/card-page-component/id}",
+              "description" : null
+            }, {
+              "name" : "action",
+              "shownName" : "状态迁移动作",
+              "value" : "editAction",
+              "description" : null
+            } ],
+            "handlerName" : "Edit",
+            "cmpId" : "f458e095-a3c6-43e8-a95b-fc886f6f619e",
+            "shortcut" : { },
+            "extensions" : [ ]
+          }, {
+            "id" : "16db726f-6ccc-4b2f-a8c9-b97f27a52c5c",
+            "code" : "SubmitWithBizDefKey",
+            "name" : "提交审批",
+            "params" : [ {
+              "name" : "dataId",
+              "shownName" : "表单数据id",
+              "value" : "{DATA~/card-page-component/id}",
+              "description" : "表单数据id，通用格式为{DATA~/组件名/id}"
+            }, {
+              "name" : "bizDefKey",
+              "shownName" : "入口单据id",
+              "value" : "",
+              "description" : "gspwfflowform表中对应入口单据的id字段"
+            }, {
+              "name" : "id",
+              "shownName" : "表单数据id",
+              "value" : "{DATA~/card-page-component/id}",
+              "description" : "同表单id，提交成功后更新当前数据用"
+            }, {
+              "name" : "commandName",
+              "shownName" : "命令名称",
+              "value" : "noop",
+              "description" : "无下一步命令调用输入noop"
+            }, {
+              "name" : "viewModelId",
+              "shownName" : "视图模型id",
+              "value" : "",
+              "description" : "取当前视图模型无需填写"
+            } ],
+            "handlerName" : "SubmitWithBizDefKey",
+            "cmpId" : "91cc23fb-2ecf-418b-9700-99469eab2e84",
+            "shortcut" : { },
+            "extensions" : [ ]
+          }, {
+            "id" : "3ed3abd7-85ca-42c8-bab2-c2f33e754a92",
+            "code" : "CancelSubmitWithDataId",
+            "name" : "取消审批",
+            "params" : [ {
+              "name" : "dataId",
+              "shownName" : "表单数据id",
+              "value" : "{DATA~/card-page-component/id}",
+              "description" : "表单数据id，通用格式为{DATA~/组件名/id}"
+            }, {
+              "name" : "bizDefKey",
+              "shownName" : "入口单据id",
+              "value" : "",
+              "description" : "gspwfflowform表中对应入口单据的id字段"
+            }, {
+              "name" : "id",
+              "shownName" : "表单数据id",
+              "value" : "{DATA~/card-page-component/id}",
+              "description" : "同表单id，提交成功后更新当前数据用"
+            }, {
+              "name" : "commandName",
+              "shownName" : "命令名称",
+              "value" : "noop",
+              "description" : "无下一步命令调用输入noop"
+            }, {
+              "name" : "viewModelId",
+              "shownName" : "视图模型id",
+              "value" : "",
+              "description" : "取当前视图模型无需填写"
+            } ],
+            "handlerName" : "CancelSubmitWithDataId",
+            "cmpId" : "91cc23fb-2ecf-418b-9700-99469eab2e84",
+            "shortcut" : { },
+            "extensions" : [ ]
+          } ],
+          "states" : [ ],
+          "bindTo" : "/",
+          "parent" : null,
+          "enableValidation" : false
+        }, {
+          "id" : "card-form-viewmodel",
+          "code" : "card-form-viewmodel",
+          "name" : "业务订单",
+          "fields" : [ {
+            "type" : "Form",
+            "id" : "06734cb9-a95c-4fa3-9654-0a56d6fa1fff",
+            "fieldName" : "orderCode",
+            "groupId" : null,
+            "groupName" : null,
+            "updateOn" : "blur"
+          }, {
+            "type" : "Form",
+            "id" : "384ad53e-f11a-4aa9-a95e-34cdd6c70f50",
+            "fieldName" : "merchant_Merchant_MerchantCode",
+            "groupId" : null,
+            "groupName" : null,
+            "updateOn" : "blur"
+          }, {
+            "type" : "Form",
+            "id" : "587a0fbd-82a4-4c57-a653-abcc81736104",
+            "fieldName" : "orderTime",
+            "groupId" : null,
+            "groupName" : null,
+            "updateOn" : "blur"
+          } ],
+          "commands" : [ ],
+          "serviceRefs" : [ ],
+          "states" : [ ],
+          "bindTo" : "/",
+          "parent" : "card-page-viewmodel",
+          "enableValidation" : false
+        }, {
+          "id" : "listview-viewmodel-fae3e3f8-22fd-41d9-b96a-f672fe80d249",
+          "code" : "",
+          "name" : "订单明细",
+          "fields" : [ {
+            "type" : "Form",
+            "id" : "ff7e490c-8873-4bcd-bdfc-fff265a58484",
+            "fieldName" : "goods_Goods_GoodsName",
+            "groupId" : null,
+            "groupName" : null,
+            "updateOn" : "blur"
+          }, {
+            "type" : "Form",
+            "id" : "d205c619-61a1-49f1-bc3e-4f83288aefd7",
+            "fieldName" : "goods_Goods_GoodsCode",
+            "groupId" : null,
+            "groupName" : null,
+            "updateOn" : "blur"
+          }, {
+            "type" : "Form",
+            "id" : "d5915cfb-ef66-405a-8961-f08807cf565a",
+            "fieldName" : "specification",
+            "groupId" : null,
+            "groupName" : null,
+            "updateOn" : "blur"
+          }, {
+            "type" : "Form",
+            "id" : "c69ad672-44da-4529-936f-1913712118a5",
+            "fieldName" : "quality",
+            "groupId" : null,
+            "groupName" : null,
+            "updateOn" : "blur"
+          }, {
+            "type" : "Form",
+            "id" : "fa3a5332-d226-40d9-90d7-bd36d94530c2",
+            "fieldName" : "price",
+            "groupId" : null,
+            "groupName" : null,
+            "updateOn" : "blur"
+          }, {
+            "type" : "Form",
+            "id" : "60933c19-ddef-49f4-a2b3-f27a54407389",
+            "fieldName" : "amount",
+            "groupId" : null,
+            "groupName" : null,
+            "updateOn" : "blur"
+          }, {
+            "type" : "Form",
+            "id" : "35d1275d-8fb9-498a-a0bb-a22ae661223c",
+            "fieldName" : "discount",
+            "groupId" : null,
+            "groupName" : null,
+            "updateOn" : "blur"
+          }, {
+            "type" : "Form",
+            "id" : "6a0da038-eac5-4268-8be9-7f245ac980f6",
+            "fieldName" : "actualAmount",
+            "groupId" : null,
+            "groupName" : null,
+            "updateOn" : "blur"
+          }, {
+            "type" : "Form",
+            "id" : "7b409db5-ae84-4d9b-890e-d2d1a186c1f8",
+            "fieldName" : "remark",
+            "groupId" : null,
+            "groupName" : null,
+            "updateOn" : "blur"
+          } ],
+          "serviceRefs" : [ ],
+          "commands" : [ ],
+          "states" : [ ],
+          "bindTo" : "/orderDetails",
+          "parent" : null,
+          "stateMachine" : [ ],
+          "enableValidation" : false,
+          "pagination" : {
+            "enable" : false
+          }
+        }, {
+          "id" : "root-viewmodel-db9b09f7-a470-4fe7-89d0-b14844790ccb",
+          "code" : "",
+          "name" : "业务订单",
+          "fields" : [ ],
+          "serviceRefs" : [ ],
+          "commands" : [ {
+            "id" : "LoadPageForChildCard",
+            "code" : "LoadPageForChildCard",
+            "name" : "卡片页面加载命令",
+            "params" : [ {
+              "name" : "commandName",
+              "shownName" : "命令名称",
+              "value" : "{UISTATE~/root-component-6a869f8/routerState/queryParams/action}",
+              "description" : "必填，页面加载时要执行命令名称"
+            }, {
+              "name" : "viewModelId",
+              "shownName" : "视图模型id",
+              "value" : "",
+              "description" : "选填，命令所在视图模型id，默认为当前视图模型"
+            } ],
+            "handlerName" : "LoadPageForChildCard",
+            "cmpId" : "cf5e568a-5243-4539-94ea-e195eb4d6736",
+            "shortcut" : { },
+            "extensions" : [ ]
+          }, {
+            "id" : "LoadAndAddForChildCard",
+            "code" : "LoadAndAddForChildCard",
+            "name" : "卡片加载并新增命令",
+            "params" : [ {
+              "name" : "path",
+              "shownName" : "从表路径",
+              "value" : "/orderDetails",
+              "description" : "必填，从表或从从表路径"
+            }, {
+              "name" : "action",
+              "shownName" : "状态迁移动作",
+              "value" : "addAction",
+              "description" : "选填，状态迁移动作"
+            } ],
+            "handlerName" : "LoadAndAddForChildCard",
+            "cmpId" : "0a68799b-48c6-4c9f-b0d7-140683c62b58",
+            "shortcut" : { },
+            "extensions" : [ ]
+          }, {
+            "id" : "LoadAndEditForChildCard",
+            "code" : "LoadAndEditForChildCard",
+            "name" : "卡片加载并编辑命令",
+            "params" : [ {
+              "name" : "path",
+              "shownName" : "从表路径",
+              "value" : "/orderDetails",
+              "description" : "必填，从表或从从表路径"
+            }, {
+              "name" : "id",
+              "shownName" : "从表数据id",
+              "value" : "{UISTATE~/root-component-6a869f8/routerState/queryParams/id}",
+              "description" : "必填，从表或从从表数据id"
+            }, {
+              "name" : "action",
+              "shownName" : "状态迁移动作",
+              "value" : "editAction",
+              "description" : "选填，状态迁移动作"
+            } ],
+            "handlerName" : "LoadAndEditForChildCard",
+            "cmpId" : "0a68799b-48c6-4c9f-b0d7-140683c62b58",
+            "shortcut" : { },
+            "extensions" : [ ]
+          }, {
+            "id" : "SaveAndGoBackForChildCard",
+            "code" : "SaveAndGoBackForChildCard",
+            "name" : "卡片保存命令",
+            "params" : [ {
+              "name" : "childTablePath",
+              "shownName" : "从表路径",
+              "value" : "/orderDetails",
+              "description" : "从表路径"
+            }, {
+              "name" : "backParams",
+              "shownName" : "返回参数",
+              "value" : "{\"action\":\"noop\"}",
+              "description" : "返回主表卡片时携带的参数"
+            } ],
+            "handlerName" : "SaveAndGoBackForChildCard",
+            "cmpId" : "f863c66a-bf93-4d1f-9f99-bcd76009609d",
+            "shortcut" : { },
+            "extensions" : [ ]
+          }, {
+            "id" : "GoBackForChildCard",
+            "code" : "GoBackForChildCard",
+            "name" : "卡片返回命令",
+            "params" : [ {
+              "name" : "childTablePath",
+              "shownName" : "从表路径",
+              "value" : "orderDetails",
+              "description" : "必填，子表路径。"
+            }, {
+              "name" : "backParams",
+              "shownName" : "返回参数",
+              "value" : "{\"action\":\"noop\"}",
+              "description" : "选填，返回时携带的参数。"
+            } ],
+            "handlerName" : "GoBackForChildCard",
+            "cmpId" : "910661bd-963a-4287-aa32-441c95b8720f",
+            "shortcut" : { },
+            "extensions" : [ ]
+          }, {
+            "id" : "05f8a730-70fc-4749-b59a-dfed983c9a28",
+            "code" : "Navigate05f8",
+            "name" : "路由跳转命令05f8",
+            "params" : [ {
+              "name" : "path",
+              "shownName" : "路由地址",
+              "value" : "/MyOrder/root-component-235c86b",
+              "description" : "目标路径"
+            }, {
+              "name" : "queryParams",
+              "shownName" : "携带参数",
+              "value" : "{ \"action\": \"LoadAndAddForChildCard\"}",
+              "description" : "请求携带参数"
+            }, {
+              "name" : "backParams",
+              "shownName" : "返回参数",
+              "value" : "",
+              "description" : "被跳转页面调用goback命令的携带参数"
+            }, {
+              "name" : "backPath",
+              "shownName" : "返回地址",
+              "value" : "",
+              "description" : "被跳转页面的goback命令的返回地址"
+            } ],
+            "handlerName" : "Navigate",
+            "cmpId" : "910661bd-963a-4287-aa32-441c95b8720f",
+            "shortcut" : { },
+            "extensions" : [ ]
+          } ],
+          "states" : [ ],
+          "bindTo" : "/",
+          "parent" : null,
+          "stateMachine" : "MyOrder_root-component-6a869f8_state_machine",
+          "enableValidation" : false,
+          "pagination" : {
+            "enable" : false
+          }
+        }, {
+          "id" : "child-viewmodel-ed5cbe38-4ae1-45f9-82c3-2e5a8d0fcd75",
+          "code" : "",
+          "name" : "订单明细",
+          "fields" : [ {
+            "type" : "Form",
+            "id" : "ff7e490c-8873-4bcd-bdfc-fff265a58484",
+            "fieldName" : "goods_Goods_GoodsName",
+            "groupId" : null,
+            "groupName" : null,
+            "updateOn" : "blur"
+          }, {
+            "type" : "Form",
+            "id" : "d205c619-61a1-49f1-bc3e-4f83288aefd7",
+            "fieldName" : "goods_Goods_GoodsCode",
+            "groupId" : null,
+            "groupName" : null,
+            "updateOn" : "blur"
+          }, {
+            "type" : "Form",
+            "id" : "d5915cfb-ef66-405a-8961-f08807cf565a",
+            "fieldName" : "specification",
+            "groupId" : null,
+            "groupName" : null,
+            "updateOn" : "blur"
+          }, {
+            "type" : "Form",
+            "id" : "c69ad672-44da-4529-936f-1913712118a5",
+            "fieldName" : "quality",
+            "groupId" : null,
+            "groupName" : null,
+            "updateOn" : "blur"
+          }, {
+            "type" : "Form",
+            "id" : "fa3a5332-d226-40d9-90d7-bd36d94530c2",
+            "fieldName" : "price",
+            "groupId" : null,
+            "groupName" : null,
+            "updateOn" : "blur"
+          }, {
+            "type" : "Form",
+            "id" : "60933c19-ddef-49f4-a2b3-f27a54407389",
+            "fieldName" : "amount",
+            "groupId" : null,
+            "groupName" : null,
+            "updateOn" : "blur"
+          }, {
+            "type" : "Form",
+            "id" : "35d1275d-8fb9-498a-a0bb-a22ae661223c",
+            "fieldName" : "discount",
+            "groupId" : null,
+            "groupName" : null,
+            "updateOn" : "blur"
+          }, {
+            "type" : "Form",
+            "id" : "6a0da038-eac5-4268-8be9-7f245ac980f6",
+            "fieldName" : "actualAmount",
+            "groupId" : null,
+            "groupName" : null,
+            "updateOn" : "blur"
+          }, {
+            "type" : "Form",
+            "id" : "7b409db5-ae84-4d9b-890e-d2d1a186c1f8",
+            "fieldName" : "remark",
+            "groupId" : null,
+            "groupName" : null,
+            "updateOn" : "blur"
+          } ],
+          "serviceRefs" : [ ],
+          "commands" : [ ],
+          "states" : [ ],
+          "bindTo" : "/orderDetails",
+          "parent" : "root-viewmodel-db9b09f7-a470-4fe7-89d0-b14844790ccb",
+          "stateMachine" : [ ],
+          "enableValidation" : false,
+          "pagination" : {
+            "enable" : false
+          }
+        } ],
+        "components" : [ {
+          "id" : "list-page-component",
+          "type" : "Component",
+          "title" : "列表页面",
+          "componentType" : "Page",
+          "viewModel" : "list-page-viewmodel",
+          "onInit" : "LoadListPage",
+          "contents" : [ {
+            "id" : "root-layout-listview",
+            "type" : "ContentContainer",
+            "title" : "列表页容器",
+            "appearance" : {
+              "class" : "fm-page fm-page-listview"
+            },
+            "border" : null,
+            "font" : null,
+            "margin" : null,
+            "padding" : null,
+            "size" : null,
+            "contents" : [ {
+              "id" : "page-header-card",
+              "type" : "ContentContainer",
+              "title" : "头部容器",
+              "appearance" : {
+                "class" : "fm-page-header"
+              },
+              "border" : null,
+              "font" : null,
+              "margin" : null,
+              "padding" : null,
+              "size" : null,
+              "contents" : [ {
+                "id" : "list-page-header",
+                "type" : "NavigationBar",
+                "title" : "主表列表",
+                "visible" : true,
+                "leftText" : "返回",
+                "leftClick" : null,
+                "centerText" : "主表列表",
+                "border" : null,
+                "leftArrow" : true,
+                "toolbar" : {
+                  "items" : [ {
+                    "id" : "toolBarItem_5559",
+                    "type" : "ToolBarItem",
+                    "appearance" : null,
+                    "disable" : false,
+                    "text" : "新增",
+                    "visible" : true,
+                    "click" : "OpenCardAndAdd"
+                  } ]
+                },
+                "titleTemplate" : "",
+                "leftTemplate" : "",
+                "rightTemplate" : ""
+              } ],
+              "visible" : true,
+              "isScrollspyContainer" : false,
+              "ref" : "",
+              "scrollable" : false
+            }, {
+              "id" : "main-container-list",
+              "type" : "ContentContainer",
+              "title" : "主内容",
+              "appearance" : {
+                "class" : "fm-page-main"
+              },
+              "border" : null,
+              "font" : null,
+              "margin" : null,
+              "padding" : null,
+              "size" : null,
+              "contents" : [ {
+                "id" : "list-listview-component-ref",
+                "type" : "ComponentRef",
+                "component" : "list-listview-component",
+                "visible" : true
+              } ],
+              "ref" : "",
+              "scrollable" : false,
+              "visible" : true
+            } ],
+            "ref" : "",
+            "scrollable" : false,
+            "visible" : true
+          } ],
+          "route" : {
+            "id" : "793a955a-7d51-4753-bb86-bf72b8b71066",
+            "uri" : "list-page-component",
+            "name" : "列表路由",
+            "params" : [ ]
+          },
+          "onLoadData" : "LoadForList",
+          "goBack" : null,
+          "customClass" : "",
+          "selectTemplate" : null,
+          "keepAlive" : false,
+          "onActived" : null
+        }, {
+          "id" : "list-listview-component",
+          "type" : "Component",
+          "componentType" : "dataGrid",
+          "viewModel" : "list-listview-viewmodel",
+          "appearance" : null,
+          "onInit" : "",
+          "contents" : [ {
+            "id" : "list-view-layout",
+            "type" : "ContentContainer",
+            "appearance" : {
+              "class" : "fm-tmpl-list-container"
+            },
+            "border" : null,
+            "font" : null,
+            "margin" : null,
+            "padding" : null,
+            "size" : null,
+            "contents" : [ {
+              "id" : "query-scheme",
+              "type" : "QueryScheme",
+              "visible" : true,
+              "fieldConfigs" : [ {
+                "id" : "96976ac9-3bb4-4663-8f10-887f7a17d914",
+                "labelCode" : "Merchant.Merchant",
+                "code" : "Merchant",
+                "name" : "商户",
+                "control" : {
+                  "controltype" : "help",
+                  "helpId" : "b610c446-71ea-4aed-bb9b-f46ccc45a556",
+                  "uri" : "SaleOrder.merchant",
+                  "idField" : "id",
+                  "valueField" : "id",
+                  "textField" : "merchantName",
+                  "displayType" : "TreeList",
+                  "enableExtendLoadMethod" : false,
+                  "enableFullTree" : false,
+                  "loadTreeDataType" : "default",
+                  "multiSelect" : false,
+                  "enableCascade" : false,
+                  "expandLevel" : -1,
+                  "nosearch" : false,
+                  "pageSize" : 20
+                }
+              } ],
+              "onQuery" : "",
+              "presetQuerySolutionName" : "默认筛选方案结果",
+              "isControlInline" : true,
+              "presetFieldConfigs" : [ {
+                "id" : "96976ac9-3bb4-4663-8f10-887f7a17d914",
+                "labelCode" : "Merchant.Merchant",
+                "code" : "Merchant",
+                "name" : "商户",
+                "control" : {
+                  "controltype" : "help",
+                  "helpId" : "b610c446-71ea-4aed-bb9b-f46ccc45a556",
+                  "uri" : "SaleOrder.merchant",
+                  "idField" : "id",
+                  "valueField" : "id",
+                  "textField" : "merchantName",
+                  "displayType" : "TreeList",
+                  "enableExtendLoadMethod" : false,
+                  "enableFullTree" : false,
+                  "loadTreeDataType" : "default",
+                  "multiSelect" : false,
+                  "enableCascade" : false,
+                  "expandLevel" : -1,
+                  "nosearch" : false,
+                  "pageSize" : 20
+                }
+              } ],
+              "formId" : "MyOrder",
+              "enableInitQuery" : false,
+              "appearance" : null,
+              "useSearch" : true
+            }, {
+              "id" : "listView",
+              "type" : "ListView",
+              "appearance" : {
+                "class" : "fm-tmpl-list-with-img-detail fm-tmpl-list-with-border"
+              },
+              "border" : null,
+              "multiSelect" : false,
+              "font" : null,
+              "margin" : null,
+              "padding" : null,
+              "size" : null,
+              "listClick" : "OpenCardAndEdit",
+              "contentTemplate" : "<div class=\"img-detail--item\">\r\n    <div class=\"img-detail--item-content\">\r\n        <div class=\"item-img-round--wrapper\">\r\n            <div class=\"item-img-round--img fm-bg-orange\">\r\n                <span class=\"fm-icon fm-icon-photograph\"></span>\r\n            </div>\r\n        </div>\r\n        <div class=\"img-detail--content\">\r\n            <div class=\"img-detail--header\">\r\n                <h6 class=\"title\">{{props.item.orderCode}}</h6>\r\n                <!-- <div class=\"img-detail--status\"> -->\r\n                    <p class=\"img-detail--info\">\r\n                        <span v-if=\"props.item.sendState ==='UnShipped'\"><fm-tag type=\"warning\">未发货</fm-tag></span>\r\n                        <span v-if=\"props.item.sendState  === 'Shipped'\"><fm-tag type=\"info\">已发货</fm-tag></span>\r\n                        <span v-if=\"props.item.sendState ==='Done'\"><fm-tag type=\"success\">已收货</fm-tag></span>\r\n                    </p>\r\n                <!-- </div> -->\r\n            </div>\r\n            <p class=\"img-detail--info\">下单时间：{{props.item.orderTime}}</p>\r\n            <p class=\"img-detail--info\">商户：{{props.item.merchant.merchant_MerchantName}}</p>\r\n            <p class=\"img-detail--info\">折扣优惠：{{props.item.totalDiscounts}}</p>\r\n            <p class=\"img-detail--info\">合计实付：{{props.item.actualPay}}</p>\r\n        </div>\r\n    </div>\r\n    <div class=\"img-detail--actions\">\r\n        <fm-button type=\"info\" round plain :disabled=\"props.disabled\" size=\"small\" @click.stop=\"MyOrderCom5a2b\">确认收货\r\n        </fm-button>\r\n    </div>\r\n</div>",
+              "visible" : true,
+              "fill" : true,
+              "dataSource" : null,
+              "focusedItem" : null,
+              "focusedIndex" : null,
+              "pagination" : null,
+              "identifyField" : null,
+              "selectable" : null,
+              "itemTemplate" : null,
+              "toolBar" : null,
+              "sortable" : false,
+              "sort" : null,
+              "summary" : null,
+              "fieldEditable" : false,
+              "onSelectionChange" : "",
+              "rowClass" : null,
+              "headerTemplate" : null,
+              "footerTemplate" : null,
+              "showEmpty" : false,
+              "emptyTemplate" : null,
+              "pageTemplate" : null,
+              "enablePullDownRefresh" : true,
+              "enablePullUpLoad" : false,
+              "swipeTemplate" : null,
+              "title" : "listView",
+              "selectTemplate" : null
+            } ],
+            "title" : "list-view-layout",
+            "ref" : "",
+            "scrollable" : false,
+            "visible" : true
+          } ],
+          "customClass" : "",
+          "title" : "list-listview-component",
+          "keepAlive" : false,
+          "onActived" : null
+        }, {
+          "id" : "card-page-component",
+          "type" : "Component",
+          "title" : "卡片页面",
+          "componentType" : "Page",
+          "pageType" : "Card",
+          "viewModel" : "card-page-viewmodel",
+          "onInit" : "LoadForCard",
+          "contents" : [ {
+            "id" : "root-layout-card",
+            "type" : "ContentContainer",
+            "title" : "卡片页容器",
+            "appearance" : {
+              "class" : "fm-page fm-page-card"
+            },
+            "border" : null,
+            "font" : null,
+            "margin" : null,
+            "padding" : null,
+            "size" : null,
+            "contents" : [ {
+              "id" : "page-header-main-card",
+              "type" : "ContentContainer",
+              "title" : "卡片页头部容器",
+              "appearance" : {
+                "class" : "fm-page-header"
+              },
+              "border" : null,
+              "font" : null,
+              "margin" : null,
+              "padding" : null,
+              "size" : null,
+              "contents" : [ {
+                "id" : "main-card-page-header",
+                "type" : "NavigationBar",
+                "title" : "卡片标题",
+                "visible" : true,
+                "centerText" : "主表卡片",
+                "leftText" : "返回",
+                "leftClick" : "GoBackAndCheck",
+                "border" : null,
+                "leftArrow" : true,
+                "toolbar" : {
+                  "items" : [ {
+                    "id" : "add-btn",
+                    "type" : "ToolBarItem",
+                    "appearance" : null,
+                    "iconType" : "",
+                    "disable" : false,
+                    "text" : "新增",
+                    "visible" : true,
+                    "click" : "Add"
+                  }, {
+                    "id" : "edit-btn",
+                    "type" : "ToolBarItem",
+                    "appearance" : null,
+                    "disable" : false,
+                    "text" : "编辑",
+                    "visible" : true,
+                    "click" : "Edit"
+                  }, {
+                    "id" : "cancel-btn",
+                    "type" : "ToolBarItem",
+                    "appearance" : null,
+                    "disable" : false,
+                    "text" : "取消",
+                    "visible" : true,
+                    "click" : "Cancel"
+                  } ]
+                },
+                "titleTemplate" : "",
+                "leftTemplate" : "",
+                "rightTemplate" : ""
+              } ],
+              "visible" : true,
+              "isScrollspyContainer" : false,
+              "ref" : "",
+              "scrollable" : false
+            }, {
+              "id" : "main-container",
+              "type" : "ContentContainer",
+              "title" : "卡片页内容",
+              "appearance" : {
+                "class" : "fm-page-main"
+              },
+              "border" : null,
+              "font" : null,
+              "margin" : null,
+              "padding" : null,
+              "size" : null,
+              "contents" : [ {
+                "id" : "card-form-component-ref",
+                "type" : "ComponentRef",
+                "component" : "card-form-component",
+                "visible" : true
+              }, {
+                "fill" : false,
+                "id" : "section-02b50d2",
+                "type" : "Section",
+                "appearance" : null,
+                "visible" : true,
+                "mainTitle" : "",
+                "subTitle" : "",
+                "headerClass" : "",
+                "titleClass" : "",
+                "extendedHeaderAreaClass" : "",
+                "toolbarClass" : "",
+                "extendedAreaClass" : "",
+                "contentTemplateClass" : "",
+                "expanded" : true,
+                "enableMaximize" : true,
+                "enableAccordion" : true,
+                "accordionMode" : "default",
+                "showHeader" : false,
+                "headerTemplate" : "",
+                "footerTemplate" : "<fm-button type=\"info\" block plain noBorder className=\"fm-btn-with-icon\" @click.stop=\"Navigate05f8\"><span class=\"fm-icon fm-icon-addbutton fm-btn-icon\"></span><span class=\"fm-btn-text\">新增</span></fm-button>",
+                "titleTemplate" : "",
+                "extendedHeaderAreaTemplate" : "",
+                "toolbarTemplate" : "",
+                "extendedAreaTemplate" : "",
+                "contents" : [ {
+                  "id" : "listview-componentref-f2445dc",
+                  "type" : "ComponentRef",
+                  "component" : "listview-component-31ff108",
+                  "visible" : true
+                } ],
+                "isScrollSpyItem" : false
+              } ],
+              "ref" : "",
+              "scrollable" : false,
+              "visible" : true
+            }, {
+              "id" : "page-footer-container",
+              "type" : "ContentContainer",
+              "title" : "卡片页底部容器",
+              "appearance" : {
+                "class" : "fm-page-footer"
+              },
+              "border" : null,
+              "font" : null,
+              "margin" : null,
+              "padding" : null,
+              "size" : null,
+              "contents" : [ {
+                "id" : "page-tabbar-container",
+                "type" : "ContentContainer",
+                "title" : "卡片底部",
+                "appearance" : {
+                  "class" : "fm-tabbar-style van-tabbar fm-tabbar-style"
+                },
+                "border" : null,
+                "font" : null,
+                "margin" : null,
+                "padding" : null,
+                "size" : null,
+                "contents" : [ {
+                  "id" : "button-container",
+                  "type" : "ContentContainer",
+                  "title" : "卡片底部按钮容器",
+                  "appearance" : {
+                    "class" : "van-tabbar-item show-left-width"
+                  },
+                  "border" : null,
+                  "font" : null,
+                  "margin" : null,
+                  "padding" : null,
+                  "size" : null,
+                  "contents" : [ {
+                    "id" : "submit-buttonded3c6",
+                    "type" : "Button",
+                    "title" : "保存按钮",
+                    "visible" : true,
+                    "disable" : false,
+                    "text" : "保存",
+                    "click" : "Save"
+                  } ],
+                  "ref" : "",
+                  "scrollable" : false,
+                  "visible" : true
+                } ],
+                "ref" : "",
+                "scrollable" : false,
+                "visible" : true
+              } ],
+              "ref" : "",
+              "scrollable" : false,
+              "visible" : true
+            } ],
+            "ref" : "",
+            "scrollable" : false,
+            "visible" : true
+          } ],
+          "route" : {
+            "id" : "723a955a-7d51-4753-bb86-bf42b8b71066",
+            "uri" : "card-page-component",
+            "name" : "卡片路由",
+            "params" : [ ]
+          },
+          "onLoadData" : "",
+          "goBack" : "GoBackAndCheck",
+          "customClass" : "",
+          "selectTemplate" : null,
+          "keepAlive" : false,
+          "onActived" : null
+        }, {
+          "id" : "card-form-component",
+          "type" : "Component",
+          "title" : "卡片组件",
+          "componentType" : "form-col-1",
+          "viewModel" : "card-form-viewmodel",
+          "onInit" : "",
+          "appearance" : null,
+          "contents" : [ {
+            "id" : "detail-form-layout",
+            "type" : "Form",
+            "title" : "卡片组件容器",
+            "appearance" : {
+              "class" : "fm-edit-input-list"
+            },
+            "border" : null,
+            "font" : null,
+            "margin" : null,
+            "padding" : null,
+            "size" : null,
+            "contents" : [ {
+              "id" : "form_orderCode",
+              "type" : "TextBox",
+              "title" : "订单编号",
+              "appearance" : {
+                "class" : "col-12"
+              },
+              "border" : null,
+              "font" : null,
+              "margin" : null,
+              "padding" : null,
+              "size" : null,
+              "binding" : {
+                "type" : "Form",
+                "path" : "orderCode",
+                "field" : "06734cb9-a95c-4fa3-9654-0a56d6fa1fff"
+              },
+              "readonly" : false,
+              "require" : false,
+              "disable" : false,
+              "placeholder" : "",
+              "format" : null,
+              "validation" : null,
+              "value" : null,
+              "maxLength" : 36,
+              "valueChange" : null,
+              "linkedLabelEnabled" : false,
+              "linkedLabelClick" : null,
+              "visible" : true,
+              "holdPlace" : false,
+              "isTextArea" : false,
+              "isPassword" : false,
+              "tabindex" : -1,
+              "hasDefaultFocus" : false,
+              "focusState" : null,
+              "titleWidth" : null,
+              "rightTemplate" : null,
+              "path" : "orderCode",
+              "inputTemplate" : "",
+              "cellTemplate" : "",
+              "validationRules" : null
+            }, {
+              "id" : "form_merchant_Merchant_MerchantCode",
+              "type" : "TextBox",
+              "title" : "商户编号",
+              "appearance" : {
+                "class" : "col-12"
+              },
+              "border" : null,
+              "font" : null,
+              "margin" : null,
+              "padding" : null,
+              "size" : null,
+              "binding" : {
+                "type" : "Form",
+                "path" : "merchant_Merchant_MerchantCode",
+                "field" : "384ad53e-f11a-4aa9-a95e-34cdd6c70f50"
+              },
+              "readonly" : false,
+              "require" : false,
+              "disable" : false,
+              "placeholder" : "",
+              "format" : null,
+              "validation" : null,
+              "value" : null,
+              "maxLength" : 36,
+              "valueChange" : null,
+              "linkedLabelEnabled" : false,
+              "linkedLabelClick" : null,
+              "visible" : true,
+              "holdPlace" : false,
+              "isTextArea" : false,
+              "isPassword" : false,
+              "tabindex" : -1,
+              "hasDefaultFocus" : false,
+              "focusState" : null,
+              "titleWidth" : null,
+              "rightTemplate" : null,
+              "path" : "merchant.merchant_MerchantCode",
+              "inputTemplate" : "",
+              "cellTemplate" : "",
+              "validationRules" : null
+            }, {
+              "id" : "form_orderTime",
+              "type" : "TextBox",
+              "title" : "下单时间",
+              "appearance" : {
+                "class" : "col-12"
+              },
+              "border" : null,
+              "font" : null,
+              "margin" : null,
+              "padding" : null,
+              "size" : null,
+              "binding" : {
+                "type" : "Form",
+                "path" : "orderTime",
+                "field" : "587a0fbd-82a4-4c57-a653-abcc81736104"
+              },
+              "readonly" : false,
+              "require" : false,
+              "disable" : false,
+              "placeholder" : "",
+              "format" : null,
+              "validation" : null,
+              "value" : null,
+              "maxLength" : 30,
+              "valueChange" : null,
+              "linkedLabelEnabled" : false,
+              "linkedLabelClick" : null,
+              "visible" : true,
+              "holdPlace" : false,
+              "isTextArea" : false,
+              "isPassword" : false,
+              "tabindex" : -1,
+              "hasDefaultFocus" : false,
+              "focusState" : null,
+              "titleWidth" : null,
+              "rightTemplate" : null,
+              "path" : "orderTime",
+              "inputTemplate" : "",
+              "cellTemplate" : "",
+              "validationRules" : null
+            } ],
+            "controlsInline" : true,
+            "formAutoIntl" : true,
+            "visible" : true
+          } ],
+          "customClass" : "",
+          "keepAlive" : false,
+          "onActived" : null
+        }, {
+          "id" : "listview-component-31ff108",
+          "type" : "Component",
+          "viewModel" : "listview-viewmodel-fae3e3f8-22fd-41d9-b96a-f672fe80d249",
+          "componentType" : "dataGrid",
+          "appearance" : null,
+          "onInit" : null,
+          "onLoadData" : null,
+          "contents" : [ {
+            "id" : "listview-0e54c93",
+            "type" : "ListView",
+            "appearance" : {
+              "_class" : "flex-fill w-100 ",
+              "class" : "fm-tmpl-list-with-img-detail"
+            },
+            "border" : null,
+            "font" : null,
+            "margin" : null,
+            "padding" : null,
+            "size" : null,
+            "dataSource" : null,
+            "focusedItem" : null,
+            "focusedIndex" : null,
+            "pagination" : null,
+            "identifyField" : null,
+            "multiSelect" : false,
+            "selectable" : null,
+            "itemTemplate" : null,
+            "toolBar" : null,
+            "sortable" : false,
+            "sort" : null,
+            "summary" : null,
+            "fieldEditable" : false,
+            "onSelectionChange" : "",
+            "rowClass" : null,
+            "headerTemplate" : null,
+            "contentTemplate" : "<div class=\"img-detail--item\">\r\n    <div class=\"img-detail--item-content\">\r\n        <div class=\"item-img-round--wrapper\">\r\n            <div class=\"item-img-round--img fm-bg-orange\">\r\n                <span class=\"fm-icon fm-icon-photograph\"></span>\r\n            </div>\r\n        </div>\r\n        <div class=\"img-detail--content\">\r\n            <div class=\"img-detail--header\">\r\n                <h6 class=\"title\">{{props.item.goods.goods_GoodsName}}</h6>\r\n                <span class=\"time\">详情</span>\r\n            </div>\r\n            <p class=\"img-detail--info\">规格型号：{{props.item.specification}}</p>\r\n            <p class=\"img-detail--info\">数量：{{props.item.quality}}</p>\r\n            <p class=\"img-detail--info\">单价：{{props.item.price}}</p>\r\n            <p class=\"img-detail--info\">金额：{{props.item.amount}}</p>\r\n        </div>\r\n    </div>\r\n</div>",
+            "footerTemplate" : null,
+            "showEmpty" : false,
+            "emptyTemplate" : null,
+            "pageTemplate" : null,
+            "visible" : true,
+            "enablePullDownRefresh" : true,
+            "enablePullUpLoad" : false,
+            "swipeTemplate" : null,
+            "fill" : false,
+            "listClick" : null,
+            "title" : "listview-0e54c93",
+            "selectTemplate" : null
+          } ],
+          "afterViewInit" : null,
+          "parent" : "card-page-viewmodel",
+          "customClass" : "",
+          "title" : "listview-component-31ff108",
+          "keepAlive" : false,
+          "onActived" : null
+        }, {
+          "id" : "root-component-6a869f8",
+          "type" : "Component",
+          "viewModel" : "root-viewmodel-db9b09f7-a470-4fe7-89d0-b14844790ccb",
+          "componentType" : "Page",
+          "appearance" : null,
+          "onInit" : "LoadPageForChild",
+          "onLoadData" : null,
+          "contents" : [ {
+            "id" : "root-layout-5af0b0b",
+            "type" : "ContentContainer",
+            "appearance" : {
+              "class" : "fm-page fm-page-card"
+            },
+            "border" : null,
+            "font" : null,
+            "margin" : null,
+            "padding" : null,
+            "size" : null,
+            "contents" : [ {
+              "id" : "root-header-efe7a15",
+              "type" : "ContentContainer",
+              "appearance" : {
+                "class" : "fm-page-header"
+              },
+              "border" : null,
+              "font" : null,
+              "margin" : null,
+              "padding" : null,
+              "size" : null,
+              "contents" : [ {
+                "id" : "page-header",
+                "type" : "NavigationBar",
+                "title" : "导航栏",
+                "visible" : true,
+                "leftText" : "返回",
+                "leftClick" : "GoBackForChildCard",
+                "centerText" : "导航",
+                "rightText" : "前进",
+                "rightClick" : null,
+                "border" : null,
+                "titleTemplate" : "",
+                "leftTemplate" : "",
+                "rightTemplate" : "",
+                "leftArrow" : true
+              } ],
+              "title" : "root-header-efe7a15",
+              "ref" : "",
+              "scrollable" : false,
+              "visible" : true
+            }, {
+              "id" : "main-container-a1cac73",
+              "type" : "ContentContainer",
+              "appearance" : {
+                "class" : "fm-page-main"
+              },
+              "border" : null,
+              "font" : null,
+              "margin" : null,
+              "padding" : null,
+              "size" : null,
+              "contents" : [ {
+                "id" : "card-component-ref-a369bb1",
+                "type" : "ComponentRef",
+                "component" : "card-component-ab86420",
+                "visible" : true
+              } ],
+              "title" : "main-container-a1cac73",
+              "ref" : "",
+              "scrollable" : false,
+              "visible" : true
+            }, {
+              "id" : "page-footer-container-7145556",
+              "type" : "ContentContainer",
+              "appearance" : {
+                "class" : "fm-page-footer"
+              },
+              "border" : null,
+              "font" : null,
+              "margin" : null,
+              "padding" : null,
+              "size" : null,
+              "contents" : [ {
+                "id" : "page-tabbar-container-142ba0c",
+                "type" : "ContentContainer",
+                "appearance" : {
+                  "class" : "fm-tabbar-style van-tabbar fm-tabbar-style"
+                },
+                "border" : null,
+                "font" : null,
+                "margin" : null,
+                "padding" : null,
+                "size" : null,
+                "contents" : [ {
+                  "id" : "button-container-a51d091",
+                  "type" : "ContentContainer",
+                  "appearance" : {
+                    "class" : "van-tabbar-item show-left-width"
+                  },
+                  "border" : null,
+                  "font" : null,
+                  "margin" : null,
+                  "padding" : null,
+                  "size" : null,
+                  "contents" : [ {
+                    "id" : "submit-button492787",
+                    "type" : "Button",
+                    "title" : "保存按钮",
+                    "visible" : true,
+                    "disable" : false,
+                    "text" : "保存",
+                    "click" : "SaveAndGoBackForChildCard"
+                  } ],
+                  "title" : "卡片底部按钮容器",
+                  "lable" : "button-container-d69eac1",
+                  "ref" : "",
+                  "scrollable" : false,
+                  "visible" : true
+                } ],
+                "title" : "卡片底部",
+                "ref" : "",
+                "scrollable" : false,
+                "visible" : true
+              } ],
+              "title" : "卡片页底部容器",
+              "ref" : "",
+              "scrollable" : false,
+              "visible" : true
+            } ],
+            "title" : "root-layout-5af0b0b",
+            "ref" : "",
+            "scrollable" : false,
+            "visible" : true
+          } ],
+          "afterViewInit" : null,
+          "title" : "订单明细表单页面",
+          "route" : {
+            "id" : "c0552cee-6e4e-467b-97b9-5daee5639ab9",
+            "uri" : "root-component-6a869f8",
+            "name" : "",
+            "params" : [ ]
+          },
+          "goBack" : "GoBackForChild",
+          "customClass" : "",
+          "selectTemplate" : null,
+          "keepAlive" : false,
+          "onActived" : null
+        }, {
+          "id" : "card-component-ab86420",
+          "type" : "Component",
+          "viewModel" : "child-viewmodel-ed5cbe38-4ae1-45f9-82c3-2e5a8d0fcd75",
+          "componentType" : "form-col-1",
+          "appearance" : null,
+          "onInit" : null,
+          "onLoadData" : null,
+          "contents" : [ {
+            "id" : "card-component-form-e7ea5b4",
+            "type" : "Form",
+            "appearance" : {
+              "class" : "f-form-layout farris-form farris-form-controls-inline"
+            },
+            "size" : null,
+            "contents" : [ {
+              "id" : "form_goods_Goods_GoodsName",
+              "type" : "TextBox",
+              "title" : "商品名称",
+              "appearance" : {
+                "class" : "col-12"
+              },
+              "border" : null,
+              "font" : null,
+              "margin" : null,
+              "padding" : null,
+              "size" : null,
+              "binding" : {
+                "type" : "Form",
+                "path" : "goods_Goods_GoodsName",
+                "field" : "ff7e490c-8873-4bcd-bdfc-fff265a58484"
+              },
+              "readonly" : false,
+              "require" : false,
+              "disable" : false,
+              "placeholder" : "",
+              "format" : null,
+              "validation" : null,
+              "value" : null,
+              "maxLength" : 36,
+              "valueChange" : null,
+              "linkedLabelEnabled" : false,
+              "linkedLabelClick" : null,
+              "visible" : true,
+              "holdPlace" : false,
+              "isTextArea" : false,
+              "isPassword" : false,
+              "tabindex" : -1,
+              "hasDefaultFocus" : false,
+              "focusState" : null,
+              "titleWidth" : null,
+              "rightTemplate" : null,
+              "path" : "goods.goods_GoodsName",
+              "inputTemplate" : "",
+              "cellTemplate" : "",
+              "validationRules" : null
+            }, {
+              "id" : "form_goods_Goods_GoodsCode",
+              "type" : "TextBox",
+              "title" : "商品编号",
+              "appearance" : {
+                "class" : "col-12"
+              },
+              "border" : null,
+              "font" : null,
+              "margin" : null,
+              "padding" : null,
+              "size" : null,
+              "binding" : {
+                "type" : "Form",
+                "path" : "goods_Goods_GoodsCode",
+                "field" : "d205c619-61a1-49f1-bc3e-4f83288aefd7"
+              },
+              "readonly" : false,
+              "require" : false,
+              "disable" : false,
+              "placeholder" : "",
+              "format" : null,
+              "validation" : null,
+              "value" : null,
+              "maxLength" : 36,
+              "valueChange" : null,
+              "linkedLabelEnabled" : false,
+              "linkedLabelClick" : null,
+              "visible" : true,
+              "holdPlace" : false,
+              "isTextArea" : false,
+              "isPassword" : false,
+              "tabindex" : -1,
+              "hasDefaultFocus" : false,
+              "focusState" : null,
+              "titleWidth" : null,
+              "rightTemplate" : null,
+              "path" : "goods.goods_GoodsCode",
+              "inputTemplate" : "",
+              "cellTemplate" : "",
+              "validationRules" : null
+            }, {
+              "id" : "form_specification",
+              "type" : "TextBox",
+              "title" : "规格型号",
+              "appearance" : {
+                "class" : "col-12"
+              },
+              "border" : null,
+              "font" : null,
+              "margin" : null,
+              "padding" : null,
+              "size" : null,
+              "binding" : {
+                "type" : "Form",
+                "path" : "specification",
+                "field" : "d5915cfb-ef66-405a-8961-f08807cf565a"
+              },
+              "readonly" : false,
+              "require" : false,
+              "disable" : false,
+              "placeholder" : "",
+              "format" : null,
+              "validation" : null,
+              "value" : null,
+              "maxLength" : 36,
+              "valueChange" : null,
+              "linkedLabelEnabled" : false,
+              "linkedLabelClick" : null,
+              "visible" : true,
+              "holdPlace" : false,
+              "isTextArea" : false,
+              "isPassword" : false,
+              "tabindex" : -1,
+              "hasDefaultFocus" : false,
+              "focusState" : null,
+              "titleWidth" : null,
+              "rightTemplate" : null,
+              "path" : "specification",
+              "inputTemplate" : "",
+              "cellTemplate" : "",
+              "validationRules" : null
+            }, {
+              "id" : "form_quality",
+              "type" : "NumericBox",
+              "title" : "数量",
+              "binding" : {
+                "type" : "Form",
+                "path" : "quality",
+                "field" : "c69ad672-44da-4529-936f-1913712118a5"
+              },
+              "placeholder" : "",
+              "readonly" : false,
+              "require" : false,
+              "disable" : false,
+              "format" : "n0",
+              "precision" : 0,
+              "validation" : null,
+              "value" : null,
+              "maxValue" : null,
+              "minValue" : null,
+              "maxLength" : 0,
+              "spin" : null,
+              "step" : 1,
+              "appearance" : {
+                "class" : "col-12"
+              },
+              "border" : null,
+              "font" : null,
+              "margin" : null,
+              "padding" : null,
+              "size" : null,
+              "valueChange" : null,
+              "linkedLabelEnabled" : false,
+              "linkedLabelClick" : null,
+              "visible" : true,
+              "holdPlace" : false,
+              "isTextArea" : false,
+              "isPassword" : false,
+              "tabindex" : -1,
+              "hasDefaultFocus" : false,
+              "focusState" : null,
+              "titleWidth" : null,
+              "rightTemplate" : null,
+              "path" : "quality",
+              "inputTemplate" : "",
+              "cellTemplate" : "",
+              "validationRules" : null
+            }, {
+              "id" : "form_price",
+              "type" : "NumericBox",
+              "title" : "标准单价",
+              "binding" : {
+                "type" : "Form",
+                "path" : "price",
+                "field" : "fa3a5332-d226-40d9-90d7-bd36d94530c2"
+              },
+              "placeholder" : "",
+              "readonly" : false,
+              "require" : false,
+              "disable" : false,
+              "format" : "n2",
+              "precision" : 2,
+              "validation" : null,
+              "value" : null,
+              "maxValue" : null,
+              "minValue" : null,
+              "maxLength" : 10,
+              "spin" : null,
+              "step" : 1,
+              "appearance" : {
+                "class" : "col-12"
+              },
+              "border" : null,
+              "font" : null,
+              "margin" : null,
+              "padding" : null,
+              "size" : null,
+              "valueChange" : null,
+              "linkedLabelEnabled" : false,
+              "linkedLabelClick" : null,
+              "visible" : true,
+              "holdPlace" : false,
+              "isTextArea" : false,
+              "isPassword" : false,
+              "tabindex" : -1,
+              "hasDefaultFocus" : false,
+              "focusState" : null,
+              "titleWidth" : null,
+              "rightTemplate" : null,
+              "path" : "price",
+              "inputTemplate" : "",
+              "cellTemplate" : "",
+              "validationRules" : null
+            }, {
+              "id" : "form_amount",
+              "type" : "NumericBox",
+              "title" : "金额",
+              "binding" : {
+                "type" : "Form",
+                "path" : "amount",
+                "field" : "60933c19-ddef-49f4-a2b3-f27a54407389"
+              },
+              "placeholder" : "",
+              "readonly" : false,
+              "require" : false,
+              "disable" : false,
+              "format" : "n2",
+              "precision" : 2,
+              "validation" : null,
+              "value" : null,
+              "maxValue" : null,
+              "minValue" : null,
+              "maxLength" : 10,
+              "spin" : null,
+              "step" : 1,
+              "appearance" : {
+                "class" : "col-12"
+              },
+              "border" : null,
+              "font" : null,
+              "margin" : null,
+              "padding" : null,
+              "size" : null,
+              "valueChange" : null,
+              "linkedLabelEnabled" : false,
+              "linkedLabelClick" : null,
+              "visible" : true,
+              "holdPlace" : false,
+              "isTextArea" : false,
+              "isPassword" : false,
+              "tabindex" : -1,
+              "hasDefaultFocus" : false,
+              "focusState" : null,
+              "titleWidth" : null,
+              "rightTemplate" : null,
+              "path" : "amount",
+              "inputTemplate" : "",
+              "cellTemplate" : "",
+              "validationRules" : null
+            }, {
+              "id" : "form_discount",
+              "type" : "NumericBox",
+              "title" : "折扣金额",
+              "binding" : {
+                "type" : "Form",
+                "path" : "discount",
+                "field" : "35d1275d-8fb9-498a-a0bb-a22ae661223c"
+              },
+              "placeholder" : "",
+              "readonly" : false,
+              "require" : false,
+              "disable" : false,
+              "format" : "n2",
+              "precision" : 2,
+              "validation" : null,
+              "value" : null,
+              "maxValue" : null,
+              "minValue" : null,
+              "maxLength" : 10,
+              "spin" : null,
+              "step" : 1,
+              "appearance" : {
+                "class" : "col-12"
+              },
+              "border" : null,
+              "font" : null,
+              "margin" : null,
+              "padding" : null,
+              "size" : null,
+              "valueChange" : null,
+              "linkedLabelEnabled" : false,
+              "linkedLabelClick" : null,
+              "visible" : true,
+              "holdPlace" : false,
+              "isTextArea" : false,
+              "isPassword" : false,
+              "tabindex" : -1,
+              "hasDefaultFocus" : false,
+              "focusState" : null,
+              "titleWidth" : null,
+              "rightTemplate" : null,
+              "path" : "discount",
+              "inputTemplate" : "",
+              "cellTemplate" : "",
+              "validationRules" : null
+            }, {
+              "id" : "form_actualAmount",
+              "type" : "NumericBox",
+              "title" : "实际结算金额",
+              "binding" : {
+                "type" : "Form",
+                "path" : "actualAmount",
+                "field" : "6a0da038-eac5-4268-8be9-7f245ac980f6"
+              },
+              "placeholder" : "",
+              "readonly" : false,
+              "require" : false,
+              "disable" : false,
+              "format" : "n2",
+              "precision" : 2,
+              "validation" : null,
+              "value" : null,
+              "maxValue" : null,
+              "minValue" : null,
+              "maxLength" : 10,
+              "spin" : null,
+              "step" : 1,
+              "appearance" : {
+                "class" : "col-12"
+              },
+              "border" : null,
+              "font" : null,
+              "margin" : null,
+              "padding" : null,
+              "size" : null,
+              "valueChange" : null,
+              "linkedLabelEnabled" : false,
+              "linkedLabelClick" : null,
+              "visible" : true,
+              "holdPlace" : false,
+              "isTextArea" : false,
+              "isPassword" : false,
+              "tabindex" : -1,
+              "hasDefaultFocus" : false,
+              "focusState" : null,
+              "titleWidth" : null,
+              "rightTemplate" : null,
+              "path" : "actualAmount",
+              "inputTemplate" : "",
+              "cellTemplate" : "",
+              "validationRules" : null
+            }, {
+              "id" : "form_remark",
+              "type" : "TextBox",
+              "title" : "备注",
+              "appearance" : {
+                "class" : "col-12"
+              },
+              "border" : null,
+              "font" : null,
+              "margin" : null,
+              "padding" : null,
+              "size" : null,
+              "binding" : {
+                "type" : "Form",
+                "path" : "remark",
+                "field" : "7b409db5-ae84-4d9b-890e-d2d1a186c1f8"
+              },
+              "readonly" : false,
+              "require" : false,
+              "disable" : false,
+              "placeholder" : "",
+              "format" : null,
+              "validation" : null,
+              "value" : null,
+              "maxLength" : 100,
+              "valueChange" : null,
+              "linkedLabelEnabled" : false,
+              "linkedLabelClick" : null,
+              "visible" : true,
+              "holdPlace" : false,
+              "isTextArea" : false,
+              "isPassword" : false,
+              "tabindex" : -1,
+              "hasDefaultFocus" : false,
+              "focusState" : null,
+              "titleWidth" : null,
+              "rightTemplate" : null,
+              "path" : "remark",
+              "inputTemplate" : "",
+              "cellTemplate" : "",
+              "validationRules" : null
+            } ],
+            "controlsInline" : true,
+            "formAutoIntl" : true,
+            "title" : "订单明细表单容器控件",
+            "visible" : true
+          } ],
+          "afterViewInit" : null,
+          "title" : "订单明细表单组件",
+          "customClass" : "",
+          "keepAlive" : false,
+          "onActived" : null
+        } ],
+        "webcmds" : [ {
+          "id" : "0a68799b-48c6-4c9f-b0d7-140683c62b58",
+          "path" : "Gsp/Mobile/MobileCmp/bo-mobilecmp/metadata/webcmd",
+          "name" : "LoadCommands.webcmd",
+          "refedHandlers" : [ {
+            "host" : "fb2e2d4c-b6b5-49c0-a2dc-7a6a983561ba",
+            "handler" : "LoadForList"
+          }, {
+            "host" : "dd31991d-55a0-4d9e-9327-750d9b5c9300",
+            "handler" : "LoadForCard"
+          }, {
+            "host" : "2326e1ee-52c7-4fe2-a0f4-a4272f673ed8",
+            "handler" : "LoadAndAddForCard"
+          }, {
+            "host" : "01152ada-386d-4071-81d0-c0dcd43da34d",
+            "handler" : "LoadAndEditForCard"
+          } ]
+        }, {
+          "id" : "910661bd-963a-4287-aa32-441c95b8720f",
+          "path" : "Gsp/Mobile/MobileCmp/bo-mobilecmp/metadata/webcmd",
+          "name" : "NavigateCommands.webcmd",
+          "refedHandlers" : [ {
+            "host" : "ee361d44-7b4c-45d6-87c2-f8caa3ae25af",
+            "handler" : "Navigate"
+          }, {
+            "host" : "47191daa-e34c-4ad3-9a2c-81868ef09472",
+            "handler" : "Navigate"
+          }, {
+            "host" : "9e039841-f8a8-4b11-9480-8859d36d780f",
+            "handler" : "Navigate"
+          }, {
+            "host" : "c589c6e1-9d90-4a58-8185-b48b5c33b9c9",
+            "handler" : "Navigate"
+          }, {
+            "host" : "c29b1026-c87d-49f9-b5d9-cbd5a080695c",
+            "handler" : "Navigate"
+          }, {
+            "host" : "316a0d01-e53f-4e89-a1bc-d8e9e9c63f6f",
+            "handler" : "GoBackAndCheck"
+          }, {
+            "host" : "05f8a730-70fc-4749-b59a-dfed983c9a28",
+            "handler" : "Navigate"
+          } ]
+        }, {
+          "id" : "f863c66a-bf93-4d1f-9f99-bcd76009609d",
+          "path" : "Gsp/Mobile/MobileCmp/bo-mobilecmp/metadata/webcmd",
+          "name" : "SaveCommands.webcmd",
+          "refedHandlers" : [ {
+            "host" : "1ca4ef00-0100-4963-9add-0153fca55eba",
+            "handler" : "Save"
+          }, {
+            "host" : "7cbd69ae-bfca-430e-b8c3-0560fd19822a",
+            "handler" : "Save"
+          } ]
+        }, {
+          "id" : "9ef56595-7cb7-4bbe-8f64-c6efcb7b1f9d",
+          "path" : "Gsp/Mobile/MobileCmp/bo-mobilecmp/metadata/webcmd",
+          "name" : "AddCommands.webcmd",
+          "refedHandlers" : [ {
+            "host" : "f005152f-fe2d-4562-b039-0fbd021d6bdf",
+            "handler" : "Create"
+          }, {
+            "host" : "fa731944-6245-4a9d-a6fa-ced8a0131fdf",
+            "handler" : "CreateByPath"
+          } ]
+        }, {
+          "id" : "05592163-fd45-474e-b0ab-61d7dc02e5c0",
+          "path" : "Gsp/Mobile/MobileCmp/bo-mobilecmp/metadata/webcmd",
+          "name" : "CancelCommands.webcmd",
+          "refedHandlers" : [ {
+            "host" : "e6292547-7c6b-4043-9b17-b0016cd2cf54",
+            "handler" : "Cancel"
+          } ]
+        }, {
+          "id" : "dab6b7f1-f56f-490a-879c-3d74232cd3ba",
+          "path" : "Gsp/Mobile/MobileCmp/bo-mobilecmp/metadata/webcmd",
+          "name" : "RemoveCommands.webcmd",
+          "refedHandlers" : [ {
+            "host" : "b036c847-9fb1-42ad-aaba-5be2fb6a4422",
+            "handler" : "RemoveById"
+          } ]
+        }, {
+          "id" : "cf5e568a-5243-4539-94ea-e195eb4d6736",
+          "path" : "Gsp/Mobile/MobileCmp/bo-mobilecmp/metadata/webcmd",
+          "name" : "LoadPageCommands.webcmd",
+          "refedHandlers" : [ {
+            "host" : "b84e2ff8-65f4-44f2-b7fb-60a464cb3382",
+            "handler" : "LoadListPage"
+          } ]
+        }, {
+          "id" : "f458e095-a3c6-43e8-a95b-fc886f6f619e",
+          "path" : "Gsp/Mobile/MobileCmp/bo-mobilecmp/metadata/webcmd",
+          "name" : "EditCommands.webcmd",
+          "refedHandlers" : [ {
+            "host" : "4bb1a40f-6ee2-49ff-926e-89829d66ac5e",
+            "handler" : "Edit"
+          } ]
+        }, {
+          "id" : "91cc23fb-2ecf-418b-9700-99469eab2e84",
+          "path" : "Gsp/Mobile/MobileApproveCmp/bo-mobileapprovecmp/metadata/webcmd",
+          "name" : "ApproveService.webcmd",
+          "refedHandlers" : [ {
+            "host" : "16db726f-6ccc-4b2f-a8c9-b97f27a52c5c",
+            "handler" : "SubmitWithBizDefKey"
+          }, {
+            "host" : "3ed3abd7-85ca-42c8-bab2-c2f33e754a92",
+            "handler" : "CancelSubmitWithDataId"
+          } ]
+        }, {
+          "id" : "14a26f53-59d4-4403-b1f0-fd55d3aed845",
+          "path" : "HotWave/OrderMrg/MyOrder/bo-myorderfront/metadata/components",
+          "name" : "MyOrder_frm_MyOrderCom.webcmd",
+          "refedHandlers" : [ {
+            "host" : "5a2b2064-5323-4354-9323-0703ddfef941",
+            "handler" : "MyOrderCom"
+          } ]
+        } ],
+        "serviceRefs" : [ ],
+        "ctrlLangs" : {
+          "ch" : {
+            "list-page-component" : "列表页面",
+            "root-layout-listview" : "列表页容器",
+            "page-header-card" : "头部容器",
+            "list-page-header" : "主表列表",
+            "main-container-list" : "主内容"
+          }
+        },
+        "projectName" : "bo-myorderfront"
+      }
+    },
+    "CreationDate" : null
+  },
+  "ExtendRule" : null,
+  "RelativePath" : "HotWave/OrderMrg/MyOrder/bo-myorderfront/metadata/components",
+  "ExtendProperty" : "",
+  "Extended" : false,
+  "PreviousVersion" : null,
+  "Version" : null,
+  "Properties" : null
+}

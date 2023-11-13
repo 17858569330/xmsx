@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-parent</artifactId>
+        <version>2.1.6.RELEASE</version>
+        <relativePath />
+    </parent>
+
+    <groupId>io.iec.edp</groupId>
+    <artifactId>caf-boot-parent</artifactId>
+    <version>0.1.2</version>
+    <packaging>pom</packaging>
+
+    <name>caf-boot-parent</name>
+    <description>CAF Boot Parent</description>
+
+    <url>https://git.iec.io/caf/caf-boot</url>
+
+    <developers>
+        <developer>
+            <name>Yi Siqi</name>
+            <email>yisiqi@inspur.com</email>
+            <organization>Inspur Genersoft Co., Ltd.</organization>
+            <organizationUrl>https://ecloud.inspur.com</organizationUrl>
+        </developer>
+        <developer>
+            <name>Zhang Kun</name>
+            <email>zhangkun02@inspur.com</email>
+            <organization>Inspur Genersoft Co., Ltd.</organization>
+            <organizationUrl>https://ecloud.inspur.com</organizationUrl>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://git.iec.io/caf/caf-boot</connection>
+        <developerConnection>scm:git:ssh://git@git.iec.io:6060/caf/caf-boot.git</developerConnection>
+        <url>https://git.iec.io/caf/caf-boot</url>
+      <tag>v0.1.2</tag>
+  </scm>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <spring-cloud.version>Greenwich.SR2</spring-cloud.version>
+        <spring-security-oauth2.version>2.3.6.RELEASE</spring-security-oauth2.version>
+        <cxf.version>3.3.2</cxf.version>
+        <jakarta.servlet.version>4.0.2</jakarta.servlet.version>
+        <jakarta.jax-rs.version>2.1.5</jakarta.jax-rs.version>
+        <jakarta.jax-ws.version>2.3.2</jakarta.jax-ws.version>
+        <jakarta.persistence.version>2.2.2</jakarta.persistence.version>
+        <jakarta.validation.version>2.0.1</jakarta.validation.version>
+        <swagger.version>1.5.21</swagger.version>
+        <guava.version>28.0-jre</guava.version>
+        <caf-security.version>0.1.1</caf-security.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>io.iec.edp</groupId>
+            <artifactId>caf-boot-commons-autoconfigure</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+
+            <!-- CAF Boot Core -->
+            <dependency>
+                <groupId>io.iec.edp</groupId>
+                <artifactId>caf-boot-core-session</artifactId>
+                <version>0.1.2</version>
+            </dependency>
+            <dependency>
+                <groupId>io.iec.edp</groupId>
+                <artifactId>caf-boot-core-context</artifactId>
+                <version>0.1.2</version>
+            </dependency>
+
+
+            <!-- CAF Boot Commons -->
+            <dependency>
+                <groupId>io.iec.edp</groupId>
+                <artifactId>caf-boot-commons-exception</artifactId>
+                <version>0.1.2</version>
+            </dependency>
+            <dependency>
+                <groupId>io.iec.edp</groupId>
+                <artifactId>caf-boot-commons-json</artifactId>
+                <version>0.1.2</version>
+            </dependency>
+            <dependency>
+                <groupId>io.iec.edp</groupId>
+                <artifactId>caf-boot-commons-autoconfigure</artifactId>
+                <version>0.1.2</version>
+            </dependency>
+
+            <!-- CAF Boot Starters-->
+            <dependency>
+                <groupId>io.iec.edp</groupId>
+                <artifactId>caf-boot-starter-rest-server</artifactId>
+                <version>0.1.2</version>
+            </dependency>
+            <dependency>
+                <groupId>io.iec.edp</groupId>
+                <artifactId>caf-boot-starter-rest-client</artifactId>
+                <version>0.1.2</version>
+            </dependency>
+            <dependency>
+                <groupId>io.iec.edp</groupId>
+                <artifactId>caf-boot-starter-data-orm</artifactId>
+                <version>0.1.2</version>
+            </dependency>
+            <dependency>
+                <groupId>io.iec.edp</groupId>
+                <artifactId>caf-boot-starter-context</artifactId>
+                <version>0.1.2</version>
+            </dependency>
+            <dependency>
+                <groupId>io.iec.edp</groupId>
+                <artifactId>caf-boot-starter-security</artifactId>
+                <version>${caf-security.version}</version>
+            </dependency>
+
+
+            <!-- Jakarta EE API -->
+            <dependency>
+                <groupId>jakarta.servlet</groupId>
+                <artifactId>jakarta.servlet-api</artifactId>
+                <version>${jakarta.servlet.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>jakarta.ws.rs</groupId>
+                <artifactId>jakarta.ws.rs-api</artifactId>
+                <version>${jakarta.jax-rs.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>jakarta.xml.ws</groupId>
+                <artifactId>jakarta.xml.ws-api</artifactId>
+                <version>${jakarta.jax-ws.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>jakarta.persistence</groupId>
+                <artifactId>jakarta.persistence-api</artifactId>
+                <version>${jakarta.persistence.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>jakarta.validation</groupId>
+                <artifactId>jakarta.validation-api</artifactId>
+                <version>${jakarta.validation.version}</version>
+            </dependency>
+
+
+            <!-- Others 3rd party deps -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.cxf</groupId>
+                <artifactId>cxf-spring-boot-starter-jaxrs</artifactId>
+                <version>${cxf.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.cxf</groupId>
+                <artifactId>cxf-rt-features-logging</artifactId>
+                <version>${cxf.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.cxf</groupId>
+                <artifactId>cxf-rt-rs-client</artifactId>
+                <version>${cxf.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.swagger</groupId>
+                <artifactId>swagger-annotations</artifactId>
+                <version>${swagger.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.security.oauth</groupId>
+                <artifactId>spring-security-oauth2</artifactId>
+                <version>${spring-security-oauth2.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.openclover</groupId>
+                <artifactId>clover-maven-plugin</artifactId>
+                <version>4.3.1</version>
+                <configuration>
+                    <includesTestSourceRoots>false</includesTestSourceRoots>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>caf-snapshots-repo</id>
+            <url>https://repos.iec.io/repository/maven-caf-snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>caf-releases-repo</id>
+            <url>https://repos.iec.io/repository/maven-caf-releases/</url>
+        </repository>
+    </distributionManagement>
+
+</project>

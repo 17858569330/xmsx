@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>aif</artifactId>
+        <groupId>com.inspur.edp</groupId>
+        <version>0.12.1</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>aif-runtime-client</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>aif-runtime</artifactId>
+        </dependency>
+
+        <!-- bef -->
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>cef-entity</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>das-commonmodel</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>bef-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>bef-spi</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>bef-bizentity</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>bff-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>cm-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>formserver-viewmodel</artifactId>
+        </dependency>
+
+        <!-- dip -->
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>mapping-runtime-api</artifactId>
+        </dependency>
+
+        <!-- dip -->
+        <dependency>
+            <groupId>io.iec.edp</groupId>
+            <artifactId>caf-lockservice-api</artifactId>
+        </dependency>
+    </dependencies>
+</project>

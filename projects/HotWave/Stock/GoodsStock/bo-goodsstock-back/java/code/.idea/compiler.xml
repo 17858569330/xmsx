@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Annotation profile for hotwave-stock-goodsstock-goodsstock-back" enabled="true">
+        <sourceOutputDir name="../target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="hotwave-stock-goodsstock-goodsstock-back-comp" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="hotwave-stock-goodsstock-goodsstock-back" target="1.5" />
+      <module name="hotwave-stock-goodsstock-goodsstock-back-comp" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,15 @@
+{
+  "AppCode" : "HotWave",
+  "ServiceUnitCode" : "OrderMrg",
+  "BizobjectCode" : "MyOrder",
+  "BizobjectID" : "dc97c471-1757-f628-21f7-32ba147f3eda",
+  "ProjectNameSpace" : "Inspur.GS.HotWave.OrderMrg.MyOrder",
+  "SuDeploymentPath" : "apps/hotwave/ordermrg",
+  "MetadataProjectName" : "bo-MyOrder",
+  "MetadataPackageName" : "Inspur.GS.HotWave.OrderMrg.MyOrder",
+  "SuConfigDeploymentPath" : null,
+  "ProjectType" : "backend",
+  "ProjectExtendItem" : [ {
+    "codelanguage" : "java"
+  } ]
+}

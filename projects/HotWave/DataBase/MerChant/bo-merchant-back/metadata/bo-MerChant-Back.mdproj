@@ -1,0 +1,38 @@
+{
+  "NameSpace" : "Inspur.GS.HotWave.DataBase.MerChant.MerChant.Back",
+  "Name" : "bo-MerChant-Back",
+  "ProjectFileName" : "bo-MerChant-Back.mdproj",
+  "ProjectPath" : "HotWave/DataBase/MerChant/bo-merchant-back/metadata",
+  "MetadataPackageInfo" : {
+    "Name" : "Inspur.GS.HotWave.DataBase.MerChant.MerChant.Back",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "interpretation"
+  },
+  "MetadataPackageRefs" : [ ],
+  "ProjectRefs" : null,
+  "ExternalRefs" : null,
+  "MdpkgRefs" : [ {
+    "Name" : "Inspur.Gsp.Common.CommonCmp",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "generation"
+  }, {
+    "Name" : "Inspur.Gsp.Common.CommonUdt",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "generation"
+  } ],
+  "MavenPackageRefs" : [ ],
+  "CsprojAssemblyName" : "Inspur.GS.HotWave.DataBase.MerChant.MerChant.Back",
+  "ID" : "ffcab534-93aa-48de-990c-6578538ca941"
+}

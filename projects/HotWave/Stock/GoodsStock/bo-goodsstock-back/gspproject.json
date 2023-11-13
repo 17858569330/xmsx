@@ -1,0 +1,15 @@
+{
+  "AppCode" : "HotWave",
+  "ServiceUnitCode" : "Stock",
+  "BizobjectCode" : "GoodsStock",
+  "BizobjectID" : "e093e8c4-7764-1bc4-bf0e-76bd4b1a9099",
+  "ProjectNameSpace" : "Inspur.GS.HotWave.Stock.GoodsStock.GoodsStock.Back",
+  "SuDeploymentPath" : "apps/hotwave/stock",
+  "MetadataProjectName" : "bo-GoodsStock-Back",
+  "MetadataPackageName" : "Inspur.GS.HotWave.Stock.GoodsStock.GoodsStock.Back",
+  "SuConfigDeploymentPath" : null,
+  "ProjectType" : "backend",
+  "ProjectExtendItem" : [ {
+    "codelanguage" : "java"
+  } ]
+}

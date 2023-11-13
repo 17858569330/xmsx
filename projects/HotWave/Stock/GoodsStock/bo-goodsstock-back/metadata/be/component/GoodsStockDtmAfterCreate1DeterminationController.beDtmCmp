@@ -1,0 +1,49 @@
+{
+  "Header" : {
+    "Code" : "GoodsStockDtmAfterCreate1DeterminationController",
+    "Type" : "DeterminationComponent",
+    "NameSpace" : "Inspur.GS.HotWave.Stock.GoodsStock.GoodsStock.Back",
+    "CertId" : null,
+    "Name" : "GoodsStockDtmAfterCreate1DeterminationController",
+    "FileName" : "GoodsStockDtmAfterCreate1DeterminationController.beDtmCmp",
+    "BizobjectID" : "e093e8c4-7764-1bc4-bf0e-76bd4b1a9099",
+    "Language" : null,
+    "Extendable" : false,
+    "ID" : "9378d132-3df3-40c4-af99-6e4a8369099c",
+    "IsTranslating" : false
+  },
+  "Refs" : [ ],
+  "Content" : {
+    "ComponentCode" : "DtmAfterCreate1",
+    "ComponentDescription" : "",
+    "ComponentID" : "9378d132-3df3-40c4-af99-6e4a8369099c",
+    "ComponentName" : "新增后1",
+    "ComponentType" : "DeterminationComponent",
+    "DeterminationMethod" : {
+      "Assembly" : "Inspur.GS.HotWave.Stock.GoodsStock.GoodsStock.Back",
+      "ClassName" : "Inspur.GS.HotWave.Stock.GoodsStock.GoodsStock.Back.Determinations.GoodsStockDtmAfterCreate1Determination",
+      "DeterminationParams" : [ ],
+      "JavaClassName" : "com.inspur.gs.hotwave.stock.goodsstock.goodsstock.back.goodsstock.determinations.GoodsStockDtmAfterCreate1Determination",
+      "JavaPackageName" : null,
+      "ReturnValue" : {
+        "Assembly" : "mscorlib.dll",
+        "ClassName" : "Void",
+        "ID" : null,
+        "JavaClassName" : "void",
+        "Mode" : 0,
+        "ParamCode" : "",
+        "ParamDescription" : null,
+        "ParamName" : "",
+        "ParameterCollectionType" : 0,
+        "ParameterType" : 7
+      }
+    }
+  },
+  "ExtendRule" : null,
+  "RelativePath" : null,
+  "ExtendProperty" : null,
+  "Extended" : false,
+  "PreviousVersion" : null,
+  "Version" : null,
+  "Properties" : null
+}

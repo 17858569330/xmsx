@@ -1,0 +1,138 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "bo-saleorder-front": {
+      "root": "projects/bo-saleorder-front/",
+      "sourceRoot": "projects/bo-saleorder-front/src",
+      "projectType": "application",
+      "prefix": "app",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+      "targets": {
+        "build": {
+          "builder": "@farris/farris-rollup:build",
+          "options": {
+            "format": "system",
+            "outputPath": "dist-rollup/bo-saleorder-front",
+            "ngcOut": "out-tsc/app/projects/bo-saleorder-front",
+            "excludeNgFactory": true,
+            "index": "projects/bo-saleorder-front/src/index.rollup.html",
+            "importmap": "/platform/runtime/common/web/runtime.common.manifest.json?v=1689038570745",
+            "tsConfig": "projects/bo-saleorder-front/tsconfig.app.json",
+            "entry": {
+              "main": {
+                "entry": "src/main.js",
+                "sourceMaps": false
+              },
+              "saleordercarddemo1": {
+                "entry": "src/app/saleordercarddemo1/saleordercarddemo1.module.ngfactory.js",
+                "sourceMaps": false,
+                "output": "saleordercarddemo1"
+              },
+              "saleorderlist": {
+                "entry": "src/app/saleorderlist/saleorderlist.module.ngfactory.js",
+                "sourceMaps": false,
+                "output": "saleorderlist"
+              },
+              "goodsqueryform": {
+                "entry": "src/app/goodsqueryform/goodsqueryform.module.ngfactory.js",
+                "sourceMaps": false,
+                "output": "goodsqueryform"
+              }
+            },
+            "uglify": false,
+            "hash": false,
+            "libs": {},
+            "serve": false,
+            "visualize": false,
+            "libsPath": "F:/projects/node_modules/@farris/farris-rollup/src/build/libsWithNgFactory.json",
+            "linkedNodeModules": "F:/projects/node_modules",
+            "assets": [],
+            "i18n": {
+              "projects/bo-saleorder-front/src/app/saleordercarddemo1/i18n": "dist-rollup/bo-saleorder-front/saleordercarddemo1/i18n",
+              "projects/bo-saleorder-front/src/app/saleordercarddemo1/expressions": "dist-rollup/bo-saleorder-front/saleordercarddemo1/expressions",
+              "projects/bo-saleorder-front/src/app/saleordercarddemo1/metadata": "dist-rollup/bo-saleorder-front/saleordercarddemo1",
+              "projects/bo-saleorder-front/src/app/saleordercarddemo1/services/dist-rollup": "dist-rollup/bo-saleorder-front/saleordercarddemo1/services",
+              "projects/bo-saleorder-front/src/app/saleorderlist/i18n": "dist-rollup/bo-saleorder-front/saleorderlist/i18n",
+              "projects/bo-saleorder-front/src/app/saleorderlist/expressions": "dist-rollup/bo-saleorder-front/saleorderlist/expressions",
+              "projects/bo-saleorder-front/src/app/saleorderlist/metadata": "dist-rollup/bo-saleorder-front/saleorderlist",
+              "projects/bo-saleorder-front/src/app/saleorderlist/services/dist-rollup": "dist-rollup/bo-saleorder-front/saleorderlist/services",
+              "projects/bo-saleorder-front/src/app/goodsqueryform/i18n": "dist-rollup/bo-saleorder-front/goodsqueryform/i18n",
+              "projects/bo-saleorder-front/src/app/goodsqueryform/expressions": "dist-rollup/bo-saleorder-front/goodsqueryform/expressions",
+              "projects/bo-saleorder-front/src/app/goodsqueryform/metadata": "dist-rollup/bo-saleorder-front/goodsqueryform",
+              "projects/bo-saleorder-front/src/app/goodsqueryform/services/dist-rollup": "dist-rollup/bo-saleorder-front/goodsqueryform/services"
+            }
+          },
+          "configurations": {
+            "production": {
+              "importmap": "/platform/runtime/common/web/runtime.common.manifest.json?v=1689038570745",
+              "optimization": false,
+              "buildOptimizer": false,
+              "outputHashing": "none",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": true,
+              "showCircularDependencies": false,
+              "aot": true,
+              "extractLicenses": false,
+              "statsJson": false,
+              "progress": false,
+              "vendorChunk": true
+            },
+            "ci": {
+              "importmap": "/platform/runtime/common/web/runtime.common.manifest.json",
+              "libsPath": "请手工修改,参考示例：/builds/webadp/front-project-ci/node_modules/@farris/farris-rollup/src/build/libsWithNgFactory.json",
+              "linkedNodeModules": "请手工修改，参考示例：/builds/webadp/front-project-ci/node_modules",
+              "optimization": false,
+              "buildOptimizer": false,
+              "outputHashing": "none",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": true,
+              "showCircularDependencies": false,
+              "aot": true,
+              "extractLicenses": false,
+              "statsJson": false,
+              "progress": false,
+              "vendorChunk": true
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "bo-saleorder-front:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "bo-saleorder-front:build:production"
+            },
+            "ci": {
+              "importmap": "/platform/runtime/common/web/runtime.common.manifest.json",
+              "libsPath": "请手工修改,参考示例：/builds/webadp/front-project-ci/node_modules/@farris/farris-rollup/src/build/libsWithNgFactory.json",
+              "linkedNodeModules": "请手工修改，参考示例：/builds/webadp/front-project-ci/node_modules",
+              "optimization": false,
+              "buildOptimizer": false,
+              "outputHashing": "none",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": true,
+              "showCircularDependencies": false,
+              "aot": true,
+              "extractLicenses": false,
+              "statsJson": false,
+              "progress": false,
+              "vendorChunk": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "bo-saleorder-front"
+}

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>cef-runtime</artifactId>
+        <groupId>com.inspur.edp</groupId>
+        <version>0.2.89</version>
+    </parent>
+    <artifactId>cef-core</artifactId>
+    <name>cef-core</name>
+    <properties>
+        <caf.cef.version>0.1.1</caf.cef.version>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>cef-api</artifactId>
+            <version>${project.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>cef-spi</artifactId>
+            <version>${project.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>caf-cef-rt-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>bef-api</artifactId>
+            <version>0.2.43</version>
+        </dependency>
+        <dependency>
+            <groupId>io.iec.edp</groupId>
+            <artifactId>caf-boot-starter-context</artifactId>
+        </dependency>
+        <!--        <dependency>-->
+        <!--            <groupId>com.inspur.edp</groupId>-->
+        <!--            <artifactId>svc-reference-check</artifactId>-->
+        <!--            <version>0.1.0</version>-->
+        <!--        </dependency>-->
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>svc-reference-check-api</artifactId>
+            <version>0.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>svc-reference-check-core</artifactId>
+            <version>0.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.iec.edp</groupId>
+            <artifactId>caf-rpc-api</artifactId>
+            <version>0.2.3</version>
+        </dependency>
+        <dependency>
+            <groupId>io.iec.edp</groupId>
+            <artifactId>caf-i18n-framework-localclient</artifactId>
+            <version>0.2.5</version>
+        </dependency>
+        <dependency>
+            <groupId>io.iec.edp</groupId>
+            <artifactId>caf-i18n-framework-api</artifactId>
+            <version>0.2.5</version>
+        </dependency>
+    </dependencies>
+
+
+</project>

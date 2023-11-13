@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>io.iec.edp</groupId>
+		<artifactId>caf-boot-core</artifactId>
+		<version>0.3.6</version>
+	</parent>
+
+	<artifactId>caf-boot-core-context</artifactId>
+
+	<dependencies>
+		<dependency>
+			<groupId>io.iec.edp</groupId>
+			<artifactId>caf-boot-core-session</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>io.iec.edp</groupId>
+			<artifactId>caf-boot-commons-dataaccess</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>io.iec.edp</groupId>
+			<artifactId>caf-boot-commons-caching</artifactId>
+		</dependency>
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-redis</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.iec.edp</groupId>
+            <artifactId>caf-boot-commons-exception</artifactId>
+        </dependency>
+    </dependencies>
+</project>

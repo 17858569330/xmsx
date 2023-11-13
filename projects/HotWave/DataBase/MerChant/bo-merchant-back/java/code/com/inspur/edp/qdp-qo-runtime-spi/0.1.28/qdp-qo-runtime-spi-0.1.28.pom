@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>qdp-qo-runtime</artifactId>
+        <groupId>com.inspur.edp</groupId>
+        <version>0.1.28</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>qdp-qo-runtime-spi</artifactId>
+    <version>0.1.28</version>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>qdp-qo-runtime-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>bql-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>bql-dom</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>qdp-qo-runtime-entity</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>common-dbaccess</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>svc-filtercondition-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>qdp-config</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>svc-expression-api</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>

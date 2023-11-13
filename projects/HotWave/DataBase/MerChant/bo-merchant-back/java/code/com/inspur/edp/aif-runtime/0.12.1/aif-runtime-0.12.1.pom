@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>aif</artifactId>
+        <groupId>com.inspur.edp</groupId>
+        <version>0.12.1</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>aif-runtime</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>aif-common</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>caf-transaction-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>event-stream</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>event-stream-center-client</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.iec.edp</groupId>
+            <artifactId>caf-i18n-framework-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>mapping-rule-manager-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>metadata-businesstype-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>metadata-rtcustomization-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>bef-bizentity</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>formserver-viewmodel</artifactId>
+        </dependency>
+
+        <!-- caf -->
+        <dependency>
+            <groupId>io.iec.edp</groupId>
+            <artifactId>caf-boot-starter-data-orm</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.iec.edp</groupId>
+            <artifactId>caf-boot-starter-rest-server</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.iec.edp</groupId>
+            <artifactId>caf-boot-commons-layeringcache</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.iec.edp</groupId>
+            <artifactId>caf-boot-commons-transaction</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>svc-expression-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.iec.edp</groupId>
+            <artifactId>caf-rpc-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.iec.edp</groupId>
+            <artifactId>caf-rpc-client</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.iec.edp</groupId>
+            <artifactId>caf-framework-configdata-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.iec.edp</groupId>
+            <artifactId>caf-i18n-framework-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.iec.edp</groupId>
+            <artifactId>caf-lockservice-api</artifactId>
+        </dependency>
+
+        <!-- lcm -->
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>lcm-metadata-spi</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.iec.edp</groupId>
+            <artifactId>caf-business-object-api</artifactId>
+        </dependency>
+
+        <!-- cdf -->
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>cdf-component-api</artifactId>
+        </dependency>
+    </dependencies>
+</project>

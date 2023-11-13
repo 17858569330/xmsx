@@ -1,0 +1,447 @@
+{
+  "Header" : {
+    "Code" : "GoodsStockLookup",
+    "Type" : "HelpMetadata",
+    "NameSpace" : "Inspur.GS.HotWave.Stock.GoodsStock.GoodsStock.Front",
+    "CertId" : null,
+    "Name" : "商品库帮助",
+    "FileName" : "GoodsStockLookup.hlp",
+    "BizobjectID" : "e093e8c4-7764-1bc4-bf0e-76bd4b1a9099",
+    "Language" : null,
+    "Extendable" : false,
+    "ID" : "f7ee3965-d277-40a2-8eb9-8dd531c3ca87",
+    "IsTranslating" : false
+  },
+  "Refs" : [ {
+    "DependentMetadata" : {
+      "ID" : "ecdda1be-3d82-4f78-95e0-05c003aa8858",
+      "CertId" : null,
+      "NameSpace" : "Inspur.GS.HotWave.Stock.GoodsStock.GoodsStock.Front",
+      "Code" : "GoodsStockLookup.hlp",
+      "Name" : "GoodsStockLookup.hlp",
+      "Type" : "ResourceMetadata",
+      "BizobjectID" : "e093e8c4-7764-1bc4-bf0e-76bd4b1a9099"
+    }
+  } ],
+  "Content" : {
+    "code" : "GoodsStockLookup",
+    "name" : "商品库帮助",
+    "version" : "0.0.2",
+    "id" : "f7ee3965-d277-40a2-8eb9-8dd531c3ca87",
+    "title" : "商品库帮助",
+    "idField" : "id",
+    "idFieldName" : "主键",
+    "textField" : "goodsID.goodsID_GoodsName",
+    "textFieldName" : "商品名称",
+    "valueField" : "id",
+    "valueFieldName" : "主键",
+    "displayType" : "List",
+    "description" : "",
+    "dataSource" : {
+      "columns" : [ {
+        "field" : "goodsID.goodsID_GoodsName",
+        "title" : "商品名称",
+        "width" : 100,
+        "fieldPath" : "GoodsID.GoodsID_GoodsName",
+        "fieldType" : "StringType",
+        "supportSearch" : true,
+        "align" : "left",
+        "formatter" : null,
+        "sortable" : false,
+        "order" : null,
+        "hAlign" : "left"
+      }, {
+        "field" : "id",
+        "title" : "主键",
+        "width" : 100,
+        "fieldPath" : "ID",
+        "fieldType" : "StringType",
+        "supportSearch" : true,
+        "align" : "left",
+        "formatter" : null,
+        "sortable" : false,
+        "order" : null,
+        "hAlign" : "left"
+      }, {
+        "field" : "merchantID.merchantID_MerchantName",
+        "title" : "商户名称",
+        "width" : 100,
+        "fieldPath" : "MerchantID.MerchantID_MerchantName",
+        "fieldType" : "StringType",
+        "supportSearch" : true,
+        "align" : "left",
+        "formatter" : null,
+        "sortable" : false,
+        "order" : null,
+        "hAlign" : "left"
+      } ],
+      "sourceType" : "BE",
+      "sourcePath" : "HotWave/Stock/GoodsStock/bo-goodsstock-back/metadata/be/GoodsStock.be",
+      "sourceName" : "商品库",
+      "sourceId" : "b3a372d3-4d4e-48a0-988d-6a7c0ddfd561",
+      "uri" : "HotWave/Stock/GoodsStock/bo-goodsstock-front/metadata/lookups/GoodsStockLookup_hlp.vo",
+      "vmCode" : "Inspur.GS.HotWave.Stock.GoodsStock.GoodsStock.Front.Vo.GoodsStockLookup_hlp",
+      "voSourceId" : "eb37757d-82db-4163-b043-c2d2db20096b",
+      "conditions" : [ ],
+      "sorts" : [ ],
+      "pageInfo" : {
+        "pageList" : [ 10, 20, 30, 50 ],
+        "pageSize" : 20,
+        "pageIndex" : 0,
+        "enablePager" : true
+      },
+      "treeInfo" : {
+        "loadDataType" : "async",
+        "layerType" : "pathcode",
+        "dataField" : "",
+        "pathField" : "path",
+        "layerField" : "layer",
+        "isDetailField" : "isDetail",
+        "onlySelectLeaf" : false,
+        "parentField" : "parentElement",
+        "treeDataIsInit" : false
+      }
+    },
+    "navigation" : null,
+    "languages" : null,
+    "schema" : {
+      "main" : {
+        "name" : "商品库帮助_ViewObject",
+        "id" : "3bdf13ef-dff0-4c8c-8a33-902f0c3a691d",
+        "sourceType" : "vo",
+        "variables" : [ ],
+        "code" : "GoodsStockLookup_hlp",
+        "entities" : [ {
+          "name" : "商品库",
+          "id" : "f6e329c7-5502-464d-afcc-6c77895165fe",
+          "type" : {
+            "$type" : "EntityType",
+            "fields" : [ {
+              "$type" : "SimpleField",
+              "name" : "主键",
+              "id" : "585fb95c-1f30-48fe-b236-e8863560652c",
+              "type" : {
+                "$type" : "StringType"
+              },
+              "path" : "ID",
+              "code" : "ID",
+              "label" : "id",
+              "originalId" : "585fb95c-1f30-48fe-b236-e8863560652c",
+              "bindingPath" : "id",
+              "bindingField" : "id"
+            }, {
+              "$type" : "SimpleField",
+              "name" : "版本",
+              "id" : "a8251b1f-1a09-4c3e-98a0-79221c90fe92",
+              "type" : {
+                "$type" : "DateTimeType"
+              },
+              "path" : "Version",
+              "code" : "Version",
+              "label" : "version",
+              "originalId" : "a8251b1f-1a09-4c3e-98a0-79221c90fe92",
+              "bindingPath" : "version",
+              "bindingField" : "version"
+            }, {
+              "$type" : "ComplexField",
+              "name" : "商户ID",
+              "id" : "a4b8bfa0-97bf-4be4-9cc9-721041f4e3c6",
+              "type" : {
+                "$type" : "EntityType",
+                "fields" : [ {
+                  "$type" : "SimpleField",
+                  "name" : "商户ID",
+                  "id" : "55213b02-11bb-483a-928c-7c026e25b6e8",
+                  "type" : {
+                    "$type" : "StringType"
+                  },
+                  "path" : "MerchantID.MerchantID",
+                  "code" : "MerchantID",
+                  "label" : "merchantID",
+                  "originalId" : "55213b02-11bb-483a-928c-7c026e25b6e8",
+                  "bindingPath" : "merchantID.merchantID",
+                  "bindingField" : "merchantID"
+                }, {
+                  "$type" : "SimpleField",
+                  "name" : "商户名称",
+                  "id" : "45946060-25b8-49d5-bfe5-b6fab293975f",
+                  "type" : {
+                    "$type" : "StringType"
+                  },
+                  "path" : "MerchantID.MerchantID_MerchantName",
+                  "code" : "MerchantName",
+                  "label" : "merchantID_MerchantName",
+                  "originalId" : "45946060-25b8-49d5-bfe5-b6fab293975f",
+                  "bindingPath" : "merchantID.merchantID_MerchantName",
+                  "bindingField" : "merchantID_MerchantID_MerchantName"
+                }, {
+                  "$type" : "SimpleField",
+                  "name" : "商户名称",
+                  "id" : "94fb5099-accd-446b-9879-e9d088fde2f8",
+                  "type" : {
+                    "$type" : "StringType"
+                  },
+                  "path" : "MerchantID.MerchantID_ParentMerchantID_MerchantName",
+                  "code" : "MerchantName(ParentMerchantID)",
+                  "label" : "merchantID_ParentMerchantID_MerchantName",
+                  "originalId" : "94fb5099-accd-446b-9879-e9d088fde2f8",
+                  "bindingPath" : "merchantID.merchantID_ParentMerchantID_MerchantName",
+                  "bindingField" : "merchantID_MerchantID_ParentMerchantID_MerchantName"
+                } ],
+                "primary" : "merchantID",
+                "entities" : [ ]
+              },
+              "path" : "MerchantID",
+              "code" : "MerchantID",
+              "label" : "merchantID",
+              "originalId" : "a4b8bfa0-97bf-4be4-9cc9-721041f4e3c6",
+              "bindingPath" : "merchantID",
+              "bindingField" : "merchantID"
+            }, {
+              "$type" : "ComplexField",
+              "name" : "商品ID",
+              "id" : "2be2fa34-b895-4fc7-9cb5-639cce400d73",
+              "type" : {
+                "$type" : "EntityType",
+                "fields" : [ {
+                  "$type" : "SimpleField",
+                  "name" : "商品ID",
+                  "id" : "28bac24b-122e-452a-9780-cb12e992da74",
+                  "type" : {
+                    "$type" : "StringType"
+                  },
+                  "path" : "GoodsID.GoodsID",
+                  "code" : "GoodsID",
+                  "label" : "goodsID",
+                  "originalId" : "28bac24b-122e-452a-9780-cb12e992da74",
+                  "bindingPath" : "goodsID.goodsID",
+                  "bindingField" : "goodsID"
+                }, {
+                  "$type" : "SimpleField",
+                  "name" : "商品名称",
+                  "id" : "75f0cbea-dbe8-4712-941a-9f2b4d6d6194",
+                  "type" : {
+                    "$type" : "StringType"
+                  },
+                  "path" : "GoodsID.GoodsID_GoodsName",
+                  "code" : "GoodsName",
+                  "label" : "goodsID_GoodsName",
+                  "originalId" : "75f0cbea-dbe8-4712-941a-9f2b4d6d6194",
+                  "bindingPath" : "goodsID.goodsID_GoodsName",
+                  "bindingField" : "goodsID_GoodsID_GoodsName"
+                }, {
+                  "$type" : "SimpleField",
+                  "name" : "规格型号",
+                  "id" : "ec8ec2cb-438b-486c-b77e-8ae65d7c090f",
+                  "type" : {
+                    "$type" : "StringType"
+                  },
+                  "path" : "GoodsID.GoodsID_Specification",
+                  "code" : "Specification",
+                  "label" : "goodsID_Specification",
+                  "originalId" : "ec8ec2cb-438b-486c-b77e-8ae65d7c090f",
+                  "bindingPath" : "goodsID.goodsID_Specification",
+                  "bindingField" : "goodsID_GoodsID_Specification"
+                }, {
+                  "$type" : "SimpleField",
+                  "name" : "分类名称",
+                  "id" : "725ce5ab-c76d-4338-9303-17c7f7902ef2",
+                  "type" : {
+                    "$type" : "StringType"
+                  },
+                  "path" : "GoodsID.GoodsID_Category",
+                  "code" : "Category",
+                  "label" : "goodsID_Category",
+                  "originalId" : "725ce5ab-c76d-4338-9303-17c7f7902ef2",
+                  "bindingPath" : "goodsID.goodsID_Category",
+                  "bindingField" : "goodsID_GoodsID_Category"
+                }, {
+                  "$type" : "SimpleField",
+                  "name" : "单价",
+                  "id" : "26eb6841-25c6-462a-9868-cde00ff45f55",
+                  "type" : {
+                    "$type" : "NumericType",
+                    "precision" : 2
+                  },
+                  "path" : "GoodsID.GoodsID_Price",
+                  "code" : "Price",
+                  "label" : "goodsID_Price",
+                  "originalId" : "26eb6841-25c6-462a-9868-cde00ff45f55",
+                  "bindingPath" : "goodsID.goodsID_Price",
+                  "bindingField" : "goodsID_GoodsID_Price"
+                }, {
+                  "$type" : "SimpleField",
+                  "name" : "上架数量",
+                  "id" : "80979d24-c1a6-4745-a457-398915628c34",
+                  "type" : {
+                    "$type" : "NumericType",
+                    "precision" : 0
+                  },
+                  "path" : "GoodsID.GoodsID_Number",
+                  "code" : "Number",
+                  "label" : "goodsID_Number",
+                  "originalId" : "80979d24-c1a6-4745-a457-398915628c34",
+                  "bindingPath" : "goodsID.goodsID_Number",
+                  "bindingField" : "goodsID_GoodsID_Number"
+                } ],
+                "primary" : "goodsID",
+                "entities" : [ ]
+              },
+              "path" : "GoodsID",
+              "code" : "GoodsID",
+              "label" : "goodsID",
+              "originalId" : "2be2fa34-b895-4fc7-9cb5-639cce400d73",
+              "bindingPath" : "goodsID",
+              "bindingField" : "goodsID"
+            }, {
+              "$type" : "SimpleField",
+              "name" : "当前库存量",
+              "id" : "daf3051d-2c82-48ce-841d-9cb40b3cb32d",
+              "type" : {
+                "$type" : "NumericType",
+                "precision" : 2
+              },
+              "path" : "StockNum",
+              "code" : "StockNum",
+              "label" : "stockNum",
+              "originalId" : "daf3051d-2c82-48ce-841d-9cb40b3cb32d",
+              "bindingPath" : "stockNum",
+              "bindingField" : "stockNum"
+            }, {
+              "$type" : "SimpleField",
+              "name" : "日销量",
+              "id" : "81871cdc-8557-4122-9c01-c6cd8ffede02",
+              "type" : {
+                "$type" : "NumericType",
+                "precision" : 2
+              },
+              "path" : "DailySalesNum",
+              "code" : "DailySalesNum",
+              "label" : "dailySalesNum",
+              "originalId" : "81871cdc-8557-4122-9c01-c6cd8ffede02",
+              "bindingPath" : "dailySalesNum",
+              "bindingField" : "dailySalesNum"
+            }, {
+              "$type" : "SimpleField",
+              "name" : "安全库存天数",
+              "id" : "addff72e-ac87-4198-bf3b-10df31335e96",
+              "type" : {
+                "$type" : "NumericType",
+                "precision" : 0
+              },
+              "path" : "SafetyStockDays",
+              "code" : "SafetyStockDays",
+              "label" : "safetyStockDays",
+              "originalId" : "addff72e-ac87-4198-bf3b-10df31335e96",
+              "bindingPath" : "safetyStockDays",
+              "bindingField" : "safetyStockDays"
+            }, {
+              "$type" : "SimpleField",
+              "name" : "安全库存量",
+              "id" : "72f4d98f-b1a3-4096-a55e-fcb8171e9d90",
+              "type" : {
+                "$type" : "NumericType",
+                "precision" : 2
+              },
+              "path" : "SafetyStockNum",
+              "code" : "SafetyStockNum",
+              "label" : "safetyStockNum",
+              "originalId" : "72f4d98f-b1a3-4096-a55e-fcb8171e9d90",
+              "bindingPath" : "safetyStockNum",
+              "bindingField" : "safetyStockNum"
+            }, {
+              "$type" : "SimpleField",
+              "name" : "采购在订量",
+              "id" : "6d1704d6-d75f-4d4b-b796-38d79ce7f83b",
+              "type" : {
+                "$type" : "NumericType",
+                "precision" : 2
+              },
+              "path" : "InPurchaseNum",
+              "code" : "InPurchaseNum",
+              "label" : "inPurchaseNum",
+              "originalId" : "6d1704d6-d75f-4d4b-b796-38d79ce7f83b",
+              "bindingPath" : "inPurchaseNum",
+              "bindingField" : "inPurchaseNum"
+            }, {
+              "$type" : "SimpleField",
+              "name" : "销售在订量",
+              "id" : "01584830-8ee3-41cf-907e-34ebe2f7b08d",
+              "type" : {
+                "$type" : "NumericType",
+                "precision" : 2
+              },
+              "path" : "InSalesNum",
+              "code" : "InSalesNum",
+              "label" : "inSalesNum",
+              "originalId" : "01584830-8ee3-41cf-907e-34ebe2f7b08d",
+              "bindingPath" : "inSalesNum",
+              "bindingField" : "inSalesNum"
+            }, {
+              "$type" : "SimpleField",
+              "name" : "建议采购量",
+              "id" : "4d8a28dd-aea3-4c77-a071-c957aa396bd1",
+              "type" : {
+                "$type" : "NumericType",
+                "precision" : 2
+              },
+              "path" : "SuggestPurchaseNum",
+              "code" : "SuggestPurchaseNum",
+              "label" : "suggestPurchaseNum",
+              "originalId" : "4d8a28dd-aea3-4c77-a071-c957aa396bd1",
+              "bindingPath" : "suggestPurchaseNum",
+              "bindingField" : "suggestPurchaseNum"
+            }, {
+              "$type" : "SimpleField",
+              "name" : "最近采购价",
+              "id" : "91578ec2-6ea4-4c46-9608-529c6a2cd163",
+              "type" : {
+                "$type" : "NumericType",
+                "precision" : 2
+              },
+              "path" : "RecentPurchasePrice",
+              "code" : "RecentPurchasePrice",
+              "label" : "recentPurchasePrice",
+              "originalId" : "91578ec2-6ea4-4c46-9608-529c6a2cd163",
+              "bindingPath" : "recentPurchasePrice",
+              "bindingField" : "recentPurchasePrice"
+            }, {
+              "$type" : "SimpleField",
+              "name" : "金额",
+              "id" : "3794492e-07c7-4424-8aec-b6b2a10be5ad",
+              "type" : {
+                "$type" : "NumericType",
+                "precision" : 2
+              },
+              "path" : "StockAmount",
+              "code" : "StockAmount",
+              "label" : "stockAmount",
+              "originalId" : "3794492e-07c7-4424-8aec-b6b2a10be5ad",
+              "bindingPath" : "stockAmount",
+              "bindingField" : "stockAmount"
+            } ],
+            "primary" : "id",
+            "entities" : [ ],
+            "name" : "GoodsStock",
+            "displayName" : "商品库"
+          },
+          "code" : "GoodsStock",
+          "label" : "goodsStocks"
+        } ],
+        "extendProperties" : {
+          "enableStdTimeFormat" : true
+        },
+        "sourceUri" : null
+      }
+    },
+    "initDataSource" : true,
+    "createTime" : "2023-06-27 14:04:33"
+  },
+  "ExtendRule" : null,
+  "RelativePath" : "HotWave/Stock/GoodsStock/bo-goodsstock-front/metadata/lookups",
+  "ExtendProperty" : "",
+  "Extended" : false,
+  "PreviousVersion" : null,
+  "Version" : null,
+  "Properties" : null
+}

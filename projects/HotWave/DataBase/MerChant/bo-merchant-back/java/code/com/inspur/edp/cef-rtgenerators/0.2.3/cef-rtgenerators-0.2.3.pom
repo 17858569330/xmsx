@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.inspur.edp</groupId>
+    <artifactId>cef-rtgenerators</artifactId>
+    <packaging>pom</packaging>
+    <version>0.2.3</version>
+    <modules>
+        <module>cef-gencommon</module>
+        <module>cef-rtgenerator</module>
+    </modules>
+    <parent>
+        <groupId>io.iec.edp</groupId>
+        <artifactId>caf-boot-parent</artifactId>
+        <version>0.1.2</version>
+    </parent>
+    <properties>
+        <database.object.api.version>0.1.10</database.object.api.version>
+        <cef.version>0.2.40</cef.version>
+    </properties>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>io.iec.edp</groupId>
+                <artifactId>caf-database-object-api</artifactId>
+                <version>${database.object.api.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>lcm-database-object-api</artifactId>
+                <version>${database.object.api.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>cef-gencommon</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>metadata-rtcustomization-api</artifactId>
+                <version>0.1.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.inspur.dep</groupId>
+                <artifactId>cef-core</artifactId>
+                <version>${cef.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.openclover</groupId>
+                <artifactId>clover-maven-plugin</artifactId>
+                <version>4.3.1</version>
+                <configuration>
+                    <includesTestSourceRoots>false</includesTestSourceRoots>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>gsp-snapshots-repo</id>
+            <url>https://repos.iec.io/repository/maven-gsp-snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>gsp-releases-repo</id>
+            <url>https://repos.iec.io/repository/maven-gsp-releases/</url>
+        </repository>
+    </distributionManagement>
+
+</project>

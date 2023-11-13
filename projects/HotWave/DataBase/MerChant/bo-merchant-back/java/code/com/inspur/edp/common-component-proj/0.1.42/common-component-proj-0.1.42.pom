@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>io.iec.edp</groupId>
+        <artifactId>caf-boot-parent</artifactId>
+        <version>0.2.6</version>
+    </parent>
+    <groupId>com.inspur.edp</groupId>
+    <artifactId>common-component-proj</artifactId>
+    <packaging>pom</packaging>
+    <version>0.1.42</version>
+    <modules>
+        <module>common-component-api</module>
+        <module>common-component</module>
+    </modules>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>gsp-snapshots-repo</id>
+            <url>https://repos.iec.io/repository/maven-gsp-snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>gsp-releases-repo</id>
+            <url>https://repos.iec.io/repository/maven-gsp-releases/</url>
+        </repository>
+    </distributionManagement>
+    <properties>
+        <bef.runtime.version>0.2.44</bef.runtime.version>
+        <bff.runtime.version>0.2.15</bff.runtime.version>
+        <cef.runtime.version>0.2.72</cef.runtime.version>
+        <document-storage-api.version>0.2.6</document-storage-api.version>
+        <cdf-component-api.version>0.1.2</cdf-component-api.version>
+        <caf-boot-starter-context.version>0.2.5</caf-boot-starter-context.version>
+        <wf-runtime-api.version>0.1.5</wf-runtime-api.version>
+        <udt.version>0.2.9</udt.version>
+    </properties>
+</project>

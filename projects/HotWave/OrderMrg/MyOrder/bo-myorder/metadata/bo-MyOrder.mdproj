@@ -1,0 +1,22 @@
+{
+  "NameSpace" : "Inspur.GS.HotWave.OrderMrg.MyOrder",
+  "Name" : "bo-MyOrder",
+  "ProjectFileName" : null,
+  "ProjectPath" : null,
+  "MetadataPackageInfo" : {
+    "Name" : "Inspur.GS.HotWave.OrderMrg.MyOrder",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "interpretation"
+  },
+  "MetadataPackageRefs" : [ ],
+  "ProjectRefs" : null,
+  "ExternalRefs" : null,
+  "MdpkgRefs" : null,
+  "MavenPackageRefs" : [ ],
+  "CsprojAssemblyName" : null,
+  "ID" : "b0e613f6-7341-4d2f-9fb4-cfa3763833a4"
+}

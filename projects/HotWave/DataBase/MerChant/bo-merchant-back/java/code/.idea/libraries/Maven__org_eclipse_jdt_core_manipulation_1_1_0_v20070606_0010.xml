@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.eclipse.jdt.core:manipulation:1.1.0-v20070606-0010">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../../../../../maven_cache/org/eclipse/jdt/core/manipulation/1.1.0-v20070606-0010/manipulation-1.1.0-v20070606-0010.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../../../../../../maven_cache/org/eclipse/jdt/core/manipulation/1.1.0-v20070606-0010/manipulation-1.1.0-v20070606-0010-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../../../../../maven_cache/org/eclipse/jdt/core/manipulation/1.1.0-v20070606-0010/manipulation-1.1.0-v20070606-0010-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <modules>
+        <module>mapping-rule-manager-api</module>
+        <module>mapping-rule-manager-core</module>
+        <module>mapping-rule-rpc-service</module>
+        <module>mapping-rule-rpc-client</module>
+        <module>mapping-rule-common</module>
+        <module>mapping-rule-manager-service</module>
+        <module>mapping-rule-compile</module>
+        <module>mapping-rule-test</module>
+    </modules>
+
+    <parent>
+        <groupId>io.iec.edp</groupId>
+        <artifactId>caf-boot-parent</artifactId>
+        <version>0.1.2</version>
+    </parent>
+
+    <artifactId>mapping-rule-manager</artifactId>
+
+    <groupId>com.inspur.edp</groupId>
+    <packaging>pom</packaging>
+    <version>0.3.2</version>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>mapping-rule-manager-api</artifactId>
+                <version>0.3.2</version>
+            </dependency>
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>mapping-rule-manager-core</artifactId>
+                <version>0.3.2</version>
+            </dependency>
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>mapping-rule-rpc-service</artifactId>
+                <version>0.3.2</version>
+            </dependency>
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>mapping-rule-rpc-client</artifactId>
+                <version>0.3.2</version>
+            </dependency>
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>mapping-rule-common</artifactId>
+                <version>0.3.2</version>
+            </dependency>
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>mapping-rule-manager-service</artifactId>
+                <version>0.3.2</version>
+            </dependency>
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>mapping-rule-compile</artifactId>
+                <version>0.3.2</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.openclover</groupId>
+                <artifactId>clover-maven-plugin</artifactId>
+                <version>4.3.1</version>
+                <configuration>
+                    <includesTestSourceRoots>false</includesTestSourceRoots>
+                </configuration>
+            </plugin>
+            <plugin> <!-- 跳过测试 全局生效-->
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
+        </plugins>
+
+        <pluginManagement>
+            <plugins>
+                <plugin> <!-- springboot maven构建插件 -->
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>gsp-snapshots-repo</id>
+            <url>https://repos.iec.io/repository/maven-gsp-snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>gsp-releases-repo</id>
+            <url>https://repos.iec.io/repository/maven-gsp-releases/</url>
+        </repository>
+    </distributionManagement>
+
+</project>

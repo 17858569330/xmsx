@@ -1,0 +1,43 @@
+{
+  "Header" : {
+    "Code" : "GoodsStockForm_frm_Controller",
+    "Type" : "WebComponent",
+    "NameSpace" : "Inspur.GS.HotWave.Stock.GoodsStock.GoodsStock.Front",
+    "CertId" : null,
+    "Name" : "商品库表单_frm_Controller",
+    "FileName" : "GoodsStockForm_frm_Controller.webcmp",
+    "BizobjectID" : "e093e8c4-7764-1bc4-bf0e-76bd4b1a9099",
+    "Language" : null,
+    "Extendable" : false,
+    "ID" : "08dd464e-dde9-47de-882e-c5a5231f581e",
+    "IsTranslating" : false
+  },
+  "Refs" : [ ],
+  "Content" : {
+    "name" : "商品库表单_frm_Controller",
+    "application" : "HotWave",
+    "serviceUnit" : "Stock",
+    "version" : "1.0",
+    "refStructures" : [ ],
+    "resource" : {
+      "sourceFile" : "HotWave/Stock/GoodsStock/bo-goodsstock-front/metadata/components/GoodsStockForm_frm_Controller.ts",
+      "className" : null,
+      "kind" : "TypeScriptClass"
+    },
+    "Code" : "GoodsStockForm_frm_Controller",
+    "Id" : "08dd464e-dde9-47de-882e-c5a5231f581e",
+    "Description" : null,
+    "Operations" : [ ],
+    "IsCommon" : false,
+    "ClassName" : null,
+    "FormCode" : "GoodsStockForm",
+    "Source" : "HotWave/Stock/GoodsStock/bo-goodsstock-front/metadata/components/GoodsStockForm_frm_Controller.ts"
+  },
+  "ExtendRule" : null,
+  "RelativePath" : "HotWave/Stock/GoodsStock/bo-goodsstock-front/metadata/components",
+  "ExtendProperty" : "{\"IsCommon\":false,\"FormCode\":\"GoodsStockForm\"}",
+  "Extended" : false,
+  "PreviousVersion" : null,
+  "Version" : null,
+  "Properties" : null
+}

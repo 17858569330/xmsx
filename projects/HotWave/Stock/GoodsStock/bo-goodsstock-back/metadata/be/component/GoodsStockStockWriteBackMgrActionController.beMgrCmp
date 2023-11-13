@@ -1,0 +1,82 @@
+{
+  "Header" : {
+    "Code" : "GoodsStockStockWriteBackMgrActionController",
+    "Type" : "BEMgrComponent",
+    "NameSpace" : "Inspur.GS.HotWave.Stock.GoodsStock.GoodsStock.Back",
+    "CertId" : null,
+    "Name" : "GoodsStockStockWriteBackMgrActionController",
+    "FileName" : "GoodsStockStockWriteBackMgrActionController.beMgrCmp",
+    "BizobjectID" : "e093e8c4-7764-1bc4-bf0e-76bd4b1a9099",
+    "Language" : null,
+    "Extendable" : false,
+    "ID" : "42128097-ddc2-4e22-8bc0-62363589c462",
+    "IsTranslating" : false
+  },
+  "Refs" : [ ],
+  "Content" : {
+    "BEMgrMethod" : {
+      "Assembly" : "Inspur.GS.HotWave.Stock.GoodsStock.GoodsStock.Back",
+      "BEMgrParams" : [ {
+        "Assembly" : "mscorlib.dll",
+        "ClassName" : "System.String",
+        "ID" : "a8199652-8188-4037-9739-36e9081f7d1c",
+        "JavaClassName" : "java.lang.String",
+        "Mode" : 0,
+        "ParamCode" : "dataid",
+        "ParamDescription" : "",
+        "ParamName" : "单据id",
+        "ParameterCollectionType" : 0,
+        "ParameterType" : 0
+      }, {
+        "Assembly" : "mscorlib.dll",
+        "ClassName" : "System.String",
+        "ID" : "fe734aec-21d3-433b-95c5-ca45b098cf37",
+        "JavaClassName" : "java.lang.String",
+        "Mode" : 0,
+        "ParamCode" : "spjl",
+        "ParamDescription" : "",
+        "ParamName" : "审批结论",
+        "ParameterCollectionType" : 0,
+        "ParameterType" : 0
+      }, {
+        "Assembly" : "mscorlib.dll",
+        "ClassName" : "System.String",
+        "ID" : "7b995bff-6b02-4e7e-918d-1ffe0653d551",
+        "JavaClassName" : "java.lang.String",
+        "Mode" : 0,
+        "ParamCode" : "beid",
+        "ParamDescription" : "",
+        "ParamName" : "业务实体id",
+        "ParameterCollectionType" : 0,
+        "ParameterType" : 0
+      } ],
+      "ClassName" : "Inspur.GS.HotWave.Stock.GoodsStock.GoodsStock.Back.bizactions.GoodsStockStockWriteBackMgrAction",
+      "JavaClassName" : "com.inspur.gs.hotwave.stock.goodsstock.goodsstock.back.bizactions.GoodsStockStockWriteBackMgrAction",
+      "JavaPackageName" : null,
+      "ReturnValue" : {
+        "Assembly" : "mscorlib.dll",
+        "ClassName" : "Void",
+        "ID" : "9944c0ec-a621-4473-8e9b-881f13596348",
+        "JavaClassName" : "void",
+        "Mode" : 0,
+        "ParamCode" : "",
+        "ParamDescription" : "",
+        "ParamName" : "",
+        "ParameterCollectionType" : 0,
+        "ParameterType" : 0
+      }
+    },
+    "ComponentCode" : "StockWriteBack",
+    "ComponentDescription" : "",
+    "ComponentID" : "42128097-ddc2-4e22-8bc0-62363589c462",
+    "ComponentName" : "补货回写库存",
+    "ComponentType" : "BEMgrComponent"
+  },
+  "ExtendRule" : null,
+  "RelativePath" : null,
+  "ExtendProperty" : null,
+  "Extended" : false,
+  "PreviousVersion" : null,
+  "Version" : null,
+  "Properties" : null
+}

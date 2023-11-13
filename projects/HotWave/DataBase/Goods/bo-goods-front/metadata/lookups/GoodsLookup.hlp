@@ -1,0 +1,263 @@
+{
+  "Header" : {
+    "Code" : "GoodsLookup",
+    "Type" : "HelpMetadata",
+    "NameSpace" : "Inspur.GS.HotWave.DataBase.Goods.Goods.Front",
+    "CertId" : null,
+    "Name" : "商品帮助",
+    "FileName" : "GoodsLookup.hlp",
+    "BizobjectID" : "dec0e47e-409b-6d3a-8876-85bd5909bf19",
+    "Language" : null,
+    "Extendable" : false,
+    "ID" : "bdb254aa-5b96-4088-8aca-8548df8f45aa",
+    "IsTranslating" : false
+  },
+  "Refs" : [ {
+    "DependentMetadata" : {
+      "ID" : "09a82287-f19d-46b4-ad9f-6b764ddc0e5d",
+      "CertId" : null,
+      "NameSpace" : "Inspur.GS.HotWave.DataBase.Goods.Goods.Front",
+      "Code" : "GoodsLookup.hlp",
+      "Name" : "GoodsLookup.hlp",
+      "Type" : "ResourceMetadata",
+      "BizobjectID" : "dec0e47e-409b-6d3a-8876-85bd5909bf19"
+    }
+  } ],
+  "Content" : {
+    "code" : "GoodsLookup",
+    "name" : "商品帮助",
+    "version" : "0.0.2",
+    "id" : "bdb254aa-5b96-4088-8aca-8548df8f45aa",
+    "title" : "商品帮助",
+    "idField" : "id",
+    "idFieldName" : "主键",
+    "textField" : "goodsName",
+    "textFieldName" : "商品名称",
+    "valueField" : "id",
+    "valueFieldName" : "主键",
+    "displayType" : "List",
+    "description" : "",
+    "dataSource" : {
+      "columns" : [ {
+        "field" : "goodsCode",
+        "title" : "商品编号",
+        "width" : 100,
+        "fieldPath" : "GoodsCode",
+        "fieldType" : "StringType",
+        "supportSearch" : true,
+        "align" : "left",
+        "formatter" : null,
+        "sortable" : false,
+        "order" : null,
+        "hAlign" : "left"
+      }, {
+        "field" : "goodsName",
+        "title" : "商品名称",
+        "width" : 100,
+        "fieldPath" : "GoodsName",
+        "fieldType" : "StringType",
+        "supportSearch" : true,
+        "align" : "left",
+        "formatter" : null,
+        "sortable" : false,
+        "order" : null,
+        "hAlign" : "left"
+      }, {
+        "field" : "specification",
+        "title" : "规格型号",
+        "width" : 100,
+        "fieldPath" : "Specification",
+        "fieldType" : "StringType",
+        "supportSearch" : true,
+        "align" : "left",
+        "formatter" : null,
+        "sortable" : false,
+        "order" : null,
+        "hAlign" : "left"
+      } ],
+      "sourceType" : "BE",
+      "sourcePath" : "HotWave/DataBase/Goods/bo-goods-back/metadata/be/Goods.be",
+      "sourceName" : "商品",
+      "sourceId" : "7cbdd71b-7819-44cc-a946-c6ac7c8c94c6",
+      "uri" : "HotWave/DataBase/Goods/bo-goods-front/metadata/lookups/GoodsLookup_hlp.vo",
+      "vmCode" : "Inspur.GS.HotWave.DataBase.Goods.Goods.Front.Vo.GoodsLookup_hlp",
+      "voSourceId" : "a0eb32aa-fb49-4a7f-ac2d-5a7a80084ef5",
+      "conditions" : [ ],
+      "sorts" : [ ],
+      "pageInfo" : {
+        "pageList" : [ 10, 20, 30, 50 ],
+        "pageSize" : 20,
+        "pageIndex" : 0,
+        "enablePager" : true
+      },
+      "treeInfo" : {
+        "loadDataType" : "async",
+        "layerType" : "pathcode",
+        "dataField" : "",
+        "pathField" : "path",
+        "layerField" : "layer",
+        "isDetailField" : "isDetail",
+        "onlySelectLeaf" : false,
+        "parentField" : "parentElement",
+        "treeDataIsInit" : false
+      }
+    },
+    "navigation" : null,
+    "languages" : null,
+    "schema" : {
+      "main" : {
+        "name" : "商品帮助_ViewObject",
+        "id" : "48282b86-5e8c-454f-ad84-f7a88ea72d90",
+        "extendProperties" : {
+          "enableStdTimeFormat" : true
+        },
+        "sourceType" : "vo",
+        "variables" : [ ],
+        "code" : "GoodsLookup_hlp",
+        "sourceUri" : null,
+        "entities" : [ {
+          "name" : "商品",
+          "id" : "8a810f48-6075-43d5-a6e1-f93e24bc1a9d",
+          "type" : {
+            "$type" : "EntityType",
+            "fields" : [ {
+              "$type" : "SimpleField",
+              "name" : "主键",
+              "id" : "d76c1c70-573f-43ed-8ab5-023072c474f6",
+              "type" : {
+                "$type" : "StringType"
+              },
+              "path" : "ID",
+              "label" : "id",
+              "code" : "ID",
+              "originalId" : "d76c1c70-573f-43ed-8ab5-023072c474f6",
+              "bindingPath" : "id",
+              "bindingField" : "id"
+            }, {
+              "$type" : "SimpleField",
+              "name" : "版本",
+              "id" : "eaf53ed8-4319-4b2f-9864-87ebff640c4c",
+              "type" : {
+                "$type" : "DateTimeType"
+              },
+              "path" : "Version",
+              "label" : "version",
+              "code" : "Version",
+              "originalId" : "eaf53ed8-4319-4b2f-9864-87ebff640c4c",
+              "bindingPath" : "version",
+              "bindingField" : "version"
+            }, {
+              "$type" : "SimpleField",
+              "name" : "商品名称",
+              "id" : "9897a2f2-c663-4407-8234-e3565d02977a",
+              "type" : {
+                "$type" : "StringType"
+              },
+              "path" : "GoodsName",
+              "label" : "goodsName",
+              "code" : "GoodsName",
+              "originalId" : "9897a2f2-c663-4407-8234-e3565d02977a",
+              "bindingPath" : "goodsName",
+              "bindingField" : "goodsName"
+            }, {
+              "$type" : "SimpleField",
+              "name" : "商品编号",
+              "id" : "7b77fddd-e52a-459d-8c41-458db2efa758",
+              "type" : {
+                "$type" : "StringType"
+              },
+              "path" : "GoodsCode",
+              "label" : "goodsCode",
+              "code" : "GoodsCode",
+              "originalId" : "7b77fddd-e52a-459d-8c41-458db2efa758",
+              "bindingPath" : "goodsCode",
+              "bindingField" : "goodsCode"
+            }, {
+              "$type" : "SimpleField",
+              "name" : "规格型号",
+              "id" : "88d46ac9-c9ca-4e7b-a74c-a6dce568c49c",
+              "type" : {
+                "$type" : "StringType"
+              },
+              "path" : "Specification",
+              "label" : "specification",
+              "code" : "Specification",
+              "originalId" : "88d46ac9-c9ca-4e7b-a74c-a6dce568c49c",
+              "bindingPath" : "specification",
+              "bindingField" : "specification"
+            }, {
+              "$type" : "SimpleField",
+              "name" : "分类名称",
+              "id" : "9822a330-dbe1-4b56-9e9b-8194d5f21434",
+              "type" : {
+                "$type" : "StringType"
+              },
+              "path" : "Category",
+              "label" : "category",
+              "code" : "Category",
+              "originalId" : "9822a330-dbe1-4b56-9e9b-8194d5f21434",
+              "bindingPath" : "category",
+              "bindingField" : "category"
+            }, {
+              "$type" : "SimpleField",
+              "name" : "单价",
+              "id" : "ca422ddf-6eae-41fa-87c3-70bf5e2e3c4b",
+              "type" : {
+                "$type" : "NumericType",
+                "precision" : 2
+              },
+              "path" : "Price",
+              "label" : "price",
+              "code" : "Price",
+              "originalId" : "ca422ddf-6eae-41fa-87c3-70bf5e2e3c4b",
+              "bindingPath" : "price",
+              "bindingField" : "price"
+            }, {
+              "$type" : "SimpleField",
+              "name" : "上架数量",
+              "id" : "dcc4d4af-b753-49a9-acd2-20bb4c015501",
+              "type" : {
+                "$type" : "NumericType",
+                "precision" : 0
+              },
+              "path" : "Number",
+              "label" : "number",
+              "code" : "Number",
+              "originalId" : "dcc4d4af-b753-49a9-acd2-20bb4c015501",
+              "bindingPath" : "number",
+              "bindingField" : "number"
+            }, {
+              "$type" : "SimpleField",
+              "name" : "备注",
+              "id" : "6074dd1e-7c7e-4efa-b2bf-8fe2d9dcd257",
+              "type" : {
+                "$type" : "StringType"
+              },
+              "path" : "Remark",
+              "label" : "remark",
+              "code" : "Remark",
+              "originalId" : "6074dd1e-7c7e-4efa-b2bf-8fe2d9dcd257",
+              "bindingPath" : "remark",
+              "bindingField" : "remark"
+            } ],
+            "primary" : "id",
+            "entities" : [ ],
+            "name" : "Goods",
+            "displayName" : "商品"
+          },
+          "label" : "goodss",
+          "code" : "Goods"
+        } ]
+      }
+    },
+    "initDataSource" : true,
+    "createTime" : "2023-06-28 14:59:47"
+  },
+  "ExtendRule" : null,
+  "RelativePath" : "HotWave/DataBase/Goods/bo-goods-front/metadata/lookups",
+  "ExtendProperty" : "",
+  "Extended" : false,
+  "PreviousVersion" : null,
+  "Version" : null,
+  "Properties" : null
+}

@@ -1,0 +1,50 @@
+{
+  "Header" : {
+    "Code" : "predefinePageflow",
+    "Type" : "PageFlowMetadata",
+    "NameSpace" : "Inspur.GS.HotWave.DataBase.MerChant.MerChant.Front",
+    "CertId" : null,
+    "Name" : "predefinePageflow",
+    "FileName" : "predefinePageflow.pf",
+    "BizobjectID" : "86748f14-54c0-bedd-9337-a23a74fbb6ff",
+    "Language" : null,
+    "Extendable" : false,
+    "ID" : "8ee0614f-ab88-4bae-ad56-ce7f21a83f83",
+    "IsTranslating" : false
+  },
+  "Refs" : [ ],
+  "Content" : {
+    "code" : null,
+    "name" : null,
+    "id" : "8ee0614f-ab88-4bae-ad56-ce7f21a83f83",
+    "project" : {
+      "name" : "bo-merchant-front"
+    },
+    "pages" : [ {
+      "id" : "b57238a6-8fdf-4c16-8f5a-c8451b8045a2",
+      "code" : "MerChantForm",
+      "name" : "商户表单",
+      "fileName" : "MerChantForm.frm",
+      "relativePath" : "HotWave/DataBase/MerChant/bo-merchant-front/metadata/components",
+      "formUri" : null,
+      "routeUri" : "MerChantForm",
+      "routeParams" : null,
+      "forceDynamicForm" : false
+    } ],
+    "entry" : "MerChantForm",
+    "routes" : null,
+    "appCode" : "MerChantForm",
+    "appName" : "商户维护",
+    "publishes" : [ {
+      "id" : "8bbe073e-c398-40ed-af6f-57f55475d613",
+      "entry" : "b57238a6-8fdf-4c16-8f5a-c8451b8045a2"
+    } ]
+  },
+  "ExtendRule" : null,
+  "RelativePath" : "HotWave/DataBase/MerChant/bo-merchant-front/metadata/route",
+  "ExtendProperty" : "",
+  "Extended" : false,
+  "PreviousVersion" : null,
+  "Version" : null,
+  "Properties" : null
+}

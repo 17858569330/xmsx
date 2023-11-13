@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>io.iec.edp</groupId>
+    <artifactId>caf-boot-parent</artifactId>
+    <version>0.1.2</version>
+  </parent>
+
+  <modules>
+    <module>caf-cef-rt-api</module>
+    <module>caf-cef-rt-core</module>
+    <module>caf-cef-rt-spi</module>
+    <module>caf-cef-schema</module>
+    <module>caf-cef-schema-base</module>
+  </modules>
+
+  <artifactId>caf-cef</artifactId>
+
+  <groupId>com.inspur.edp</groupId>
+  <packaging>pom</packaging>
+  <version>0.1.1</version>
+
+  <dependencies>
+    <!-- common-utils -->
+    <dependency>
+      <groupId>com.inspur.edp</groupId>
+      <artifactId>cdp-common-utils</artifactId>
+      <version>0.1.0</version>
+    </dependency>
+    <!-- Lombok -->
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <scope>provided</scope>
+    </dependency>
+
+    <!-- test -->
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-api</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-engine</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-junit-jupiter</artifactId>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.openclover</groupId>
+        <artifactId>clover-maven-plugin</artifactId>
+        <version>4.3.1</version>
+        <configuration>
+          <includesTestSourceRoots>false</includesTestSourceRoots>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-jar-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-source-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>attach-sources</id>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+  <distributionManagement>
+    <snapshotRepository>
+      <id>gsp-snapshots-repo</id>
+      <url>https://repos.iec.io/repository/maven-gsp-snapshots/</url>
+    </snapshotRepository>
+    <repository>
+      <id>gsp-releases-repo</id>
+      <url>https://repos.iec.io/repository/maven-gsp-releases/</url>
+    </repository>
+  </distributionManagement>
+</project>

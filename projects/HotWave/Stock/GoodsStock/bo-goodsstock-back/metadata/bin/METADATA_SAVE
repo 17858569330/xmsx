@@ -1,0 +1,10 @@
+#Last modified on: Tue Jun 27 11:46:44 GMT+08:00 2023
+#Tue Jun 27 11:46:44 GMT+08:00 2023
+metadata/be/GoodsStock.be=71496107580f1b835fd8dd60f78d0c0a40cf1a29
+metadata/be/component/GoodsStockDtmAfterCreate1DeterminationController.beDtmCmp=5dd89ab81dce0244410a05bdac28db5939318b75
+metadata/be/PurchaseOrder.be.res=4f9c0ae1c8e757ea6d1dea521008befd55fc293f
+metadata/be=4c36234d10d06c0e66d3b29fbf7b7651f28d0786
+metadata/be/PurchaseOrder.be=bfd9a3f70697eaae1016a11bdf2396f99b85ab99
+metadata/be/component/GoodsStockStockWriteBackMgrActionController.beMgrCmp=4c92d227a406e7459596e0a98a2dfd31dee3f186
+metadata/be/component=4c92d227a406e7459596e0a98a2dfd31dee3f186
+metadata/be/GoodsStock.be.res=fd14ef175e74f5749f1e911379f41683b213733e

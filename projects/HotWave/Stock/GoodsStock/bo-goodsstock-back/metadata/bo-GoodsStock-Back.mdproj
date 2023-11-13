@@ -1,0 +1,70 @@
+{
+  "NameSpace" : "Inspur.GS.HotWave.Stock.GoodsStock.GoodsStock.Back",
+  "Name" : "bo-GoodsStock-Back",
+  "ProjectFileName" : "bo-GoodsStock-Back.mdproj",
+  "ProjectPath" : "HotWave/Stock/GoodsStock/bo-goodsstock-back/metadata",
+  "MetadataPackageInfo" : {
+    "Name" : "Inspur.GS.HotWave.Stock.GoodsStock.GoodsStock.Back",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "interpretation"
+  },
+  "MetadataPackageRefs" : [ {
+    "Name" : "Inspur.GS.HotWave.DataBase.MerChant.MerChant.Back",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "interpretation"
+  }, {
+    "Name" : "Inspur.GS.HotWave.DataBase.Goods.Goods.Back",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "interpretation"
+  } ],
+  "ProjectRefs" : [ {
+    "ProjectPath" : "../../../../HotWave/DataBase/MerChant/bo-merchant-back",
+    "Name" : "Inspur.GS.HotWave.DataBase.MerChant.MerChant.Back"
+  }, {
+    "ProjectPath" : "../../../../HotWave/DataBase/Goods/bo-goods-back",
+    "Name" : "Inspur.GS.HotWave.DataBase.Goods.Goods.Back"
+  } ],
+  "ExternalRefs" : null,
+  "MdpkgRefs" : [ {
+    "Name" : "Inspur.Gsp.Common.CommonUdt",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "generation"
+  }, {
+    "Name" : "Inspur.GS.Gsp.Sys.User",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "generation"
+  } ],
+  "MavenPackageRefs" : [ {
+    "GroupId" : "com.inspur.gs",
+    "ArtifactId" : "hotwave-database-merchant-merchant-back-api",
+    "Version" : "m0.1.0-SNAPSHOT",
+    "MetadataPackageName" : "Inspur.GS.HotWave.DataBase.MerChant.MerChant.Back"
+  }, {
+    "GroupId" : "com.inspur.gs",
+    "ArtifactId" : "hotwave-database-goods-goods-back-api",
+    "Version" : "m0.1.0-SNAPSHOT",
+    "MetadataPackageName" : "Inspur.GS.HotWave.DataBase.Goods.Goods.Back"
+  } ],
+  "CsprojAssemblyName" : "Inspur.GS.HotWave.Stock.GoodsStock.GoodsStock.Back",
+  "ID" : "795afa20-d9c3-43aa-b9c6-1e88b1add5ad"
+}

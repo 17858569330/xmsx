@@ -1,0 +1,15 @@
+{
+  "AppCode" : "HotWave",
+  "ServiceUnitCode" : "OrderMrg",
+  "BizobjectCode" : "SaleOrder",
+  "BizobjectID" : "ee0af0b4-e947-7987-a85d-5072623dc1e6",
+  "ProjectNameSpace" : "Inspur.GS.HotWave.OrderMrg.SaleOrder.SaleOrder.Back",
+  "SuDeploymentPath" : "apps/hotwave/ordermrg",
+  "MetadataProjectName" : "bo-SaleOrder-Back",
+  "MetadataPackageName" : "Inspur.GS.HotWave.OrderMrg.SaleOrder.SaleOrder.Back",
+  "SuConfigDeploymentPath" : null,
+  "ProjectType" : "backend",
+  "ProjectExtendItem" : [ {
+    "codelanguage" : "java"
+  } ]
+}

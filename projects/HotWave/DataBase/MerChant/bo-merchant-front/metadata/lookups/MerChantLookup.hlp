@@ -1,0 +1,481 @@
+{
+  "Header" : {
+    "Code" : "MerChantLookup",
+    "Type" : "HelpMetadata",
+    "NameSpace" : "Inspur.GS.HotWave.DataBase.MerChant.MerChant.Front",
+    "CertId" : null,
+    "Name" : "商户帮助",
+    "FileName" : "MerChantLookup.hlp",
+    "BizobjectID" : "86748f14-54c0-bedd-9337-a23a74fbb6ff",
+    "Language" : null,
+    "Extendable" : false,
+    "ID" : "b610c446-71ea-4aed-bb9b-f46ccc45a556",
+    "IsTranslating" : false
+  },
+  "Refs" : [ {
+    "DependentMetadata" : {
+      "ID" : "e59b4e62-2f7b-4c46-a828-62dfd3189df0",
+      "CertId" : null,
+      "NameSpace" : "Inspur.GS.HotWave.DataBase.MerChant.MerChant.Front",
+      "Code" : "MerChantLookup.hlp",
+      "Name" : "MerChantLookup.hlp",
+      "Type" : "ResourceMetadata",
+      "BizobjectID" : "86748f14-54c0-bedd-9337-a23a74fbb6ff"
+    }
+  } ],
+  "Content" : {
+    "code" : "MerChantLookup",
+    "name" : "商户帮助",
+    "version" : "0.0.2",
+    "id" : "b610c446-71ea-4aed-bb9b-f46ccc45a556",
+    "title" : "商户帮助",
+    "idField" : "id",
+    "idFieldName" : "主键",
+    "textField" : "merchantName",
+    "textFieldName" : "商户名称",
+    "valueField" : "id",
+    "valueFieldName" : "主键",
+    "displayType" : "TreeList",
+    "description" : "",
+    "dataSource" : {
+      "columns" : [ {
+        "field" : "merchantName",
+        "title" : "商户名称",
+        "width" : 100,
+        "fieldPath" : "MerchantName",
+        "fieldType" : "StringType",
+        "supportSearch" : true,
+        "align" : "left",
+        "formatter" : null,
+        "sortable" : false,
+        "order" : null,
+        "hAlign" : "left"
+      }, {
+        "field" : "merchantCode",
+        "title" : "商户编号",
+        "width" : 100,
+        "fieldPath" : "MerchantCode",
+        "fieldType" : "StringType",
+        "supportSearch" : true,
+        "align" : "left",
+        "formatter" : null,
+        "sortable" : false,
+        "order" : null,
+        "hAlign" : "left"
+      } ],
+      "sourceType" : "BE",
+      "sourcePath" : "HotWave/DataBase/MerChant/bo-merchant-back/metadata/be/MerChant.be",
+      "sourceName" : "商户",
+      "sourceId" : "be844cb7-4ddf-4c37-8a56-cd9660900acc",
+      "uri" : "HotWave/DataBase/MerChant/bo-merchant-front/metadata/lookups/MerChantLookup_hlp.vo",
+      "vmCode" : "Inspur.GS.HotWave.DataBase.MerChant.MerChant.Front.Vo.MerChantLookup_hlp",
+      "voSourceId" : "62f2bdd2-cc07-4a55-8192-e8356aa01750",
+      "conditions" : [ ],
+      "sorts" : [ ],
+      "pageInfo" : {
+        "pageList" : [ 10, 20, 30, 50 ],
+        "pageSize" : 20,
+        "pageIndex" : 0,
+        "enablePager" : true
+      },
+      "treeInfo" : {
+        "loadDataType" : "async",
+        "layerType" : "pathcode",
+        "dataField" : "TreeInfo",
+        "pathField" : "path",
+        "layerField" : "layer",
+        "isDetailField" : "isDetail",
+        "onlySelectLeaf" : false,
+        "parentField" : "parentElement",
+        "treeDataIsInit" : false
+      }
+    },
+    "navigation" : null,
+    "languages" : null,
+    "schema" : {
+      "main" : {
+        "name" : "商户帮助_ViewObject",
+        "id" : "5a3911bd-1d02-46ad-bda1-6667055e4eaa",
+        "extendProperties" : {
+          "enableStdTimeFormat" : true
+        },
+        "sourceType" : "vo",
+        "variables" : [ ],
+        "code" : "MerChantLookup_hlp",
+        "sourceUri" : null,
+        "entities" : [ {
+          "name" : "商户",
+          "id" : "1892c213-2f6a-4c58-b259-3cc6c5d11044",
+          "type" : {
+            "$type" : "EntityType",
+            "fields" : [ {
+              "$type" : "SimpleField",
+              "name" : "主键",
+              "id" : "279789a1-4bb1-45b6-88ef-2963829a103d",
+              "type" : {
+                "$type" : "StringType"
+              },
+              "path" : "ID",
+              "label" : "id",
+              "code" : "ID",
+              "originalId" : "279789a1-4bb1-45b6-88ef-2963829a103d",
+              "bindingPath" : "id",
+              "bindingField" : "id"
+            }, {
+              "$type" : "SimpleField",
+              "name" : "版本",
+              "id" : "43c669b0-5659-4ed0-8096-0df75870e442",
+              "type" : {
+                "$type" : "DateTimeType"
+              },
+              "path" : "Version",
+              "label" : "version",
+              "code" : "Version",
+              "originalId" : "43c669b0-5659-4ed0-8096-0df75870e442",
+              "bindingPath" : "version",
+              "bindingField" : "version"
+            }, {
+              "$type" : "SimpleField",
+              "name" : "商户名称",
+              "id" : "51deb04d-9836-4f36-a8ee-1592cf709ba7",
+              "type" : {
+                "$type" : "StringType"
+              },
+              "path" : "MerchantName",
+              "label" : "merchantName",
+              "code" : "MerchantName",
+              "originalId" : "51deb04d-9836-4f36-a8ee-1592cf709ba7",
+              "bindingPath" : "merchantName",
+              "bindingField" : "merchantName"
+            }, {
+              "$type" : "SimpleField",
+              "name" : "商户编号",
+              "id" : "e2ef419c-d19b-4e34-8a31-e31cb6af7f8a",
+              "type" : {
+                "$type" : "StringType"
+              },
+              "path" : "MerchantCode",
+              "label" : "merchantCode",
+              "code" : "MerchantCode",
+              "originalId" : "e2ef419c-d19b-4e34-8a31-e31cb6af7f8a",
+              "bindingPath" : "merchantCode",
+              "bindingField" : "merchantCode"
+            }, {
+              "$type" : "SimpleField",
+              "name" : "企业类型",
+              "id" : "9ef68c2b-bff2-49f5-a5ee-7a9b74c7886d",
+              "type" : {
+                "$type" : "EnumType",
+                "enumValues" : [ {
+                  "name" : "企业",
+                  "value" : "qy"
+                }, {
+                  "name" : "个体工商户",
+                  "value" : "gt"
+                }, {
+                  "name" : "个人",
+                  "value" : "gr"
+                } ],
+                "valueType" : {
+                  "$type" : "StringType",
+                  "length" : 20,
+                  "name" : "String",
+                  "displayName" : "字符串"
+                }
+              },
+              "path" : "CompanyType",
+              "label" : "companyType",
+              "code" : "CompanyType",
+              "originalId" : "9ef68c2b-bff2-49f5-a5ee-7a9b74c7886d",
+              "bindingPath" : "companyType",
+              "bindingField" : "companyType"
+            }, {
+              "$type" : "SimpleField",
+              "name" : "商户类型",
+              "id" : "a666ec29-2014-4232-90bd-0df97525d409",
+              "type" : {
+                "$type" : "EnumType",
+                "enumValues" : [ {
+                  "name" : "入驻商户",
+                  "value" : "rz"
+                }, {
+                  "name" : "经销商",
+                  "value" : "jx"
+                } ],
+                "valueType" : {
+                  "$type" : "StringType",
+                  "length" : 20,
+                  "name" : "String",
+                  "displayName" : "字符串"
+                }
+              },
+              "path" : "MerchantType",
+              "label" : "merchantType",
+              "code" : "MerchantType",
+              "originalId" : "a666ec29-2014-4232-90bd-0df97525d409",
+              "bindingPath" : "merchantType",
+              "bindingField" : "merchantType"
+            }, {
+              "$type" : "SimpleField",
+              "name" : "真实姓名",
+              "id" : "2794034d-9a2b-4bdb-bab3-8905d6f60d38",
+              "type" : {
+                "$type" : "StringType"
+              },
+              "path" : "RealName",
+              "label" : "realName",
+              "code" : "RealName",
+              "originalId" : "2794034d-9a2b-4bdb-bab3-8905d6f60d38",
+              "bindingPath" : "realName",
+              "bindingField" : "realName"
+            }, {
+              "$type" : "SimpleField",
+              "name" : "企业全称",
+              "id" : "e467472c-4d56-4dba-8b49-3040bee14412",
+              "type" : {
+                "$type" : "StringType"
+              },
+              "path" : "FullName",
+              "label" : "fullName",
+              "code" : "FullName",
+              "originalId" : "e467472c-4d56-4dba-8b49-3040bee14412",
+              "bindingPath" : "fullName",
+              "bindingField" : "fullName"
+            }, {
+              "$type" : "SimpleField",
+              "name" : "营业执照编码",
+              "id" : "5d96b990-5ff4-41ad-bca0-e3c90cd154fb",
+              "type" : {
+                "$type" : "StringType"
+              },
+              "path" : "BusinessLicense",
+              "label" : "businessLicense",
+              "code" : "BusinessLicense",
+              "originalId" : "5d96b990-5ff4-41ad-bca0-e3c90cd154fb",
+              "bindingPath" : "businessLicense",
+              "bindingField" : "businessLicense"
+            }, {
+              "$type" : "SimpleField",
+              "name" : "商户地址",
+              "id" : "4c1cc1b9-da04-42b4-b0ad-2d376732c8eb",
+              "type" : {
+                "$type" : "StringType"
+              },
+              "path" : "Address",
+              "label" : "address",
+              "code" : "Address",
+              "originalId" : "4c1cc1b9-da04-42b4-b0ad-2d376732c8eb",
+              "bindingPath" : "address",
+              "bindingField" : "address"
+            }, {
+              "$type" : "SimpleField",
+              "name" : "邮箱",
+              "id" : "92f576ef-98de-4a33-bec4-2497444ca968",
+              "type" : {
+                "$type" : "StringType"
+              },
+              "path" : "Email",
+              "label" : "email",
+              "code" : "Email",
+              "originalId" : "92f576ef-98de-4a33-bec4-2497444ca968",
+              "bindingPath" : "email",
+              "bindingField" : "email"
+            }, {
+              "$type" : "SimpleField",
+              "name" : "联系电话",
+              "id" : "6f66fbd2-77c3-4783-8254-e6e84f76341e",
+              "type" : {
+                "$type" : "StringType"
+              },
+              "path" : "Telephone",
+              "label" : "telephone",
+              "code" : "Telephone",
+              "originalId" : "6f66fbd2-77c3-4783-8254-e6e84f76341e",
+              "bindingPath" : "telephone",
+              "bindingField" : "telephone"
+            }, {
+              "$type" : "SimpleField",
+              "name" : "管理员",
+              "id" : "7bf51f06-42f3-4710-a576-b2b7141330ff",
+              "type" : {
+                "$type" : "StringType"
+              },
+              "path" : "Adminstrator",
+              "label" : "adminstrator",
+              "code" : "Adminstrator",
+              "originalId" : "7bf51f06-42f3-4710-a576-b2b7141330ff",
+              "bindingPath" : "adminstrator",
+              "bindingField" : "adminstrator"
+            }, {
+              "$type" : "ComplexField",
+              "name" : "分级码信息",
+              "id" : "e3ee8400-d3e9-44c3-be73-265dbc111cb7",
+              "type" : {
+                "$type" : "HierarchyType",
+                "fields" : [ {
+                  "$type" : "SimpleField",
+                  "require" : false,
+                  "multiLanguage" : false,
+                  "defaultValue" : "",
+                  "editor" : {
+                    "$type" : "TextBox"
+                  },
+                  "readonly" : false,
+                  "name" : "分级码",
+                  "id" : "e3ee8400-890d-437e-bc5a-344d583e3fa8",
+                  "type" : {
+                    "$type" : "StringType",
+                    "length" : 36,
+                    "name" : "String",
+                    "displayName" : "字符串"
+                  },
+                  "path" : "TreeInfo.Path",
+                  "label" : "path",
+                  "code" : "Path",
+                  "originalId" : "a614192a-890d-437e-bc5a-344d583e3fa8",
+                  "bindingPath" : "treeInfo.path",
+                  "bindingField" : "treeInfo_Path"
+                }, {
+                  "$type" : "SimpleField",
+                  "require" : false,
+                  "multiLanguage" : false,
+                  "defaultValue" : "",
+                  "editor" : {
+                    "$type" : "NumericBox"
+                  },
+                  "readonly" : false,
+                  "name" : "级数",
+                  "id" : "e3ee8400-8147-4d67-95fa-9a4438d17092",
+                  "type" : {
+                    "$type" : "NumericType",
+                    "length" : 0,
+                    "name" : "Number",
+                    "displayName" : "数字",
+                    "precision" : 0
+                  },
+                  "path" : "TreeInfo.Layer",
+                  "label" : "layer",
+                  "code" : "Layer",
+                  "originalId" : "47a7321b-8147-4d67-95fa-9a4438d17092",
+                  "bindingPath" : "treeInfo.layer",
+                  "bindingField" : "treeInfo_Layer"
+                }, {
+                  "$type" : "SimpleField",
+                  "require" : false,
+                  "multiLanguage" : false,
+                  "defaultValue" : "",
+                  "editor" : {
+                    "$type" : "CheckBox"
+                  },
+                  "readonly" : false,
+                  "name" : "是否明细",
+                  "id" : "e3ee8400-5cfd-4d47-be11-5fc771b58852",
+                  "type" : {
+                    "$type" : "BooleanType",
+                    "name" : "Boolean",
+                    "displayName" : "布尔"
+                  },
+                  "path" : "TreeInfo.IsDetail",
+                  "label" : "isDetail",
+                  "code" : "IsDetail",
+                  "originalId" : "65e4346d-5cfd-4d47-be11-5fc771b58852",
+                  "bindingPath" : "treeInfo.isDetail",
+                  "bindingField" : "treeInfo_IsDetail"
+                } ]
+              },
+              "path" : "TreeInfo",
+              "label" : "treeInfo",
+              "code" : "TreeInfo",
+              "originalId" : "e3ee8400-d3e9-44c3-be73-265dbc111cb7",
+              "bindingPath" : "treeInfo",
+              "bindingField" : "treeInfo"
+            }, {
+              "$type" : "ComplexField",
+              "name" : "上游商户",
+              "id" : "da84678d-c811-48d7-bd95-5b035f912bc3",
+              "type" : {
+                "$type" : "EntityType",
+                "fields" : [ {
+                  "$type" : "SimpleField",
+                  "name" : "上游商户",
+                  "id" : "2f791209-1e73-4709-8b0d-c3af73e3b443",
+                  "type" : {
+                    "$type" : "StringType"
+                  },
+                  "path" : "ParentMerchantID.ParentMerchantID",
+                  "label" : "parentMerchantID",
+                  "code" : "ParentMerchantID",
+                  "originalId" : "2f791209-1e73-4709-8b0d-c3af73e3b443",
+                  "bindingPath" : "parentMerchantID.parentMerchantID",
+                  "bindingField" : "parentMerchantID"
+                }, {
+                  "$type" : "SimpleField",
+                  "name" : "商户名称",
+                  "id" : "a2e373fc-edd4-4e75-9cf4-be2c50893d77",
+                  "type" : {
+                    "$type" : "StringType"
+                  },
+                  "path" : "ParentMerchantID.ParentMerchantID_MerchantName",
+                  "label" : "parentMerchantID_MerchantName",
+                  "code" : "MerchantName",
+                  "originalId" : "a2e373fc-edd4-4e75-9cf4-be2c50893d77",
+                  "bindingPath" : "parentMerchantID.parentMerchantID_MerchantName",
+                  "bindingField" : "parentMerchantID_ParentMerchantID_MerchantName"
+                }, {
+                  "$type" : "SimpleField",
+                  "name" : "管理员",
+                  "id" : "1e7c7efb-b9c5-4ed0-a4db-d02f86377698",
+                  "type" : {
+                    "$type" : "StringType"
+                  },
+                  "path" : "ParentMerchantID.ParentMerchantID_Adminstrator",
+                  "label" : "parentMerchantID_Adminstrator",
+                  "code" : "Adminstrator",
+                  "originalId" : "1e7c7efb-b9c5-4ed0-a4db-d02f86377698",
+                  "bindingPath" : "parentMerchantID.parentMerchantID_Adminstrator",
+                  "bindingField" : "parentMerchantID_ParentMerchantID_Adminstrator"
+                } ],
+                "primary" : "parentMerchantID",
+                "entities" : [ ]
+              },
+              "path" : "ParentMerchantID",
+              "label" : "parentMerchantID",
+              "code" : "ParentMerchantID",
+              "originalId" : "da84678d-c811-48d7-bd95-5b035f912bc3",
+              "bindingPath" : "parentMerchantID",
+              "bindingField" : "parentMerchantID"
+            }, {
+              "$type" : "SimpleField",
+              "name" : "备注",
+              "id" : "27f573b5-15f5-4fed-84d7-99a0b7b1c5d0",
+              "type" : {
+                "$type" : "StringType"
+              },
+              "path" : "Remark",
+              "label" : "remark",
+              "code" : "Remark",
+              "originalId" : "27f573b5-15f5-4fed-84d7-99a0b7b1c5d0",
+              "bindingPath" : "remark",
+              "bindingField" : "remark"
+            } ],
+            "primary" : "id",
+            "entities" : [ ],
+            "name" : "Merchant",
+            "displayName" : "商户"
+          },
+          "label" : "merchants",
+          "code" : "Merchant"
+        } ]
+      }
+    },
+    "initDataSource" : true,
+    "createTime" : "2023-06-28 11:00:26"
+  },
+  "ExtendRule" : null,
+  "RelativePath" : "HotWave/DataBase/MerChant/bo-merchant-front/metadata/lookups",
+  "ExtendProperty" : "",
+  "Extended" : false,
+  "PreviousVersion" : null,
+  "Version" : null,
+  "Properties" : null
+}

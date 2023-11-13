@@ -1,0 +1,343 @@
+{
+  "Header" : {
+    "Code" : "GoodsQuery_QDPParamVO",
+    "Type" : "GSPViewModel",
+    "NameSpace" : "Inspur.GS.HotWave.OrderMrg.SaleOrder.SaleOrder.Back",
+    "CertId" : null,
+    "Name" : "商品查询_查询参数VO",
+    "FileName" : "GoodsQuery_QDPParamVO.vo",
+    "BizobjectID" : "ee0af0b4-e947-7987-a85d-5072623dc1e6",
+    "Language" : null,
+    "Extendable" : false,
+    "ID" : "fb12e502-2f69-4418-8ebf-e37e4561a5eb",
+    "IsTranslating" : false
+  },
+  "Refs" : [ {
+    "DependentMetadata" : {
+      "ID" : "5b7826e3-4bfb-4fb5-ae86-d9277584e394",
+      "CertId" : null,
+      "NameSpace" : "Inspur.Gsp.Common.CommonCmp",
+      "Code" : "DefaultVirtualVoCreateAction",
+      "Name" : "默认虚拟Vo新增数据构件",
+      "Type" : "VMComponent",
+      "BizobjectID" : "CommonCmp"
+    }
+  }, {
+    "DependentMetadata" : {
+      "ID" : "4768d816-23f7-49af-a20e-39ca3ae44fcd",
+      "CertId" : null,
+      "NameSpace" : "Inspur.Gsp.Common.CommonCmp",
+      "Code" : "DefaultVirtualVoQueryAction",
+      "Name" : "默认虚拟Vo查询数据构件",
+      "Type" : "VMComponent",
+      "BizobjectID" : "CommonCmp"
+    }
+  }, {
+    "DependentMetadata" : {
+      "ID" : "ac1832ae-c53b-4b4d-a10e-2d6705c7b83a",
+      "CertId" : null,
+      "NameSpace" : "Inspur.Gsp.Common.CommonCmp",
+      "Code" : "DefaultVirtualVoModifyAction",
+      "Name" : "默认虚拟Vo修改数据构件",
+      "Type" : "VMComponent",
+      "BizobjectID" : "CommonCmp"
+    }
+  }, {
+    "DependentMetadata" : {
+      "ID" : "81f04f2d-f373-457c-926e-bbac2cd1cb31",
+      "CertId" : null,
+      "NameSpace" : "Inspur.Gsp.Common.CommonCmp",
+      "Code" : "DefaultVirtualVoDataMappingAction",
+      "Name" : "默认虚拟Vo数据Mapping构件",
+      "Type" : "VMComponent",
+      "BizobjectID" : "CommonCmp"
+    }
+  }, {
+    "DependentMetadata" : {
+      "ID" : "38f943d3-1935-41b7-b31f-07f8dc4358d9",
+      "CertId" : null,
+      "NameSpace" : "Inspur.Gsp.Common.CommonCmp",
+      "Code" : "DefaultVirtualVoReverseDataMappingAction",
+      "Name" : "默认虚拟Vo数据反向Mapping构件",
+      "Type" : "VMComponent",
+      "BizobjectID" : "CommonCmp"
+    }
+  }, {
+    "DependentMetadata" : {
+      "ID" : "b1755efb-0bf6-4045-a212-0c0429cfcac8",
+      "CertId" : null,
+      "NameSpace" : "Inspur.Gsp.Common.CommonCmp",
+      "Code" : "DefaultVirtualVoReverseChangeSetMappingAction",
+      "Name" : "默认虚拟Vo变更集反向Mapping构件",
+      "Type" : "VMComponent",
+      "BizobjectID" : "CommonCmp"
+    }
+  }, {
+    "DependentMetadata" : {
+      "ID" : "34dc421f-ab14-4d46-9bbd-9b13a5355ced",
+      "CertId" : null,
+      "NameSpace" : "Inspur.Gsp.Common.CommonCmp",
+      "Code" : "DefaultVirtualVoChangeSetMappingAction",
+      "Name" : "默认虚拟Vo变更集Mapping构件",
+      "Type" : "VMComponent",
+      "BizobjectID" : "CommonCmp"
+    }
+  }, {
+    "DependentMetadata" : {
+      "ID" : "f695e09c-63e5-468e-9c4b-88e5da15f809",
+      "CertId" : null,
+      "NameSpace" : "Inspur.GS.HotWave.OrderMrg.SaleOrder.SaleOrder.Back",
+      "Code" : "GoodsQuery_QDPParamVO.vo",
+      "Name" : "GoodsQuery_QDPParamVO.vo",
+      "Type" : "ResourceMetadata",
+      "BizobjectID" : "ee0af0b4-e947-7987-a85d-5072623dc1e6"
+    }
+  } ],
+  "Content" : {
+    "ID" : "fb12e502-2f69-4418-8ebf-e37e4561a5eb",
+    "Code" : "GoodsQuery_QDPParamVO",
+    "Name" : "商品查询_查询参数VO",
+    "IsVirtual" : true,
+    "GeneratingAssembly" : "Inspur.GS.HotWave.OrderMrg.SaleOrder.SaleOrder.Back.Qo.Vo",
+    "IsUseNamespaceConfig" : true,
+    "MainObject" : {
+      "ID" : "603410af-b7bf-45b7-8c43-a5695e0e34ff",
+      "Code" : "GoodsQuery_QDPParamVO",
+      "Name" : "商品查询_查询参数VO",
+      "I18nResourceInfoPrefix" : "Inspur.GS.HotWave.OrderMrg.SaleOrder.SaleOrder.Back.Qo.Vo.GoodsQuery_QDPParamVO.GoodsQuery_QDPParamVO",
+      "ContainElements" : [ {
+        "ID" : "30b0f4f8-97a5-4e9f-b0c6-5ab2c7485956",
+        "LabelID" : "ID",
+        "ChildAssociations" : [ ],
+        "Code" : "ID",
+        "Name" : "ID",
+        "MDataType" : "String",
+        "Length" : 36,
+        "IsRequire" : true,
+        "EnableRtrim" : true,
+        "IsVirtual" : true,
+        "IsVirtualViewElement" : true
+      }, {
+        "ID" : "3859390f-3db7-4821-8753-5157d4a4fae1",
+        "LabelID" : "Goods_GoodsName",
+        "ChildAssociations" : [ ],
+        "Code" : "Goods_GoodsName",
+        "Name" : "商品名称",
+        "MDataType" : "String",
+        "Length" : 36,
+        "EnableRtrim" : true,
+        "IsVirtual" : true,
+        "IsVirtualViewElement" : true
+      } ],
+      "ColumnGenerateID" : {
+        "ColumnParameters" : [ ],
+        "ElementID" : "30b0f4f8-97a5-4e9f-b0c6-5ab2c7485956",
+        "GenerateType" : "Guid"
+      },
+      "IsVirtual" : true,
+      "BelongModelID" : "fb12e502-2f69-4418-8ebf-e37e4561a5eb"
+    },
+    "Variables" : {
+      "ID" : "0756654d-a2b3-4771-a8ee-221f88d5ef50",
+      "Code" : "GoodsQuery_QDPParamVOVariable",
+      "Name" : "商品查询_查询参数VO变量",
+      "I18nResourceInfoPrefix" : ""
+    },
+    "ConvertMsg" : false,
+    "ExtendProperties" : { },
+    "DataExtendInfo" : {
+      "DataMappingActions" : [ {
+        "ID" : "7c4ab5c0-6ba5-4bec-9035-09256da8d926",
+        "Code" : "DefultVirtualVoDataMappingAction",
+        "Name" : "默认虚拟Vo数据Mapping构件",
+        "ComponentName" : "默认虚拟Vo数据Mapping构件",
+        "Type" : "VMAction",
+        "ReturnValue" : {
+          "ID" : "",
+          "ParameterType" : "Custom",
+          "Assembly" : "mscorlib.dll",
+          "JavaClassName" : "Void",
+          "ClassName" : "",
+          "Mode" : "OUT",
+          "ParamActualValue" : {
+            "Enable" : false,
+            "HasValue" : false,
+            "Value" : "",
+            "ValueType" : "Constant"
+          }
+        },
+        "ComponentEntityId" : "81f04f2d-f373-457c-926e-bbac2cd1cb31",
+        "ComponentPkgName" : "Inspur.Gsp.Common.CommonCmp",
+        "IsGenerateComponent" : false
+      } ],
+      "BeforeQueryActions" : [ ],
+      "QueryActions" : [ {
+        "ID" : "b2ed601f-e9e3-4b5c-9f43-a26ca225b14a",
+        "Code" : "DefaultVirtualVoQueryAction",
+        "Name" : "默认虚拟Vo查询数据构件",
+        "ComponentName" : "默认虚拟Vo查询数据构件",
+        "Type" : "VMAction",
+        "ReturnValue" : {
+          "ID" : "",
+          "ParameterType" : "Custom",
+          "Assembly" : "mscorlib.dll",
+          "JavaClassName" : "Void",
+          "ClassName" : "",
+          "Mode" : "OUT",
+          "ParamActualValue" : {
+            "Enable" : false,
+            "HasValue" : false,
+            "Value" : "",
+            "ValueType" : "Constant"
+          }
+        },
+        "ComponentEntityId" : "4768d816-23f7-49af-a20e-39ca3ae44fcd",
+        "ComponentPkgName" : "Inspur.Gsp.Common.CommonCmp",
+        "IsGenerateComponent" : false
+      } ],
+      "AfterQueryActions" : [ ],
+      "BeforeRetrieveActions" : [ ],
+      "RetrieveActions" : [ ],
+      "AfterRetrieveActions" : [ ],
+      "BeforeModifyActions" : [ ],
+      "ModifyActions" : [ {
+        "ID" : "0ccd248f-bfa3-46ea-b11f-f8300e0049f8",
+        "Code" : "DefaultVirtualVoModifyAction",
+        "Name" : "默认虚拟Vo修改数据构件",
+        "ComponentName" : "默认虚拟Vo修改数据构件",
+        "Type" : "VMAction",
+        "ReturnValue" : {
+          "ID" : "",
+          "ParameterType" : "Custom",
+          "Assembly" : "mscorlib.dll",
+          "JavaClassName" : "Void",
+          "ClassName" : "",
+          "Mode" : "OUT",
+          "ParamActualValue" : {
+            "Enable" : false,
+            "HasValue" : false,
+            "Value" : "",
+            "ValueType" : "Constant"
+          }
+        },
+        "ComponentEntityId" : "ac1832ae-c53b-4b4d-a10e-2d6705c7b83a",
+        "ComponentPkgName" : "Inspur.Gsp.Common.CommonCmp",
+        "IsGenerateComponent" : false
+      } ],
+      "AfterModifyActions" : [ ],
+      "ChangesetMappingActions" : [ {
+        "ID" : "0b04aa0b-3d01-4c11-84f7-2bcf399cecb5",
+        "Code" : "DefaultVirtualVoChangeSetMappingAction",
+        "Name" : "默认虚拟Vo变更集Mapping构件",
+        "ComponentName" : "默认虚拟Vo变更集Mapping构件",
+        "Type" : "VMAction",
+        "ReturnValue" : {
+          "ID" : "",
+          "ParameterType" : "Custom",
+          "Assembly" : "mscorlib.dll",
+          "JavaClassName" : "Void",
+          "ClassName" : "",
+          "Mode" : "OUT",
+          "ParamActualValue" : {
+            "Enable" : false,
+            "HasValue" : false,
+            "Value" : "",
+            "ValueType" : "Constant"
+          }
+        },
+        "ComponentEntityId" : "34dc421f-ab14-4d46-9bbd-9b13a5355ced",
+        "ComponentPkgName" : "Inspur.Gsp.Common.CommonCmp",
+        "IsGenerateComponent" : false
+      } ],
+      "BeforeCreateActions" : [ ],
+      "CreateActions" : [ {
+        "ID" : "3d09a294-dda5-4772-8098-432d885e54f1",
+        "Code" : "DefaultVirtualVoCreateAction",
+        "Name" : "默认虚拟Vo新增数据构件",
+        "ComponentName" : "默认虚拟Vo新增数据构件",
+        "Type" : "VMAction",
+        "ReturnValue" : {
+          "ID" : "",
+          "ParameterType" : "Custom",
+          "Assembly" : "mscorlib.dll",
+          "JavaClassName" : "Void",
+          "ClassName" : "",
+          "Mode" : "OUT",
+          "ParamActualValue" : {
+            "Enable" : false,
+            "HasValue" : false,
+            "Value" : "",
+            "ValueType" : "Constant"
+          }
+        },
+        "ComponentEntityId" : "5b7826e3-4bfb-4fb5-ae86-d9277584e394",
+        "ComponentPkgName" : "Inspur.Gsp.Common.CommonCmp",
+        "IsGenerateComponent" : false
+      } ],
+      "AfterCreateActions" : [ ],
+      "BeforeDeleteActions" : [ ],
+      "DeleteActions" : [ ],
+      "AfterDeleteActions" : [ ],
+      "BeforeSaveActions" : [ ],
+      "DataReversalMappingActions" : [ {
+        "ID" : "74b7a5d4-c652-4b07-80f9-49101f9d960d",
+        "Code" : "DefaultVirtualVoReverseDataMappingAction",
+        "Name" : "默认虚拟Vo数据反向Mapping构件",
+        "ComponentName" : "默认虚拟Vo数据反向Mapping构件",
+        "Type" : "VMAction",
+        "ReturnValue" : {
+          "ID" : "",
+          "ParameterType" : "Custom",
+          "Assembly" : "mscorlib.dll",
+          "JavaClassName" : "Void",
+          "ClassName" : "",
+          "Mode" : "OUT",
+          "ParamActualValue" : {
+            "Enable" : false,
+            "HasValue" : false,
+            "Value" : "",
+            "ValueType" : "Constant"
+          }
+        },
+        "ComponentEntityId" : "38f943d3-1935-41b7-b31f-07f8dc4358d9",
+        "ComponentPkgName" : "Inspur.Gsp.Common.CommonCmp",
+        "IsGenerateComponent" : false
+      } ],
+      "AfterSaveActions" : [ ],
+      "ChangesetReversalMappingActions" : [ {
+        "ID" : "feabf6d8-0fa2-4af4-b039-c0adcb00f6df",
+        "Code" : "DefaultVirtualVoReverseChangeSetMappingAction",
+        "Name" : "默认虚拟Vo变更集反向Mapping构件",
+        "ComponentName" : "默认虚拟Vo变更集反向Mapping构件",
+        "Type" : "VMAction",
+        "ReturnValue" : {
+          "ID" : "",
+          "ParameterType" : "Custom",
+          "Assembly" : "mscorlib.dll",
+          "JavaClassName" : "Void",
+          "ClassName" : "",
+          "Mode" : "OUT",
+          "ParamActualValue" : {
+            "Enable" : false,
+            "HasValue" : false,
+            "Value" : "",
+            "ValueType" : "Constant"
+          }
+        },
+        "ComponentEntityId" : "b1755efb-0bf6-4045-a212-0c0429cfcac8",
+        "ComponentPkgName" : "Inspur.Gsp.Common.CommonCmp",
+        "IsGenerateComponent" : false
+      } ],
+      "BeforeMultiDeleteActions" : [ ],
+      "MultiDeleteActions" : [ ],
+      "AfterMultiDeleteActions" : [ ]
+    }
+  },
+  "ExtendRule" : null,
+  "RelativePath" : "HotWave/OrderMrg/SaleOrder/bo-saleorder-back/metadata/qo",
+  "ExtendProperty" : "",
+  "Extended" : false,
+  "PreviousVersion" : null,
+  "Version" : null,
+  "Properties" : null
+}

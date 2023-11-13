@@ -1,0 +1,50 @@
+{
+  "Header" : {
+    "Code" : "predefinePageflow",
+    "Type" : "PageFlowMetadata",
+    "NameSpace" : "Inspur.GS.HotWave.DataBase.Goods.Goods.Front",
+    "CertId" : null,
+    "Name" : "predefinePageflow",
+    "FileName" : "predefinePageflow.pf",
+    "BizobjectID" : "dec0e47e-409b-6d3a-8876-85bd5909bf19",
+    "Language" : null,
+    "Extendable" : false,
+    "ID" : "9b455182-835e-4c37-96a9-1add35247eda",
+    "IsTranslating" : false
+  },
+  "Refs" : [ ],
+  "Content" : {
+    "code" : null,
+    "name" : null,
+    "id" : "9b455182-835e-4c37-96a9-1add35247eda",
+    "project" : {
+      "name" : "bo-goods-front"
+    },
+    "pages" : [ {
+      "id" : "47987c1f-7db8-4d88-ad1d-daea61415bac",
+      "code" : "GoodsForm",
+      "name" : "商品表单",
+      "fileName" : "GoodsForm.frm",
+      "relativePath" : "HotWave/DataBase/Goods/bo-goods-front/metadata/components",
+      "formUri" : null,
+      "routeUri" : "GoodsForm",
+      "routeParams" : null,
+      "forceDynamicForm" : false
+    } ],
+    "entry" : "GoodsForm",
+    "routes" : null,
+    "appCode" : "SPGL",
+    "appName" : "商品管理",
+    "publishes" : [ {
+      "id" : "5c3f3a93-5f6b-4bc8-aec6-713cff4dba22",
+      "entry" : "47987c1f-7db8-4d88-ad1d-daea61415bac"
+    } ]
+  },
+  "ExtendRule" : null,
+  "RelativePath" : "HotWave/DataBase/Goods/bo-goods-front/metadata/route",
+  "ExtendProperty" : "",
+  "Extended" : false,
+  "PreviousVersion" : null,
+  "Version" : null,
+  "Properties" : null
+}

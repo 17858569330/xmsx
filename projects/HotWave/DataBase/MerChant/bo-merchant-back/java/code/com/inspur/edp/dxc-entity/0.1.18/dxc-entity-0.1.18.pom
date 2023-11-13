@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>dxc</artifactId>
+        <groupId>com.inspur.edp</groupId>
+        <version>0.1.18</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>dxc-entity</artifactId>
+    <build>
+        <finalName>dxc-entity</finalName>
+    </build>
+    <dependencies>
+
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>cef-entity</artifactId>
+            <version>0.1.17</version>
+        </dependency>
+        <dependency>
+            <groupId>com.inspur.edp</groupId>
+            <artifactId>dataie-entity</artifactId>
+            <version>0.1.9</version>
+        </dependency>
+    </dependencies>
+
+</project>

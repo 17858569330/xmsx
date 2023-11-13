@@ -1,0 +1,99 @@
+{
+  "Header" : {
+    "Code" : "StockServer",
+    "Type" : "WebServiceComponent",
+    "NameSpace" : "Inspur.GS.HotWave.Stock.GoodsStock.GoodsStock.Front",
+    "CertId" : null,
+    "Name" : "库存服务",
+    "FileName" : "StockServer.wscmp",
+    "BizobjectID" : "e093e8c4-7764-1bc4-bf0e-76bd4b1a9099",
+    "Language" : null,
+    "Extendable" : false,
+    "ID" : "2824028e-e01c-4776-86c8-d11433703633",
+    "IsTranslating" : false
+  },
+  "Refs" : [ {
+    "DependentMetadata" : {
+      "ID" : "9f701403-11e6-458e-96a4-87d34c6f5d60",
+      "CertId" : null,
+      "NameSpace" : "Inspur.GS.HotWave.Stock.GoodsStock.GoodsStock.Front",
+      "Code" : "StockServer",
+      "Name" : "库存服务",
+      "Type" : "InternalApi",
+      "BizobjectID" : "e093e8c4-7764-1bc4-bf0e-76bd4b1a9099"
+    }
+  } ],
+  "Content" : {
+    "id" : "2824028e-e01c-4776-86c8-d11433703633",
+    "code" : "StockServer",
+    "name" : "库存服务",
+    "application" : "HotWave",
+    "serviceUnit" : "Stock",
+    "version" : "1.0",
+    "operations" : [ {
+      "kind" : "DefaultOperation",
+      "code" : "StockWriteBack",
+      "name" : "补货回写库存",
+      "description" : "StockWriteBack服务",
+      "uri" : "3e463515-cb17-4374-a9c7-e42746f136ee&^^&StockWriteBack",
+      "returnType" : {
+        "kind" : "DefaultPrimitiveType",
+        "primitiveTypeKind" : "String"
+      },
+      "parameters" : [ {
+        "kind" : "webserviceParameter",
+        "code" : "dataid",
+        "name" : "单据id",
+        "required" : true,
+        "parameterType" : {
+          "kind" : "DefaultPrimitiveType",
+          "primitiveTypeKind" : "String"
+        },
+        "fetchValueMode" : "none"
+      }, {
+        "kind" : "webserviceParameter",
+        "code" : "spjl",
+        "name" : "审批结论",
+        "required" : true,
+        "parameterType" : {
+          "kind" : "DefaultPrimitiveType",
+          "primitiveTypeKind" : "String"
+        },
+        "fetchValueMode" : "none"
+      }, {
+        "kind" : "webserviceParameter",
+        "code" : "beid",
+        "name" : "业务实体id",
+        "required" : true,
+        "parameterType" : {
+          "kind" : "DefaultPrimitiveType",
+          "primitiveTypeKind" : "String"
+        },
+        "fetchValueMode" : "none"
+      } ]
+    } ],
+    "resource" : {
+      "kind" : "sgIApi",
+      "apiId" : "9f701403-11e6-458e-96a4-87d34c6f5d60",
+      "apiCode" : "StockServer",
+      "apiName" : "库存服务",
+      "apiServiceUnit" : "Stock",
+      "apiUri" : "HotWave/Stock/v1.0/StockServer"
+    },
+    "sourceInfo" : {
+      "type" : "sgIApi",
+      "apiId" : "9f701403-11e6-458e-96a4-87d34c6f5d60",
+      "apiCode" : "StockServer",
+      "apiName" : "库存服务",
+      "apiSu" : "Stock",
+      "apiUri" : "HotWave/Stock/v1.0/StockServer"
+    }
+  },
+  "ExtendRule" : null,
+  "RelativePath" : "HotWave/Stock/GoodsStock/bo-goodsstock-front/metadata/wscmp",
+  "ExtendProperty" : "",
+  "Extended" : false,
+  "PreviousVersion" : null,
+  "Version" : null,
+  "Properties" : null
+}

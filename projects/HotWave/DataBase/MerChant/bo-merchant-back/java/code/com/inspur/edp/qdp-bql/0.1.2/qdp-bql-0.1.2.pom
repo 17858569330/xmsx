@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <modules>
+        <module>bql-dom</module>
+        <module>bql-parse</module>
+        <module>bql-db-dm</module>
+        <module>bql-db-oracle</module>
+        <module>bql-db-pg</module>
+        <module>bql-db-sqlserver</module>
+        <module>bql-db-highgo</module>
+        <module>bql-api</module>
+        <module>bql-execute</module>
+        <module>bql-scan</module>
+    </modules>
+
+    <parent>
+        <groupId>io.iec.edp</groupId>
+        <artifactId>caf-boot-parent</artifactId>
+        <version>0.2.2</version>
+    </parent>
+
+    <artifactId>qdp-bql</artifactId>
+
+    <groupId>com.inspur.edp</groupId>
+    <packaging>pom</packaging>
+    <version>0.1.2</version>
+
+    <distributionManagement>
+        <repository>
+            <id>gsp-releases-repo</id>
+            <url>https://repos.iec.io/repository/maven-gsp-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>gsp-snapshots-repo</id>
+            <url>https://repos.iec.io/repository/maven-gsp-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+</project>

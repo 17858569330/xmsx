@@ -1,0 +1,15 @@
+{
+  "AppCode" : "HotWave",
+  "ServiceUnitCode" : "DataBase",
+  "BizobjectCode" : "Goods",
+  "BizobjectID" : "dec0e47e-409b-6d3a-8876-85bd5909bf19",
+  "ProjectNameSpace" : "Inspur.GS.HotWave.DataBase.Goods.Goods.Front",
+  "SuDeploymentPath" : "apps/hotwave/database",
+  "MetadataProjectName" : "bo-Goods-Front",
+  "MetadataPackageName" : "Inspur.GS.HotWave.DataBase.Goods.Goods.Front",
+  "SuConfigDeploymentPath" : null,
+  "ProjectType" : "frontend",
+  "ProjectExtendItem" : [ {
+    "codelanguage" : "java"
+  } ]
+}

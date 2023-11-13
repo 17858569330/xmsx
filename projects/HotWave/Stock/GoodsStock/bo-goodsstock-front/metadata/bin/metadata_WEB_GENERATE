@@ -1,0 +1,22 @@
+#Last modified on: Thu Jul 06 16:00:10 GMT+08:00 2023
+#Thu Jul 06 16:00:10 GMT+08:00 2023
+metadata/components/GoodsStockPurchase.frm.res=1687835553996
+metadata/components/PurchaseOrderList_frm.sm=1687915688420
+metadata/eapi/GoodsStockPurchase_frm.eapi=1687672964254
+metadata/components/PurchaseOrder.frm.res=1687917287247
+metadata/components/PurchaseOrderList.frm=1687915998968
+metadata/eapi/GoodsStockForm_frm.eapi=1687662185782
+metadata/components/GoodsStockForm.frm=1688091389539
+metadata/eapi/PurchaseOrder_frm.eapi=1687678994933
+metadata/components/GoodsStockPurchase_frm.sm=1687672964278
+metadata/components/GoodsStockForm_frm_Controller.webcmp=1687662927823
+metadata/components/PurchaseOrder_frm.sm=1687678994964
+metadata/components/GoodsStockForm_frm.sm=1687662185798
+metadata/components/GoodsStockPurchase.frm=1688630402338
+metadata/components/PurchaseOrderList.frm.res=1687915998962
+metadata/components/GoodsStockForm.frm.res=1687931473525
+metadata/eapi/GoodsStockLookup_hlp.eapi=1687845873467
+metadata/route/predefinePageflow.pf=1687916433322
+metadata/components/GoodsStockForm_frm_Controller.webcmd=1687662927847
+metadata/eapi/PurchaseOrderList_frm.eapi=1687915688204
+metadata/components/PurchaseOrder.frm=1687917981192

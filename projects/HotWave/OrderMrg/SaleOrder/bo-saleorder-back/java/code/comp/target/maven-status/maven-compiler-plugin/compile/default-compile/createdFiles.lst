@@ -1,0 +1,7 @@
+com\inspur\gs\hotwave\ordermrg\saleorder\saleorder\back\bizactions\SaleOrderSendGoodsMgrAction.class
+com\inspur\gs\hotwave\ordermrg\saleorder\saleorder\back\saleorder\common\OrderDetailUtils.class
+com\inspur\gs\hotwave\ordermrg\saleorder\saleorder\back\saleorder\common\SaleOrderMgrActionUtils.class
+com\inspur\gs\hotwave\ordermrg\saleorder\saleorder\back\saleorder\determinations\SaleOrderSaleOrderAfterCreateDetermination.class
+com\inspur\gs\hotwave\ordermrg\saleorder\saleorder\back\saleorder\entityactions\SaleOrderSendStateActionAction.class
+com\inspur\gs\hotwave\ordermrg\saleorder\saleorder\back\goodsquery\processunit\GoodsQueryGoodsQyBuildInUnit.class
+com\inspur\gs\hotwave\ordermrg\saleorder\saleorder\back\saleorder\common\SaleOrderUtils.class

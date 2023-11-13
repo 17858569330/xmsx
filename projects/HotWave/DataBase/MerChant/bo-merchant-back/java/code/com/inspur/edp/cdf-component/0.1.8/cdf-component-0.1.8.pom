@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>io.iec.edp</groupId>
+    <artifactId>caf-boot-parent</artifactId>
+    <version>0.1.2</version>
+  </parent>
+
+  <groupId>com.inspur.edp</groupId>
+  <artifactId>cdf-component</artifactId>
+  <name>cdf-component</name>
+  <packaging>pom</packaging>
+  <version>0.1.8</version>
+  <modules>
+    <module>cdf-component-api</module>
+    <module>cdf-component-core</module>
+    <module>cdf-component-metadata</module>
+    <module>cdf-component-schema</module>
+<!--    <module>cdf-component-test</module>-->
+
+  </modules>
+
+  <properties>
+    <guava.version>28.0-jre</guava.version>
+    <commons-collections.version>4.1</commons-collections.version>
+  </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <!-- guava -->
+      <dependency>
+        <groupId>com.google.guava</groupId>
+        <artifactId>guava</artifactId>
+        <version>${guava.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-collections4</artifactId>
+        <version>${commons-collections.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+  <dependencies>
+
+    <!-- json -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-json</artifactId>
+    </dependency>
+    <!-- Lombok -->
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <scope>provided</scope>
+    </dependency>
+
+    <!-- test -->
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-api</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-engine</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-junit-jupiter</artifactId>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-jar-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-source-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>attach-sources</id>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+  <distributionManagement>
+    <snapshotRepository>
+      <id>gsp-snapshots-repo</id>
+      <url>https://repos.iec.io/repository/maven-gsp-snapshots/</url>
+    </snapshotRepository>
+    <repository>
+      <id>gsp-releases-repo</id>
+      <url>https://repos.iec.io/repository/maven-gsp-releases/</url>
+    </repository>
+  </distributionManagement>
+</project>

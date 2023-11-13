@@ -1,0 +1,49 @@
+{
+  "Header" : {
+    "Code" : "SaleOrderSaleOrderAfterCreateDeterminationController",
+    "Type" : "DeterminationComponent",
+    "NameSpace" : "Inspur.GS.HotWave.OrderMrg.SaleOrder.SaleOrder.Back",
+    "CertId" : null,
+    "Name" : "SaleOrderSaleOrderAfterCreateDeterminationController",
+    "FileName" : "SaleOrderSaleOrderAfterCreateDeterminationController.beDtmCmp",
+    "BizobjectID" : "ee0af0b4-e947-7987-a85d-5072623dc1e6",
+    "Language" : null,
+    "Extendable" : false,
+    "ID" : "8a30101f-b239-4df8-ba1c-eaefa38287ec",
+    "IsTranslating" : false
+  },
+  "Refs" : [ ],
+  "Content" : {
+    "ComponentCode" : "SaleOrderAfterCreate",
+    "ComponentDescription" : "",
+    "ComponentID" : "8a30101f-b239-4df8-ba1c-eaefa38287ec",
+    "ComponentName" : "新增后1",
+    "ComponentType" : "DeterminationComponent",
+    "DeterminationMethod" : {
+      "Assembly" : "Inspur.GS.HotWave.OrderMrg.SaleOrder.SaleOrder.Back",
+      "ClassName" : "Inspur.GS.HotWave.OrderMrg.SaleOrder.SaleOrder.Back.Determinations.SaleOrderSaleOrderAfterCreateDetermination",
+      "DeterminationParams" : [ ],
+      "JavaClassName" : "com.inspur.gs.hotwave.ordermrg.saleorder.saleorder.back.saleorder.determinations.SaleOrderSaleOrderAfterCreateDetermination",
+      "JavaPackageName" : null,
+      "ReturnValue" : {
+        "Assembly" : "mscorlib.dll",
+        "ClassName" : "Void",
+        "ID" : null,
+        "JavaClassName" : "void",
+        "Mode" : 0,
+        "ParamCode" : "",
+        "ParamDescription" : null,
+        "ParamName" : "",
+        "ParameterCollectionType" : 0,
+        "ParameterType" : 7
+      }
+    }
+  },
+  "ExtendRule" : null,
+  "RelativePath" : null,
+  "ExtendProperty" : null,
+  "Extended" : false,
+  "PreviousVersion" : null,
+  "Version" : null,
+  "Properties" : null
+}

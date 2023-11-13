@@ -1,0 +1,49 @@
+{
+  "Header" : {
+    "Code" : "MerchantDtmBeforeSave2DeterminationController",
+    "Type" : "DeterminationComponent",
+    "NameSpace" : "Inspur.GS.HotWave.DataBase.MerChant.MerChant.Back",
+    "CertId" : null,
+    "Name" : "MerchantDtmBeforeSave2DeterminationController",
+    "FileName" : "MerchantDtmBeforeSave2DeterminationController.beDtmCmp",
+    "BizobjectID" : "4d152341-0dcd-4468-bf75-f784a486d293",
+    "Language" : null,
+    "Extendable" : false,
+    "ID" : "a581b19d-4350-417a-9d84-d0547639a094",
+    "IsTranslating" : false
+  },
+  "Refs" : [ ],
+  "Content" : {
+    "ComponentCode" : "DtmBeforeSave2",
+    "ComponentDescription" : "",
+    "ComponentID" : "a581b19d-4350-417a-9d84-d0547639a094",
+    "ComponentName" : "保存前2",
+    "ComponentType" : "DeterminationComponent",
+    "DeterminationMethod" : {
+      "Assembly" : "Inspur.GS.HotWave.DataBase.MerChant.MerChant.Back",
+      "ClassName" : "Inspur.GS.HotWave.DataBase.MerChant.MerChant.Back.Determinations.MerchantDtmBeforeSave2Determination",
+      "DeterminationParams" : [ ],
+      "JavaClassName" : "com.inspur.gs.hotwave.database.merchant.merchant.back.merchant.determinations.MerchantDtmBeforeSave2Determination",
+      "JavaPackageName" : null,
+      "ReturnValue" : {
+        "Assembly" : "mscorlib.dll",
+        "ClassName" : "Void",
+        "ID" : null,
+        "JavaClassName" : "void",
+        "Mode" : 0,
+        "ParamCode" : "",
+        "ParamDescription" : null,
+        "ParamName" : "",
+        "ParameterCollectionType" : 0,
+        "ParameterType" : 7
+      }
+    }
+  },
+  "ExtendRule" : null,
+  "RelativePath" : null,
+  "ExtendProperty" : null,
+  "Extended" : false,
+  "PreviousVersion" : null,
+  "Version" : null,
+  "Properties" : null
+}

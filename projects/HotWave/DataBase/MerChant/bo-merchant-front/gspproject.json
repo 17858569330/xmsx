@@ -1,0 +1,15 @@
+{
+  "AppCode" : "HotWave",
+  "ServiceUnitCode" : "DataBase",
+  "BizobjectCode" : "MerChant",
+  "BizobjectID" : "86748f14-54c0-bedd-9337-a23a74fbb6ff",
+  "ProjectNameSpace" : "Inspur.GS.HotWave.DataBase.MerChant.MerChant.Front",
+  "SuDeploymentPath" : "apps/hotwave/database",
+  "MetadataProjectName" : "bo-MerChant-Front",
+  "MetadataPackageName" : "Inspur.GS.HotWave.DataBase.MerChant.MerChant.Front",
+  "SuConfigDeploymentPath" : null,
+  "ProjectType" : "frontend",
+  "ProjectExtendItem" : [ {
+    "codelanguage" : "java"
+  } ]
+}

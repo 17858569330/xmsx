@@ -1,0 +1,15 @@
+{
+  "AppCode" : "HotWave",
+  "ServiceUnitCode" : "DataBase",
+  "BizobjectCode" : "Staff",
+  "BizobjectID" : "b1d99340-20e0-c926-9f0c-748712e5c3d0",
+  "ProjectNameSpace" : "Inspur.GS.HotWave.DataBase.Staff.Staff.Front",
+  "SuDeploymentPath" : "apps/hotwave/database",
+  "MetadataProjectName" : "bo-Staff-Front",
+  "MetadataPackageName" : "Inspur.GS.HotWave.DataBase.Staff.Staff.Front",
+  "SuConfigDeploymentPath" : null,
+  "ProjectType" : "frontend",
+  "ProjectExtendItem" : [ {
+    "codelanguage" : "java"
+  } ]
+}

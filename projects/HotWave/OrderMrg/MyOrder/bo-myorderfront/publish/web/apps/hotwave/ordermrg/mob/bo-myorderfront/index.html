@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+  <html lang="en">
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title></title>
+    <link rel="stylesheet" href="/platform/common/web/assets/vant.css">
+    <link rel="stylesheet" href="/platform/common/web/assets/farris-mobile-page.css">
+    <link href="index.css" rel="stylesheet">
+    <script src="https://ccwork.oss.cn-north-3.inspurcloudoss.com/h5/ccworkJsbridge.js"></script>
+    <script src="/platform/runtime/common/web/gsprtf/gsp.rtf.mobile.core.js"></script>
+    <script src="/platform/common/web/system.js"></script>
+    <meta charset="utf-8"></meta>
+    <!-- <script type="systemjs-importmap" src="/platform/runtime/common/web/runtime.common.compact.manifest.json"></script> -->
+  </head>
+  
+  <body>
+    <noscript>
+      <strong>We're sorry but bo-myorderfront doesn't work properly without JavaScript enabled.
+        Please enable it to continue.</strong>
+    </noscript>
+    
+    <div id="app"></div>
+    <script>
+      var body = document.getElementsByTagName('body')[0];
+      var nowTime = new Date().getTime();
+
+      var commonScriptElem = document.createElement('script');
+      commonScriptElem.src = '/platform/common/web/@farris/mobile-common.js?v=' + nowTime;
+      body.appendChild(commonScriptElem);
+
+      var manifestScriptElem = document.createElement('script');
+      manifestScriptElem.type = 'systemjs-importmap';
+      manifestScriptElem.src = '/platform/runtime/common/web/runtime.common.compact.manifest.json?v=' + nowTime;
+      body.appendChild(manifestScriptElem);
+    </script>
+    
+    <!-- built files will be auto injected -->
+    <script >System.import("./index.js?v=fecb7bc8769720");</script>
+  </body>
+  </html>

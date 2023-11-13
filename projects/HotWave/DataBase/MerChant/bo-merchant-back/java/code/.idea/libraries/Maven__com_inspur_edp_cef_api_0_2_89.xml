@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.inspur.edp:cef-api:0.2.89">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../../../../../maven_cache/com/inspur/edp/cef-api/0.2.89/cef-api-0.2.89.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../../../../../../maven_cache/com/inspur/edp/cef-api/0.2.89/cef-api-0.2.89-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../../../../../maven_cache/com/inspur/edp/cef-api/0.2.89/cef-api-0.2.89-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.inspur.edp:lcm-metadata-spi:0.1.23">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../../../../../maven_cache/com/inspur/edp/lcm-metadata-spi/0.1.23/lcm-metadata-spi-0.1.23.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../../../../../../maven_cache/com/inspur/edp/lcm-metadata-spi/0.1.23/lcm-metadata-spi-0.1.23-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../../../../../maven_cache/com/inspur/edp/lcm-metadata-spi/0.1.23/lcm-metadata-spi-0.1.23-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

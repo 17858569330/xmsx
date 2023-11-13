@@ -1,0 +1,35 @@
+{
+  "Header" : {
+    "Code" : "MyOrder_mfrm_listPage",
+    "Type" : "StateMachine",
+    "NameSpace" : "Inspur.GS.HotWave.OrderMrg.MyOrder",
+    "CertId" : null,
+    "Name" : "我的订单_mfrm_listPage",
+    "FileName" : "MyOrder_mfrm_listPage.sm",
+    "BizobjectID" : "dc97c471-1757-f628-21f7-32ba147f3eda",
+    "Language" : null,
+    "Extendable" : false,
+    "ID" : "599490c0-560c-4c7f-a774-bdcf7271dd2f",
+    "IsTranslating" : false
+  },
+  "Refs" : [ ],
+  "Content" : {
+    "code" : null,
+    "name" : null,
+    "renderState" : { },
+    "state" : [ {
+      "state" : "initState",
+      "name" : "初始状态",
+      "description" : "页面初始状态"
+    } ],
+    "initialState" : "initState",
+    "action" : { }
+  },
+  "ExtendRule" : null,
+  "RelativePath" : "HotWave/OrderMrg/MyOrder/bo-myorderfront/metadata/components",
+  "ExtendProperty" : "",
+  "Extended" : false,
+  "PreviousVersion" : null,
+  "Version" : null,
+  "Properties" : null
+}

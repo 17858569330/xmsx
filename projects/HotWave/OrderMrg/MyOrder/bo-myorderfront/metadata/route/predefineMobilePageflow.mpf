@@ -1,0 +1,47 @@
+{
+  "Header" : {
+    "Code" : "predefineMobilePageflow",
+    "Type" : "MobilePageFlowMetadata",
+    "NameSpace" : "Inspur.GS.HotWave.OrderMrg.MyOrder",
+    "CertId" : null,
+    "Name" : "predefineMobilePageflow",
+    "FileName" : "predefineMobilePageflow.mpf",
+    "BizobjectID" : "dc97c471-1757-f628-21f7-32ba147f3eda",
+    "Language" : null,
+    "Extendable" : false,
+    "ID" : "1c82c0a5-43b2-4a6c-b30f-19485ef1ee4a",
+    "IsTranslating" : false
+  },
+  "Refs" : [ ],
+  "Content" : {
+    "code" : null,
+    "name" : null,
+    "id" : "1c82c0a5-43b2-4a6c-b30f-19485ef1ee4a",
+    "project" : {
+      "name" : "bo-myorderfront"
+    },
+    "pages" : [ {
+      "id" : "1fe9d960-b283-49ef-9552-5f1ce090748b",
+      "code" : "MyOrder",
+      "name" : "我的订单",
+      "fileName" : "MyOrder.mfrm",
+      "relativePath" : "HotWave/OrderMrg/MyOrder/bo-myorderfront/metadata/components",
+      "formUri" : null,
+      "routeUri" : "MyOrder",
+      "routeParams" : null,
+      "forceDynamicForm" : false
+    } ],
+    "entry" : "MyOrder",
+    "routes" : null,
+    "appCode" : null,
+    "appName" : null,
+    "publishes" : null
+  },
+  "ExtendRule" : null,
+  "RelativePath" : "",
+  "ExtendProperty" : null,
+  "Extended" : false,
+  "PreviousVersion" : null,
+  "Version" : null,
+  "Properties" : null
+}

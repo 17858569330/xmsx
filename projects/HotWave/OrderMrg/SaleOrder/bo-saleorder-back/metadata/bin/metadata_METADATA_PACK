@@ -1,0 +1,12 @@
+#Last modified on: Tue Jun 27 14:26:38 GMT+08:00 2023
+#Tue Jun 27 14:26:38 GMT+08:00 2023
+metadata/eapi/GoodsQuery_QDPParamVO.eapi=1687847184654
+metadata/be/component/SaleOrderSendStateActionActionController.beCmp=1687762567029
+metadata/be/component/SaleOrderSendGoodsMgrActionController.beMgrCmp=1687762704347
+metadata/qo/GoodsQuery.qo.res=1687764833194
+metadata/be/SaleOrder.be=1687762691041
+metadata/qo/GoodsQuery_QDPParamVO.vo=1687764833281
+metadata/be/component/SaleOrderSaleOrderAfterCreateDeterminationController.beDtmCmp=1687747845031
+metadata/be/SaleOrder.be.res=1687740897952
+metadata/qo/GoodsQuery.qo=1687847184669
+metadata/qo/GoodsQuery_QDPParamVO.vo.res=1687847130712

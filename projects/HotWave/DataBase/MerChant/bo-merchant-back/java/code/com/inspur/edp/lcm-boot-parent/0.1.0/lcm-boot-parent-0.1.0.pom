@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>io.iec.edp</groupId>
+        <artifactId>caf-boot-parent</artifactId>
+        <version>1.0.0-rc.1</version>
+    </parent>
+
+    <groupId>com.inspur.edp</groupId>
+    <artifactId>lcm-boot-parent</artifactId>
+    <version>0.1.0</version>
+    <packaging>pom</packaging>
+
+<!--    <modules>-->
+<!--        <module>../lcm-logging-service</module>-->
+<!--        <module>../lcm-metadata-framework</module>-->
+<!--        <module>../lcm-maven-utils</module>-->
+<!--        <module>../metadata-jit-to-java</module>-->
+<!--        <module>../metadata-rtcustomization</module>-->
+<!--        <module>../lcm-common</module>-->
+<!--        <module>../ide-setting</module>-->
+<!--        <module>../workspace-mgr</module>-->
+<!--        <module>../lcm-git-framework</module>-->
+<!--        <module>../paas/devops-mgr</module>-->
+<!--        <module>../caf-business-object</module>-->
+<!--        <module>../lcm-rtcustomization-cache</module>-->
+<!--        <module>../metadata-businesstype</module>-->
+<!--        <module>../lcm-project-deployer</module>-->
+<!--        <module>../projectservice</module>-->
+<!--        <module>../lcm-debugger</module>-->
+<!--    </modules>-->
+
+    <properties>
+        <lcm.common.version>0.1.1</lcm.common.version>
+        <lcm.logging.service.version>0.1.4</lcm.logging.service.version>
+        <lcm.maven.utils.version>0.1.0</lcm.maven.utils.version>
+        <metadataframework.version>0.1.33</metadataframework.version>
+        <workspace.version>0.1.2</workspace.version>
+        <metadata.rtcustomization.version>0.1.28</metadata.rtcustomization.version>
+        <metadata.to.java.version>0.1.4</metadata.to.java.version>
+        <ide.setting.version>0.1.5</ide.setting.version>
+        <devops.version>0.1.0</devops.version>
+        <caf.business.object.version>0.1.5</caf.business.object.version>
+        <lcm.git.version>0.1.0</lcm.git.version>
+        <lcm.rtcustomization.cache.version>0.1.1</lcm.rtcustomization.cache.version>
+        <metadata.businesstype.version>0.1.3</metadata.businesstype.version>
+        <lcm.project.deployer.version>0.1.1</lcm.project.deployer.version>
+        <lcm.project.service.version>0.1.1</lcm.project.service.version>
+        <lcm.debugger.version>0.1.1</lcm.debugger.version>
+
+
+        <!-- 其他组工程引用 -->
+        <caf.authentication.version>0.4.2-SNAPSHOT</caf.authentication.version>
+        <i18n.version>0.1.9</i18n.version>
+        <caf.database.object.version>0.2.7</caf.database.object.version>
+        <bcc.billcategory.version>0.1.3</bcc.billcategory.version>
+        <caf.runtime.framework.function.version>0.3.8</caf.runtime.framework.function.version>
+        <caf.framework.sysmanager.version>0.2.22</caf.framework.sysmanager.version>
+        <caf.generator.version>0.1.1</caf.generator.version>
+        <caf.framework.configdata.api.version>0.2.0</caf.framework.configdata.api.version>
+        <cef.bef.bizentity.version>0.2.16</cef.bef.bizentity.version>
+        <i18n.management.core.version>0.1.0-RELEASE</i18n.management.core.version>
+        <cloud.config.version>0.2.0-SNAPSHOT</cloud.config.version>
+
+        <!-- 第三方引用 -->
+        <apache.maven.model.version>3.6.1</apache.maven.model.version>
+        <apache.maven.shared.utils.version>3.2.1</apache.maven.shared.utils.version>
+        <apache.maven.invoker.version>3.0.1</apache.maven.invoker.version>
+        <apache.maven.settings.version>3.6.1</apache.maven.settings.version>
+        <swagger.core.version>1.5.21</swagger.core.version>
+        <dom4j.version>2.1.1</dom4j.version>
+        <lmax.disruptor.version>3.4.2</lmax.disruptor.version>
+        <commons.io.version>2.7</commons.io.version>
+        <gitlab4j.version>4.15.7</gitlab4j.version>
+        <jcraft.jsch.version>0.1.55</jcraft.jsch.version>
+
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven-checkstyle-plugin.version>3.0.0</maven-checkstyle-plugin.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>gsp-snapshots-repo</id>
+            <url>https://repos.iec.io/repository/maven-gsp-snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>gsp-releases-repo</id>
+            <url>https://repos.iec.io/repository/maven-gsp-releases/</url>
+        </repository>
+    </distributionManagement>
+
+</project>

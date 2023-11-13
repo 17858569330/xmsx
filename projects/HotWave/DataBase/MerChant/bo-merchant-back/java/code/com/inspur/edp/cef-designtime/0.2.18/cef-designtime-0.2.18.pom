@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>io.iec.edp</groupId>
+        <artifactId>caf-boot-parent</artifactId>
+        <version>0.3.1</version>
+    </parent>
+    <groupId>com.inspur.edp</groupId>
+    <artifactId>cef-designtime</artifactId>
+    <packaging>pom</packaging>
+    <version>0.2.18</version>
+    <modules>
+        <module>cef-designtime-api</module>
+    </modules>
+    <properties>
+        <caf.cef.schema.version>0.1.5</caf.cef.schema.version>
+    </properties>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>caf-cef-rt-api</artifactId>
+                <version>${caf.cef.schema.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>caf-cef-schema</artifactId>
+                <version>${caf.cef.schema.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.inspur.edp</groupId>
+                <artifactId>caf-cef-schema-base</artifactId>
+                <version>${caf.cef.schema.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>gsp-snapshots-repo</id>
+            <url>https://repos.iec.io/repository/maven-gsp-snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>gsp-releases-repo</id>
+            <url>https://repos.iec.io/repository/maven-gsp-releases/</url>
+        </repository>
+    </distributionManagement>
+</project>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>io.iec.edp</groupId>
+        <artifactId>caf-boot-parent</artifactId>
+        <version>0.1.5</version>
+    </parent>
+
+    <groupId>io.iec.edp</groupId>
+    <artifactId>caf-business-object</artifactId>
+    <packaging>pom</packaging>
+    <version>0.1.0</version>
+    <modules>
+        <module>caf-business-object-api</module>
+<!--        <module>caf-business-object-manager</module>-->
+<!--        <module>caf-business-object-web</module>-->
+    </modules>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.openclover</groupId>
+                <artifactId>clover-maven-plugin</artifactId>
+                <configuration>
+                    <includesTestSourceRoots>false</includesTestSourceRoots>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>caf-snapshots-repo</id>
+            <url>https://repos.iec.io/repository/maven-caf-snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>caf-releases-repo</id>
+            <url>https://repos.iec.io/repository/maven-caf-releases/</url>
+        </repository>
+    </distributionManagement>
+</project>
