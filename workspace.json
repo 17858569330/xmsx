@@ -1,0 +1,92 @@
+{
+  "Version" : "1.0.1",
+  "EnvironmentSetting" : {
+    "Environment" : {
+      "DevRootPath" : "F:/projects"
+    },
+    "MetadataIndexServer" : {
+      "Ip" : "support-md-index.inspures.com",
+      "Port" : "80"
+    },
+    "Deployment" : [ {
+      "Name" : "current server",
+      "Port" : 0,
+      "DebugPort" : 0,
+      "ServerPath" : "",
+      "Id" : "7e1036e3-10e7-49ae-9bbc-af6b81ee89cb",
+      "Tags" : null,
+      "ProcessID" : 0,
+      "ProcessName" : "",
+      "Status" : null,
+      "TechStack" : null,
+      "MockItem" : null,
+      "DbServer" : "",
+      "DbPort" : null,
+      "DbDatabase" : "",
+      "DbUserName" : "",
+      "DbPassword" : "",
+      "DbType" : 0,
+      "Type" : "local",
+      "default" : true
+    } ],
+    "TechnologyStack" : null,
+    "ExtractDependencyMode" : "NOT_EXTRACT_DEPEND",
+    "Vcs" : {
+      "Name" : "itltNfNb2QRUGjl60pPtGQ==",
+      "Password" : "ZbYDMbeyiR5m+LXx2eDwhkhU16rhYYoW4bCBp4VG5KaPVjt9o1ubhdZWx1BXB0Uy5I8GbqK14iJCsRc6JZHC3/QVBZxTDbEP9+rJsNH4bC5GD1iz28vSJIVsTSyyTuwKs4s8gNynaUcT4jp/AwAhMfnhKlJ4+XfrlA0gQFEHrX1riqNzixiELBPUdDB/md8GEYpWFTl9BcPtXHB+FP8oZjYK3BvT/wD4K/f0ukprp1U="
+    }
+  },
+  "DebugServerInfo" : [ {
+    "Name" : "current server",
+    "Port" : 5200,
+    "DebugPort" : 0,
+    "ServerPath" : "",
+    "Id" : "7e1036e3-10e7-49ae-9bbc-af6b81ee89cb",
+    "Tags" : null,
+    "ProcessID" : 13348,
+    "ProcessName" : "",
+    "Status" : "IsRunning",
+    "TechStack" : null,
+    "MockItem" : null,
+    "DbServer" : "",
+    "DbPort" : null,
+    "DbDatabase" : "",
+    "DbUserName" : "",
+    "DbPassword" : "",
+    "DbType" : 2,
+    "Type" : "local",
+    "default" : true
+  } ],
+  "ProjectConfiguration" : [ {
+    "Name" : "bo-myorder",
+    "WsId" : null,
+    "Path" : "/HotWave/OrderMrg/MyOrder/bo-myorder",
+    "Description" : "",
+    "Type" : "gs",
+    "Mixins" : [ ],
+    "Attributes" : { },
+    "Source" : {
+      "Type" : null,
+      "Location" : null,
+      "Parameters" : null
+    },
+    "Problems" : [ ],
+    "Links" : [ ]
+  }, {
+    "Name" : "bo-myorderfront",
+    "WsId" : null,
+    "Path" : "/HotWave/OrderMrg/MyOrder/bo-myorderfront",
+    "Description" : "",
+    "Type" : "gs",
+    "Mixins" : [ ],
+    "Attributes" : { },
+    "Source" : {
+      "Type" : null,
+      "Location" : null,
+      "Parameters" : null
+    },
+    "Problems" : [ ],
+    "Links" : [ ]
+  } ],
+  "RelaSUCodeSet" : [ ]
+}
